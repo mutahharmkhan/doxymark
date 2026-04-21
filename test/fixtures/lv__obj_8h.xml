@@ -1,0 +1,2826 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="lv__obj_8h" kind="file" language="C++">
+    <compoundname>lv_obj.h</compoundname>
+    <includes refid="lv__conf__internal_8h" local="yes">../lv_conf_internal.h</includes>
+    <includes refid="lv__types_8h" local="yes">../misc/lv_types.h</includes>
+    <includes refid="lv__style_8h" local="yes">../misc/lv_style.h</includes>
+    <includes refid="lv__area_8h" local="yes">../misc/lv_area.h</includes>
+    <includes refid="lv__color_8h" local="yes">../misc/lv_color.h</includes>
+    <includes refid="lv__assert_8h" local="yes">../misc/lv_assert.h</includes>
+    <includes refid="lv__obj__tree_8h" local="yes">lv_obj_tree.h</includes>
+    <includes refid="lv__obj__pos_8h" local="yes">lv_obj_pos.h</includes>
+    <includes refid="lv__obj__scroll_8h" local="yes">lv_obj_scroll.h</includes>
+    <includes refid="lv__obj__style_8h" local="yes">lv_obj_style.h</includes>
+    <includes refid="lv__obj__draw_8h" local="yes">lv_obj_draw.h</includes>
+    <includes refid="lv__obj__class_8h" local="yes">lv_obj_class.h</includes>
+    <includes refid="lv__obj__event_8h" local="yes">lv_obj_event.h</includes>
+    <includes refid="lv__obj__property_8h" local="yes">lv_obj_property.h</includes>
+    <includes refid="lv__group_8h" local="yes">lv_group.h</includes>
+    <includedby refid="lv__obj__private_8h" local="yes">/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_obj_private.h</includedby>
+    <includedby refid="lv__observer_8h" local="yes">/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_observer.h</includedby>
+    <includedby refid="lv__refr_8h" local="yes">/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_refr.h</includedby>
+    <includedby refid="lv__display__private_8h" local="yes">/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/display/lv_display_private.h</includedby>
+    <includedby refid="lv__snapshot_8h" local="yes">/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/snapshot/lv_snapshot.h</includedby>
+    <includedby refid="lv__gridnav_8h" local="yes">/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/indev/lv_gridnav.h</includedby>
+    <includedby refid="lv__indev__gesture_8h" local="yes">/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/indev/lv_indev_gesture.h</includedby>
+    <includedby refid="lv__indev__gesture__private_8h" local="yes">/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/indev/lv_indev_gesture_private.h</includedby>
+    <includedby refid="lv__indev__scroll_8h" local="yes">/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/indev/lv_indev_scroll.h</includedby>
+    <includedby refid="lv__file__explorer_8h" local="yes">/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/others/file_explorer/lv_file_explorer.h</includedby>
+    <includedby refid="lv__fragment_8h" local="yes">/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/others/fragment/lv_fragment.h</includedby>
+    <includedby refid="lv__theme_8h" local="yes">/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/themes/lv_theme.h</includedby>
+    <includedby refid="lv__arc_8h" local="yes">/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/arc/lv_arc.h</includedby>
+    <includedby refid="lv__bar_8h" local="yes">/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/bar/lv_bar.h</includedby>
+    <includedby refid="lv__button_8h" local="yes">/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/button/lv_button.h</includedby>
+    <includedby refid="lv__buttonmatrix_8h" local="yes">/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/buttonmatrix/lv_buttonmatrix.h</includedby>
+    <includedby refid="lv__calendar__chinese_8h" local="yes">/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/calendar/lv_calendar_chinese.h</includedby>
+    <includedby refid="lv__calendar__header__arrow_8h" local="yes">/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/calendar/lv_calendar_header_arrow.h</includedby>
+    <includedby refid="lv__calendar__header__dropdown_8h" local="yes">/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/calendar/lv_calendar_header_dropdown.h</includedby>
+    <includedby refid="lv__chart_8h" local="yes">/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/chart/lv_chart.h</includedby>
+    <includedby refid="lv__checkbox_8h" local="yes">/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/checkbox/lv_checkbox.h</includedby>
+    <includedby refid="lv__image_8h" local="yes">/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/image/lv_image.h</includedby>
+    <includedby refid="lv__imagebutton_8h" local="yes">/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/imagebutton/lv_imagebutton.h</includedby>
+    <includedby refid="lv__ime__pinyin_8h" local="yes">/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/ime/lv_ime_pinyin.h</includedby>
+    <includedby refid="lv__label_8h" local="yes">/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/label/lv_label.h</includedby>
+    <includedby refid="lv__led_8h" local="yes">/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/led/lv_led.h</includedby>
+    <includedby refid="lv__line_8h" local="yes">/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/line/lv_line.h</includedby>
+    <includedby refid="lv__list_8h" local="yes">/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/list/lv_list.h</includedby>
+    <includedby refid="lv__menu_8h" local="yes">/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/menu/lv_menu.h</includedby>
+    <includedby refid="lv__msgbox_8h" local="yes">/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/msgbox/lv_msgbox.h</includedby>
+    <includedby refid="lv__roller_8h" local="yes">/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/roller/lv_roller.h</includedby>
+    <includedby refid="lv__scale_8h" local="yes">/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/scale/lv_scale.h</includedby>
+    <includedby refid="lv__span_8h" local="yes">/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/span/lv_span.h</includedby>
+    <includedby refid="lv__switch_8h" local="yes">/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/switch/lv_switch.h</includedby>
+    <includedby refid="lv__tabview_8h" local="yes">/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/tabview/lv_tabview.h</includedby>
+    <includedby refid="lv__tileview_8h" local="yes">/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/tileview/lv_tileview.h</includedby>
+    <includedby refid="lv__win_8h" local="yes">/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/win/lv_win.h</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>../../lv_conf.h</label>
+      </node>
+      <node id="64">
+        <label>../core/lv_group.h</label>
+        <link refid="lv__group_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_obj.h</label>
+        <link refid="lv__obj_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+      </node>
+      <node id="60">
+        <label>lv_obj_class.h</label>
+        <link refid="lv__obj__class_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>lv_obj_draw.h</label>
+        <link refid="lv__obj__draw_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+      </node>
+      <node id="62">
+        <label>lv_obj_event.h</label>
+        <link refid="lv__obj__event_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>lv_obj_pos.h</label>
+        <link refid="lv__obj__pos_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="61">
+        <label>lv_obj_property.h</label>
+        <link refid="lv__obj__property_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>lv_obj_scroll.h</label>
+        <link refid="lv__obj__scroll_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="45">
+        <label>lv_obj_style.h</label>
+        <link refid="lv__obj__style_8h"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>lv_obj_style_gen.h</label>
+        <link refid="lv__obj__style__gen_8h_source"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>lv_obj_tree.h</label>
+        <link refid="lv__obj__tree_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>../display/lv_display.h</label>
+        <link refid="lv__display_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>lv_draw.h</label>
+        <link refid="lv__draw_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="57">
+        <label>../draw/lv_draw_arc.h</label>
+        <link refid="lv__draw__arc_8h"/>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="59">
+        <label>../draw/lv_draw_blur.h</label>
+        <link refid="lv__draw__blur_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>../draw/lv_draw_buf.h</label>
+        <link refid="lv__draw__buf_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>../draw/lv_draw_image.h</label>
+        <link refid="lv__draw__image_8h"/>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>../draw/lv_draw_label.h</label>
+        <link refid="lv__draw__label_8h"/>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>../draw/lv_draw_line.h</label>
+        <link refid="lv__draw__line_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>../draw/lv_draw_rect.h</label>
+        <link refid="lv__draw__rect_8h"/>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="58">
+        <label>../draw/lv_draw_triangle.h</label>
+        <link refid="lv__draw__triangle_8h"/>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>lv_image_decoder.h</label>
+        <link refid="lv__image__decoder_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>lv_image_dsc.h</label>
+        <link refid="lv__image__dsc_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>../font/lv_font.h</label>
+        <link refid="lv__font_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>lv_symbol_def.h</label>
+        <link refid="lv__symbol__def_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="63">
+        <label>../indev/lv_indev.h</label>
+        <link refid="lv__indev_8h"/>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>flex/lv_flex.h</label>
+        <link refid="lv__flex_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>grid/lv_grid.h</label>
+        <link refid="lv__grid_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>../layouts/lv_layout.h</label>
+        <link refid="lv__layout_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>../lv_conf_internal.h</label>
+        <link refid="lv__conf__internal_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>lv_conf_kconfig.h</label>
+        <link refid="lv__conf__kconfig_8h"/>
+      </node>
+      <node id="26">
+        <label>lv_anim.h</label>
+        <link refid="lv__anim_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>../misc/lv_area.h</label>
+        <link refid="lv__area_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>lv_array.h</label>
+        <link refid="lv__array_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>lv_assert.h</label>
+        <link refid="lv__assert_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>lv_bidi.h</label>
+        <link refid="lv__bidi_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>../misc/lv_color.h</label>
+        <link refid="lv__color_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>lv_color_op.h</label>
+        <link refid="lv__color__op_8h"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>../misc/lv_event.h</label>
+        <link refid="lv__event_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>lv_ext_data.h</label>
+        <link refid="lv__ext__data_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>../misc/lv_fs.h</label>
+        <link refid="lv__fs_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>lv_grad.h</label>
+        <link refid="lv__grad_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>lv_ll.h</label>
+        <link refid="lv__ll_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>lv_log.h</label>
+        <link refid="lv__log_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>lv_math.h</label>
+        <link refid="lv__math_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>../misc/lv_matrix.h</label>
+        <link refid="lv__matrix_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>lv_palette.h</label>
+        <link refid="lv__palette_8h"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>../misc/lv_profiler.h</label>
+        <link refid="lv__profiler_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>../misc/lv_style.h</label>
+        <link refid="lv__style_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>lv_style_gen.h</label>
+        <link refid="lv__style__gen_8h_source"/>
+      </node>
+      <node id="31">
+        <label>lv_text.h</label>
+        <link refid="lv__text_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>lv_timer.h</label>
+        <link refid="lv__timer_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>../misc/lv_types.h</label>
+        <link refid="lv__types_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>../stdlib/lv_mem.h</label>
+        <link refid="lv__mem_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>../stdlib/lv_sprintf.h</label>
+        <link refid="lv__sprintf_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>lv_string.h</label>
+        <link refid="lv__string_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>../tick/lv_tick.h</label>
+        <link refid="lv__tick_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>inttypes.h</label>
+      </node>
+      <node id="10">
+        <label>limits.h</label>
+      </node>
+      <node id="11">
+        <label>stdarg.h</label>
+      </node>
+      <node id="8">
+        <label>stdbool.h</label>
+      </node>
+      <node id="7">
+        <label>stddef.h</label>
+      </node>
+      <node id="6">
+        <label>stdint.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="41">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_global.h</label>
+        <link refid="lv__global_8h"/>
+      </node>
+      <node id="1">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_obj.h</label>
+        <link refid="lv__obj_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+        <childnode refid="83" relation="include">
+        </childnode>
+        <childnode refid="85" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+        <childnode refid="87" relation="include">
+        </childnode>
+        <childnode refid="88" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="89" relation="include">
+        </childnode>
+        <childnode refid="90" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="91" relation="include">
+        </childnode>
+        <childnode refid="92" relation="include">
+        </childnode>
+        <childnode refid="93" relation="include">
+        </childnode>
+        <childnode refid="94" relation="include">
+        </childnode>
+        <childnode refid="95" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="96" relation="include">
+        </childnode>
+        <childnode refid="97" relation="include">
+        </childnode>
+        <childnode refid="98" relation="include">
+        </childnode>
+        <childnode refid="99" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_obj_private.h</label>
+        <link refid="lv__obj__private_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_observer.h</label>
+        <link refid="lv__observer_8h"/>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_observer_private.h</label>
+        <link refid="lv__observer__private_8h"/>
+      </node>
+      <node id="59">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_refr.h</label>
+        <link refid="lv__refr_8h"/>
+        <childnode refid="60" relation="include">
+        </childnode>
+      </node>
+      <node id="60">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_refr_private.h</label>
+        <link refid="lv__refr__private_8h"/>
+      </node>
+      <node id="40">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/debugging/sysmon/lv_sysmon.h</label>
+        <link refid="lv__sysmon_8h"/>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/debugging/sysmon/lv_sysmon_private.h</label>
+        <link refid="lv__sysmon__private_8h"/>
+        <childnode refid="41" relation="include">
+        </childnode>
+      </node>
+      <node id="61">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/display/lv_display_private.h</label>
+        <link refid="lv__display__private_8h"/>
+      </node>
+      <node id="62">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/snapshot/lv_snapshot.h</label>
+        <link refid="lv__snapshot_8h"/>
+      </node>
+      <node id="65">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/drivers/wayland/lv_wl_keyboard.h</label>
+        <link refid="lv__wl__keyboard_8h"/>
+      </node>
+      <node id="66">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/drivers/wayland/lv_wl_pointer.h</label>
+        <link refid="lv__wl__pointer_8h"/>
+      </node>
+      <node id="67">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/drivers/wayland/lv_wl_pointer_axis.h</label>
+        <link refid="lv__wl__pointer__axis_8h"/>
+      </node>
+      <node id="68">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/drivers/wayland/lv_wl_touch.h</label>
+        <link refid="lv__wl__touch_8h"/>
+      </node>
+      <node id="63">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/indev/lv_gridnav.h</label>
+        <link refid="lv__gridnav_8h"/>
+      </node>
+      <node id="64">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/indev/lv_indev_gesture.h</label>
+        <link refid="lv__indev__gesture_8h_source"/>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+      </node>
+      <node id="70">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/indev/lv_indev_gesture_private.h</label>
+        <link refid="lv__indev__gesture__private_8h_source"/>
+      </node>
+      <node id="69">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/indev/lv_indev_private.h</label>
+        <link refid="lv__indev__private_8h"/>
+      </node>
+      <node id="71">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/indev/lv_indev_scroll.h</label>
+        <link refid="lv__indev__scroll_8h"/>
+        <childnode refid="69" relation="include">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/libs/barcode/lv_barcode.h</label>
+        <link refid="lv__barcode_8h"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/libs/barcode/lv_barcode_private.h</label>
+        <link refid="lv__barcode__private_8h"/>
+      </node>
+      <node id="50">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/libs/qrcode/lv_qrcode.h</label>
+        <link refid="lv__qrcode_8h"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/libs/qrcode/lv_qrcode_private.h</label>
+        <link refid="lv__qrcode__private_8h"/>
+      </node>
+      <node id="72">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/others/file_explorer/lv_file_explorer.h</label>
+        <link refid="lv__file__explorer_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/others/file_explorer/lv_file_explorer_private.h</label>
+        <link refid="lv__file__explorer__private_8h"/>
+      </node>
+      <node id="73">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/others/fragment/lv_fragment.h</label>
+        <link refid="lv__fragment_8h"/>
+        <childnode refid="74" relation="include">
+        </childnode>
+      </node>
+      <node id="74">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/others/fragment/lv_fragment_private.h</label>
+        <link refid="lv__fragment__private_8h"/>
+      </node>
+      <node id="76">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/themes/default/lv_theme_default.h</label>
+        <link refid="lv__theme__default_8h"/>
+        <childnode refid="75" relation="include">
+        </childnode>
+      </node>
+      <node id="75">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/themes/lv_theme.h</label>
+        <link refid="lv__theme_8h"/>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+      </node>
+      <node id="77">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/themes/lv_theme_private.h</label>
+        <link refid="lv__theme__private_8h"/>
+      </node>
+      <node id="78">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/themes/mono/lv_theme_mono.h</label>
+        <link refid="lv__theme__mono_8h"/>
+        <childnode refid="75" relation="include">
+        </childnode>
+      </node>
+      <node id="79">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/themes/simple/lv_theme_simple.h</label>
+        <link refid="lv__theme__simple_8h"/>
+        <childnode refid="75" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/animimage/lv_animimage.h</label>
+        <link refid="lv__animimage_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/animimage/lv_animimage_private.h</label>
+        <link refid="lv__animimage__private_8h"/>
+      </node>
+      <node id="43">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/arc/lv_arc.h</label>
+        <link refid="lv__arc_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/arc/lv_arc_private.h</label>
+        <link refid="lv__arc__private_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/arclabel/lv_arclabel_private.h</label>
+        <link refid="lv__arclabel__private_8h"/>
+      </node>
+      <node id="44">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/bar/lv_bar.h</label>
+        <link refid="lv__bar_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/bar/lv_bar_private.h</label>
+        <link refid="lv__bar__private_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="80">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/button/lv_button.h</label>
+        <link refid="lv__button_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/button/lv_button_private.h</label>
+        <link refid="lv__button__private_8h"/>
+      </node>
+      <node id="81">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/buttonmatrix/lv_buttonmatrix.h</label>
+        <link refid="lv__buttonmatrix_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="82" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/buttonmatrix/lv_buttonmatrix_private.h</label>
+        <link refid="lv__buttonmatrix__private_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="82">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/calendar/lv_calendar.h</label>
+        <link refid="lv__calendar_8h"/>
+        <childnode refid="83" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="83">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/calendar/lv_calendar_chinese.h</label>
+        <link refid="lv__calendar__chinese_8h"/>
+        <childnode refid="82" relation="include">
+        </childnode>
+      </node>
+      <node id="85">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/calendar/lv_calendar_header_arrow.h</label>
+        <link refid="lv__calendar__header__arrow_8h"/>
+        <childnode refid="82" relation="include">
+        </childnode>
+      </node>
+      <node id="86">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/calendar/lv_calendar_header_dropdown.h</label>
+        <link refid="lv__calendar__header__dropdown_8h"/>
+        <childnode refid="82" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/calendar/lv_calendar_private.h</label>
+        <link refid="lv__calendar__private_8h"/>
+      </node>
+      <node id="48">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/canvas/lv_canvas.h</label>
+        <link refid="lv__canvas_8h"/>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/canvas/lv_canvas_private.h</label>
+        <link refid="lv__canvas__private_8h"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="87">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/chart/lv_chart.h</label>
+        <link refid="lv__chart_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/chart/lv_chart_private.h</label>
+        <link refid="lv__chart__private_8h"/>
+      </node>
+      <node id="88">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/checkbox/lv_checkbox.h</label>
+        <link refid="lv__checkbox_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/checkbox/lv_checkbox_private.h</label>
+        <link refid="lv__checkbox__private_8h"/>
+      </node>
+      <node id="53">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/dropdown/lv_dropdown.h</label>
+        <link refid="lv__dropdown_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/dropdown/lv_dropdown_private.h</label>
+        <link refid="lv__dropdown__private_8h"/>
+      </node>
+      <node id="46">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/image/lv_image.h</label>
+        <link refid="lv__image_8h"/>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/image/lv_image_private.h</label>
+        <link refid="lv__image__private_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="89">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/imagebutton/lv_imagebutton.h</label>
+        <link refid="lv__imagebutton_8h"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/imagebutton/lv_imagebutton_private.h</label>
+        <link refid="lv__imagebutton__private_8h"/>
+      </node>
+      <node id="90">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/ime/lv_ime_pinyin.h</label>
+        <link refid="lv__ime__pinyin_8h"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/ime/lv_ime_pinyin_private.h</label>
+        <link refid="lv__ime__pinyin__private_8h"/>
+      </node>
+      <node id="84">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/keyboard/lv_keyboard.h</label>
+        <link refid="lv__keyboard_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/keyboard/lv_keyboard_private.h</label>
+        <link refid="lv__keyboard__private_8h"/>
+      </node>
+      <node id="52">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/label/lv_label.h</label>
+        <link refid="lv__label_8h"/>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/label/lv_label_private.h</label>
+        <link refid="lv__label__private_8h"/>
+      </node>
+      <node id="91">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/led/lv_led.h</label>
+        <link refid="lv__led_8h"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/led/lv_led_private.h</label>
+        <link refid="lv__led__private_8h"/>
+      </node>
+      <node id="92">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/line/lv_line.h</label>
+        <link refid="lv__line_8h"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/line/lv_line_private.h</label>
+        <link refid="lv__line__private_8h"/>
+      </node>
+      <node id="93">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/list/lv_list.h</label>
+        <link refid="lv__list_8h"/>
+      </node>
+      <node id="94">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/menu/lv_menu.h</label>
+        <link refid="lv__menu_8h"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/menu/lv_menu_private.h</label>
+        <link refid="lv__menu__private_8h"/>
+      </node>
+      <node id="95">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/msgbox/lv_msgbox.h</label>
+        <link refid="lv__msgbox_8h"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/msgbox/lv_msgbox_private.h</label>
+        <link refid="lv__msgbox__private_8h"/>
+      </node>
+      <node id="54">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/roller/lv_roller.h</label>
+        <link refid="lv__roller_8h"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/roller/lv_roller_private.h</label>
+        <link refid="lv__roller__private_8h"/>
+      </node>
+      <node id="51">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/scale/lv_scale.h</label>
+        <link refid="lv__scale_8h"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/scale/lv_scale_private.h</label>
+        <link refid="lv__scale__private_8h"/>
+      </node>
+      <node id="45">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/slider/lv_slider.h</label>
+        <link refid="lv__slider_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/slider/lv_slider_private.h</label>
+        <link refid="lv__slider__private_8h"/>
+      </node>
+      <node id="58">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/span/lv_span.h</label>
+        <link refid="lv__span_8h"/>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/span/lv_span_private.h</label>
+        <link refid="lv__span__private_8h"/>
+      </node>
+      <node id="57">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/spinbox/lv_spinbox.h</label>
+        <link refid="lv__spinbox_8h"/>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/spinbox/lv_spinbox_private.h</label>
+        <link refid="lv__spinbox__private_8h"/>
+      </node>
+      <node id="5">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/spinner/lv_spinner_private.h</label>
+        <link refid="lv__spinner__private_8h"/>
+      </node>
+      <node id="96">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/switch/lv_switch.h</label>
+        <link refid="lv__switch_8h"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/switch/lv_switch_private.h</label>
+        <link refid="lv__switch__private_8h"/>
+      </node>
+      <node id="55">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/table/lv_table.h</label>
+        <link refid="lv__table_8h"/>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/table/lv_table_private.h</label>
+        <link refid="lv__table__private_8h"/>
+      </node>
+      <node id="97">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/tabview/lv_tabview.h</label>
+        <link refid="lv__tabview_8h"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/tabview/lv_tabview_private.h</label>
+        <link refid="lv__tabview__private_8h"/>
+      </node>
+      <node id="56">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/textarea/lv_textarea.h</label>
+        <link refid="lv__textarea_8h"/>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/textarea/lv_textarea_private.h</label>
+        <link refid="lv__textarea__private_8h"/>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="98">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/tileview/lv_tileview.h</label>
+        <link refid="lv__tileview_8h"/>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/tileview/lv_tileview_private.h</label>
+        <link refid="lv__tileview__private_8h"/>
+      </node>
+      <node id="99">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/win/lv_win.h</label>
+        <link refid="lv__win_8h"/>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/win/lv_win_private.h</label>
+        <link refid="lv__win__private_8h"/>
+      </node>
+    </invincdepgraph>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="lv__obj_8h_1a8ec0fe9743c5c015162d64df591cd719" prot="public" static="no">
+        <name>LV_ASSERT_OBJ</name>
+        <param><defname>obj_p</defname></param>
+        <param><defname>obj_class</defname></param>
+        <initializer>LV_ASSERT_NULL(obj_p)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_obj.h" line="488" column="12" bodyfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_obj.h" bodystart="488" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lv__obj_8h_1a89e646eee81f5c8570c7e6adc7d664a9" prot="public" static="no">
+        <name>LV_TRACE_OBJ_CREATE</name>
+        <param><defname>...</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_obj.h" line="494" column="12" bodyfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_obj.h" bodystart="494" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="lv__obj_8h_1a94ae3b3ad803db4d65e5c735efce219a" prot="public" static="no" strong="no">
+        <type></type>
+        <name>lv_obj_flag_t</name>
+        <enumvalue id="lv__obj_8h_1a94ae3b3ad803db4d65e5c735efce219aa897a3221874cb9d0e4e28a6d530755f2" prot="public">
+          <name>LV_OBJ_FLAG_HIDDEN</name>
+          <initializer>= (1u &lt;&lt; 0)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Make the object hidden. (Like it wasn&apos;t there at all) </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj_8h_1a94ae3b3ad803db4d65e5c735efce219aab9ba97b9e1ae0b3a4a5eca3d763e263b" prot="public">
+          <name>LV_OBJ_FLAG_CLICKABLE</name>
+          <initializer>= (1u &lt;&lt; 1)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Make the object clickable by the input devices </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj_8h_1a94ae3b3ad803db4d65e5c735efce219aabc971d6f2cd12cf2fcdd7e8e28c964c6" prot="public">
+          <name>LV_OBJ_FLAG_CLICK_FOCUSABLE</name>
+          <initializer>= (1u &lt;&lt; 2)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Add focused state to the object when clicked </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj_8h_1a94ae3b3ad803db4d65e5c735efce219aa36ad28d2b06fff88a20e95952e58c937" prot="public">
+          <name>LV_OBJ_FLAG_CHECKABLE</name>
+          <initializer>= (1u &lt;&lt; 3)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Toggle checked state when the object is clicked </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj_8h_1a94ae3b3ad803db4d65e5c735efce219aacd85fb802b95208772b4e124a87546ca" prot="public">
+          <name>LV_OBJ_FLAG_SCROLLABLE</name>
+          <initializer>= (1u &lt;&lt; 4)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Make the object scrollable </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj_8h_1a94ae3b3ad803db4d65e5c735efce219aae7d692b8ceaf005b55a1a1c70d87f315" prot="public">
+          <name>LV_OBJ_FLAG_SCROLL_ELASTIC</name>
+          <initializer>= (1u &lt;&lt; 5)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Allow scrolling inside but with slower speed </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj_8h_1a94ae3b3ad803db4d65e5c735efce219aa4fe2a1748c3b752cfad7b2f2e371f97c" prot="public">
+          <name>LV_OBJ_FLAG_SCROLL_MOMENTUM</name>
+          <initializer>= (1u &lt;&lt; 6)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Make the object scroll further when &quot;thrown&quot; </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj_8h_1a94ae3b3ad803db4d65e5c735efce219aacd235b2da2988b6673679aa0d825f97f" prot="public">
+          <name>LV_OBJ_FLAG_SCROLL_ONE</name>
+          <initializer>= (1u &lt;&lt; 7)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Allow scrolling only one snappable children </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj_8h_1a94ae3b3ad803db4d65e5c735efce219aa5a3e346064405aa442372b712aac27fb" prot="public">
+          <name>LV_OBJ_FLAG_SCROLL_CHAIN_HOR</name>
+          <initializer>= (1u &lt;&lt; 8)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Allow propagating the horizontal scroll to a parent </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj_8h_1a94ae3b3ad803db4d65e5c735efce219aacdc9c68ac828c91967b52ce0b3ad60ce" prot="public">
+          <name>LV_OBJ_FLAG_SCROLL_CHAIN_VER</name>
+          <initializer>= (1u &lt;&lt; 9)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Allow propagating the vertical scroll to a parent </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj_8h_1a94ae3b3ad803db4d65e5c735efce219aaa6df5b549b49eba61dd94129a9654c5b" prot="public">
+          <name>LV_OBJ_FLAG_SCROLL_CHAIN</name>
+          <initializer>= (LV_OBJ_FLAG_SCROLL_CHAIN_HOR | LV_OBJ_FLAG_SCROLL_CHAIN_VER)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj_8h_1a94ae3b3ad803db4d65e5c735efce219aaad2d5f453aea4efc7c5c69735f8fedfc" prot="public">
+          <name>LV_OBJ_FLAG_SCROLL_ON_FOCUS</name>
+          <initializer>= (1u &lt;&lt; 10)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Automatically scroll object to make it visible when focused </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj_8h_1a94ae3b3ad803db4d65e5c735efce219aaba880a01bb4721a22b58678810e8b9f8" prot="public">
+          <name>LV_OBJ_FLAG_SCROLL_WITH_ARROW</name>
+          <initializer>= (1u &lt;&lt; 11)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Allow scrolling the focused object with arrow keys </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj_8h_1a94ae3b3ad803db4d65e5c735efce219aa42b8f9479a9887451214b2e745875ab7" prot="public">
+          <name>LV_OBJ_FLAG_SNAPPABLE</name>
+          <initializer>= (1u &lt;&lt; 12)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>If scroll snap is enabled on the parent it can snap to this object </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj_8h_1a94ae3b3ad803db4d65e5c735efce219aa5f08ee3117d5cf0ed98950557015497b" prot="public">
+          <name>LV_OBJ_FLAG_PRESS_LOCK</name>
+          <initializer>= (1u &lt;&lt; 13)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Keep the object pressed even if the press slid from the object </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj_8h_1a94ae3b3ad803db4d65e5c735efce219aae16fa872a5e67efda3e21a2925dddd85" prot="public">
+          <name>LV_OBJ_FLAG_EVENT_BUBBLE</name>
+          <initializer>= (1u &lt;&lt; 14)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Propagate the events to the parent too </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj_8h_1a94ae3b3ad803db4d65e5c735efce219aa339e201d0291a4b7258a50141b47df3e" prot="public">
+          <name>LV_OBJ_FLAG_GESTURE_BUBBLE</name>
+          <initializer>= (1u &lt;&lt; 15)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Propagate the gestures to the parent </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj_8h_1a94ae3b3ad803db4d65e5c735efce219aaab483aa0afd58b7df0c44e10b1ed73d1" prot="public">
+          <name>LV_OBJ_FLAG_ADV_HITTEST</name>
+          <initializer>= (1u &lt;&lt; 16)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Allow performing more accurate hit (click) test. E.g. consider rounded corners. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj_8h_1a94ae3b3ad803db4d65e5c735efce219aa5278a16b8d997809825817354c2a836c" prot="public">
+          <name>LV_OBJ_FLAG_IGNORE_LAYOUT</name>
+          <initializer>= (1u &lt;&lt; 17)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Make the object not positioned by the layouts </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj_8h_1a94ae3b3ad803db4d65e5c735efce219aad6fd2a95a8ca05bd35afd3393211677b" prot="public">
+          <name>LV_OBJ_FLAG_FLOATING</name>
+          <initializer>= (1u &lt;&lt; 18)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Do not scroll the object when the parent scrolls and ignore layout </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj_8h_1a94ae3b3ad803db4d65e5c735efce219aae745234d975c999fb697f3f6ba6c4b31" prot="public">
+          <name>LV_OBJ_FLAG_SEND_DRAW_TASK_EVENTS</name>
+          <initializer>= (1u &lt;&lt; 19)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Send <computeroutput><ref refid="lv__event_8h_1a34581e6a5056b169f0a229f3e51c7771a04f3236e4a0344f14b11a89fa4a3abc2" kindref="member">LV_EVENT_DRAW_TASK_ADDED</ref></computeroutput> events </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj_8h_1a94ae3b3ad803db4d65e5c735efce219aa9c1f8be397c92a0cfec887a1c1315d55" prot="public">
+          <name>LV_OBJ_FLAG_OVERFLOW_VISIBLE</name>
+          <initializer>= (1u &lt;&lt; 20)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Do not clip the children to the parent&apos;s ext draw size </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj_8h_1a94ae3b3ad803db4d65e5c735efce219aaa38ace14e264560d3e66ff3c0a723c71" prot="public">
+          <name>LV_OBJ_FLAG_EVENT_TRICKLE</name>
+          <initializer>= (1u &lt;&lt; 21)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Propagate the events to the children too </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj_8h_1a94ae3b3ad803db4d65e5c735efce219aaabaf0d9c54d1f614e0a523da7145b2e7" prot="public">
+          <name>LV_OBJ_FLAG_STATE_TRICKLE</name>
+          <initializer>= (1u &lt;&lt; 22)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Propagate the states to the children too </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj_8h_1a94ae3b3ad803db4d65e5c735efce219aa2a8087232ace4a32a3b84d5cceb0cf8a" prot="public">
+          <name>LV_OBJ_FLAG_LAYOUT_1</name>
+          <initializer>= (1u &lt;&lt; 23)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom flag, free to use by layouts </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj_8h_1a94ae3b3ad803db4d65e5c735efce219aa2f926bc2c9a05243d3cefb33a6e019a2" prot="public">
+          <name>LV_OBJ_FLAG_LAYOUT_2</name>
+          <initializer>= (1u &lt;&lt; 24)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom flag, free to use by layouts </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj_8h_1a94ae3b3ad803db4d65e5c735efce219aa380defee6eb8c8a997979f5f609007fc" prot="public">
+          <name>LV_OBJ_FLAG_FLEX_IN_NEW_TRACK</name>
+          <initializer>= LV_OBJ_FLAG_LAYOUT_1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Start a new flex track on this item </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj_8h_1a94ae3b3ad803db4d65e5c735efce219aa56ef045b9e3adf1f9b53993181b3f519" prot="public">
+          <name>LV_OBJ_FLAG_WIDGET_1</name>
+          <initializer>= (1u &lt;&lt; 25)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom flag, free to use by widget </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj_8h_1a94ae3b3ad803db4d65e5c735efce219aa13da2d5612d7eca837d153566fe5a88c" prot="public">
+          <name>LV_OBJ_FLAG_WIDGET_2</name>
+          <initializer>= (1u &lt;&lt; 26)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom flag, free to use by widget </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj_8h_1a94ae3b3ad803db4d65e5c735efce219aade26c60c22b7b72d5b7f1c198a792e38" prot="public">
+          <name>LV_OBJ_FLAG_USER_1</name>
+          <initializer>= (1u &lt;&lt; 27)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom flag, free to use by user </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj_8h_1a94ae3b3ad803db4d65e5c735efce219aa36aff389b54ace273398714fb679d293" prot="public">
+          <name>LV_OBJ_FLAG_USER_2</name>
+          <initializer>= (1u &lt;&lt; 28)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom flag, free to use by user </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj_8h_1a94ae3b3ad803db4d65e5c735efce219aa290cacf233e96ec97f1f9e475754def2" prot="public">
+          <name>LV_OBJ_FLAG_USER_3</name>
+          <initializer>= (1u &lt;&lt; 29)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom flag, free to use by user </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__obj_8h_1a94ae3b3ad803db4d65e5c735efce219aa32304027ab6e5bbddab828424b58bfe9" prot="public">
+          <name>LV_OBJ_FLAG_USER_4</name>
+          <initializer>= (1u &lt;&lt; 30)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom flag, free to use by user </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>On/Off features controlling the object&apos;s behavior. OR-ed values are possible</para>
+<para>Note: update obj flags corresponding properties below whenever add/remove flags or change bit definition of flags. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_obj.h" line="48" column="1" bodyfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_obj.h" bodystart="48" bodyend="86"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="lv__obj_8h_1a424ca3b432ad82f98c4b05950b597d44" prot="public" static="no" extern="yes" mutable="no">
+        <type>const lv_obj_class_t</type>
+        <definition>const lv_obj_class_t lv_obj_class</definition>
+        <argsstring></argsstring>
+        <name>lv_obj_class</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Make the base object&apos;s class publicly available. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_obj.h" line="180" column="30" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_obj.h" declline="180" declcolumn="30"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="lv__obj_8h_1acf57dc362a43990cbad93921da833b5d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="lv__types_8h_1a01de9a127bcf589bd7d0c695a429b158" kindref="member">lv_obj_t</ref> *</type>
+        <definition>lv_obj_t * lv_obj_create</definition>
+        <argsstring>(lv_obj_t *parent)</argsstring>
+        <name>lv_obj_create</name>
+        <param>
+          <type><ref refid="lv__types_8h_1a01de9a127bcf589bd7d0c695a429b158" kindref="member">lv_obj_t</ref> *</type>
+          <declname>parent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a base object (a rectangle) <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a parent object. If NULL then a screen will be created. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>pointer to the new object </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_obj.h" line="191" column="11" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_obj.h" declline="191" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj_8h_1a87fa70194789d48ea3dba01d1c28c984" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_add_flag</definition>
+        <argsstring>(lv_obj_t *obj, lv_obj_flag_t f)</argsstring>
+        <name>lv_obj_add_flag</name>
+        <param>
+          <type><ref refid="lv__types_8h_1a01de9a127bcf589bd7d0c695a429b158" kindref="member">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type><ref refid="lv__obj_8h_1a94ae3b3ad803db4d65e5c735efce219a" kindref="member">lv_obj_flag_t</ref></type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set one or more flags <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>OR-ed values from <computeroutput><ref refid="lv__obj_8h_1a94ae3b3ad803db4d65e5c735efce219a" kindref="member">lv_obj_flag_t</ref></computeroutput> to set. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_obj.h" line="202" column="6" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_obj.h" declline="202" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj_8h_1ac197364e3e11a3422c0ec2956b00927b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_remove_flag</definition>
+        <argsstring>(lv_obj_t *obj, lv_obj_flag_t f)</argsstring>
+        <name>lv_obj_remove_flag</name>
+        <param>
+          <type><ref refid="lv__types_8h_1a01de9a127bcf589bd7d0c695a429b158" kindref="member">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type><ref refid="lv__obj_8h_1a94ae3b3ad803db4d65e5c735efce219a" kindref="member">lv_obj_flag_t</ref></type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Remove one or more flags <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>OR-ed values from <computeroutput><ref refid="lv__obj_8h_1a94ae3b3ad803db4d65e5c735efce219a" kindref="member">lv_obj_flag_t</ref></computeroutput> to clear. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_obj.h" line="209" column="6" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_obj.h" declline="209" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj_8h_1ac0cf8d92626f909958463b23840a2d46" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_set_flag</definition>
+        <argsstring>(lv_obj_t *obj, lv_obj_flag_t f, bool v)</argsstring>
+        <name>lv_obj_set_flag</name>
+        <param>
+          <type><ref refid="lv__types_8h_1a01de9a127bcf589bd7d0c695a429b158" kindref="member">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type><ref refid="lv__obj_8h_1a94ae3b3ad803db4d65e5c735efce219a" kindref="member">lv_obj_flag_t</ref></type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set add or remove one or more flags. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>OR-ed values from <computeroutput><ref refid="lv__obj_8h_1a94ae3b3ad803db4d65e5c735efce219a" kindref="member">lv_obj_flag_t</ref></computeroutput> to update. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true: add the flags; false: remove the flags </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_obj.h" line="217" column="6" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_obj.h" declline="217" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj_8h_1adbd258635d3d653e5446336764044db1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_add_state</definition>
+        <argsstring>(lv_obj_t *obj, lv_state_t state)</argsstring>
+        <name>lv_obj_add_state</name>
+        <param>
+          <type><ref refid="lv__types_8h_1a01de9a127bcf589bd7d0c695a429b158" kindref="member">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type><ref refid="lv__obj__style_8h_1a1a992070c236042354cd579c43c4f5e5" kindref="member">lv_state_t</ref></type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add one or more states to the object. The other state bits will remain unchanged. If specified in the styles, transition animation will be started from the previous state to the current. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the states to add. E.g <computeroutput>LV_STATE_PRESSED | LV_STATE_FOCUSED</computeroutput> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_obj.h" line="225" column="6" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_obj.h" declline="225" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj_8h_1ae4b5f01ddbd6937a58d5b934dec69c50" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_remove_state</definition>
+        <argsstring>(lv_obj_t *obj, lv_state_t state)</argsstring>
+        <name>lv_obj_remove_state</name>
+        <param>
+          <type><ref refid="lv__types_8h_1a01de9a127bcf589bd7d0c695a429b158" kindref="member">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type><ref refid="lv__obj__style_8h_1a1a992070c236042354cd579c43c4f5e5" kindref="member">lv_state_t</ref></type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Remove one or more states to the object. The other state bits will remain unchanged. If specified in the styles, transition animation will be started from the previous state to the current. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the states to add. E.g <computeroutput>LV_STATE_PRESSED | LV_STATE_FOCUSED</computeroutput> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_obj.h" line="233" column="6" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_obj.h" declline="233" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj_8h_1a2979f97d93bd2805ac8ecb092f7e4638" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_set_state</definition>
+        <argsstring>(lv_obj_t *obj, lv_state_t state, bool v)</argsstring>
+        <name>lv_obj_set_state</name>
+        <param>
+          <type><ref refid="lv__types_8h_1a01de9a127bcf589bd7d0c695a429b158" kindref="member">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type><ref refid="lv__obj__style_8h_1a1a992070c236042354cd579c43c4f5e5" kindref="member">lv_state_t</ref></type>
+          <declname>state</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add or remove one or more states to the object. The other state bits will remain unchanged. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the states to add. E.g <computeroutput>LV_STATE_PRESSED | LV_STATE_FOCUSED</computeroutput> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true: add the states; false: remove the states </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_obj.h" line="241" column="6" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_obj.h" declline="241" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj_8h_1a5958414c4e1ac62921956c5654e07baf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_set_user_data</definition>
+        <argsstring>(lv_obj_t *obj, void *user_data)</argsstring>
+        <name>lv_obj_set_user_data</name>
+        <param>
+          <type><ref refid="lv__types_8h_1a01de9a127bcf589bd7d0c695a429b158" kindref="member">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>user_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the user_data field of the object <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>user_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the new user_data. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_obj.h" line="248" column="6" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_obj.h" declline="248" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj_8h_1a71de3bd7b257f40cc9c4a53e1f409608" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_set_radio_button</definition>
+        <argsstring>(lv_obj_t *obj, bool en)</argsstring>
+        <name>lv_obj_set_radio_button</name>
+        <param>
+          <type><ref refid="lv__types_8h_1a01de9a127bcf589bd7d0c695a429b158" kindref="member">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>en</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allow only one RADIO_BUTTON sibling to be checked <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a widget </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>en</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>enable or disable radio button behavior </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_obj.h" line="255" column="6" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_obj.h" declline="255" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj_8h_1a349bf1b6dea18bd0ab189e7a1c06a662" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool lv_obj_has_flag</definition>
+        <argsstring>(const lv_obj_t *obj, lv_obj_flag_t f)</argsstring>
+        <name>lv_obj_has_flag</name>
+        <param>
+          <type>const <ref refid="lv__types_8h_1a01de9a127bcf589bd7d0c695a429b158" kindref="member">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type><ref refid="lv__obj_8h_1a94ae3b3ad803db4d65e5c735efce219a" kindref="member">lv_obj_flag_t</ref></type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if a given flag or all the given flags are set on an object. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the flag(s) to check (OR-ed values can be used) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true: all flags are set; false: not all flags are set </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_obj.h" line="267" column="6" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_obj.h" declline="267" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj_8h_1a29244deb39942043ee658fbb8e1a47d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool lv_obj_has_flag_any</definition>
+        <argsstring>(const lv_obj_t *obj, lv_obj_flag_t f)</argsstring>
+        <name>lv_obj_has_flag_any</name>
+        <param>
+          <type>const <ref refid="lv__types_8h_1a01de9a127bcf589bd7d0c695a429b158" kindref="member">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type><ref refid="lv__obj_8h_1a94ae3b3ad803db4d65e5c735efce219a" kindref="member">lv_obj_flag_t</ref></type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if a given flag or any of the flags are set on an object. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the flag(s) to check (OR-ed values can be used) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true: at least one flag is set; false: none of the flags are set </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_obj.h" line="275" column="6" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_obj.h" declline="275" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj_8h_1a512731c24ce12b0e62abb3179cbde6ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="lv__obj__style_8h_1a1a992070c236042354cd579c43c4f5e5" kindref="member">lv_state_t</ref></type>
+        <definition>lv_state_t lv_obj_get_state</definition>
+        <argsstring>(const lv_obj_t *obj)</argsstring>
+        <name>lv_obj_get_state</name>
+        <param>
+          <type>const <ref refid="lv__types_8h_1a01de9a127bcf589bd7d0c695a429b158" kindref="member">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the state of an object <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the state (OR-ed values from <computeroutput><ref refid="lv__obj__style_8h_1a1a992070c236042354cd579c43c4f5e5" kindref="member">lv_state_t</ref></computeroutput>) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_obj.h" line="282" column="12" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_obj.h" declline="282" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj_8h_1af6296b36dd5eddc61f5544761b1ff5a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool lv_obj_has_state</definition>
+        <argsstring>(const lv_obj_t *obj, lv_state_t state)</argsstring>
+        <name>lv_obj_has_state</name>
+        <param>
+          <type>const <ref refid="lv__types_8h_1a01de9a127bcf589bd7d0c695a429b158" kindref="member">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type><ref refid="lv__obj__style_8h_1a1a992070c236042354cd579c43c4f5e5" kindref="member">lv_state_t</ref></type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if the object is in a given state or not. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a state or combination of states to check </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true: <computeroutput>obj</computeroutput> is in <computeroutput>state</computeroutput>; false: <computeroutput>obj</computeroutput> is not in <computeroutput>state</computeroutput> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_obj.h" line="290" column="6" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_obj.h" declline="290" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj_8h_1adc990930b8ba3ec587c24a35bb40f5b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool lv_obj_is_radio_button</definition>
+        <argsstring>(const lv_obj_t *obj)</argsstring>
+        <name>lv_obj_is_radio_button</name>
+        <param>
+          <type>const <ref refid="lv__types_8h_1a01de9a127bcf589bd7d0c695a429b158" kindref="member">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get whether the object is a radio button <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a widget </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if radio button behavior is enabled </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_obj.h" line="296" column="6" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_obj.h" declline="296" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj_8h_1a17896b421b64c466e0095a89def4d9e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>lv_group_t *</type>
+        <definition>lv_group_t * lv_obj_get_group</definition>
+        <argsstring>(const lv_obj_t *obj)</argsstring>
+        <name>lv_obj_get_group</name>
+        <param>
+          <type>const <ref refid="lv__types_8h_1a01de9a127bcf589bd7d0c695a429b158" kindref="member">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the group of the object <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the pointer to group of the object </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_obj.h" line="303" column="13" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_obj.h" declline="303" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj_8h_1ade61b9545ddcda311e77df94186c698f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void * lv_obj_get_user_data</definition>
+        <argsstring>(lv_obj_t *obj)</argsstring>
+        <name>lv_obj_get_user_data</name>
+        <param>
+          <type><ref refid="lv__types_8h_1a01de9a127bcf589bd7d0c695a429b158" kindref="member">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the user_data field of the object <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the pointer to the user_data of the object </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_obj.h" line="310" column="7" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_obj.h" declline="310" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj_8h_1a1b734607bd80d900ba862375d08227cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_allocate_spec_attr</definition>
+        <argsstring>(lv_obj_t *obj)</argsstring>
+        <name>lv_obj_allocate_spec_attr</name>
+        <param>
+          <type><ref refid="lv__types_8h_1a01de9a127bcf589bd7d0c695a429b158" kindref="member">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allocate special data for an object if not allocated yet. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_obj.h" line="320" column="6" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_obj.h" declline="320" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj_8h_1a3d7bedf32977bdf5a8ddfa01f1302c08" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool lv_obj_check_type</definition>
+        <argsstring>(const lv_obj_t *obj, const lv_obj_class_t *class_p)</argsstring>
+        <name>lv_obj_check_type</name>
+        <param>
+          <type>const <ref refid="lv__types_8h_1a01de9a127bcf589bd7d0c695a429b158" kindref="member">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>const lv_obj_class_t *</type>
+          <declname>class_p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check the type of obj. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>class_p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a class to check (e.g. <computeroutput>lv_slider_class</computeroutput>) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true: <computeroutput>class_p</computeroutput> is the <computeroutput>obj</computeroutput> class. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_obj.h" line="328" column="6" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_obj.h" declline="328" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj_8h_1a27480f49b6f82e0e2643c1dd09735e9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool lv_obj_has_class</definition>
+        <argsstring>(const lv_obj_t *obj, const lv_obj_class_t *class_p)</argsstring>
+        <name>lv_obj_has_class</name>
+        <param>
+          <type>const <ref refid="lv__types_8h_1a01de9a127bcf589bd7d0c695a429b158" kindref="member">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>const lv_obj_class_t *</type>
+          <declname>class_p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if any object has a given class (type). It checks the ancestor classes too. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>class_p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a class to check (e.g. <computeroutput>lv_slider_class</computeroutput>) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true: <computeroutput>obj</computeroutput> has the given class </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_obj.h" line="337" column="6" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_obj.h" declline="337" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj_8h_1a30595a041d9abd1a81629965d22a82e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const lv_obj_class_t *</type>
+        <definition>const lv_obj_class_t * lv_obj_get_class</definition>
+        <argsstring>(const lv_obj_t *obj)</argsstring>
+        <name>lv_obj_get_class</name>
+        <param>
+          <type>const <ref refid="lv__types_8h_1a01de9a127bcf589bd7d0c695a429b158" kindref="member">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the class (type) of the object <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the class (type) of the object </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_obj.h" line="344" column="23" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_obj.h" declline="344" declcolumn="23"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj_8h_1a4c220acd20b632ad2d4ca7cd7a3023bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool lv_obj_is_valid</definition>
+        <argsstring>(const lv_obj_t *obj)</argsstring>
+        <name>lv_obj_is_valid</name>
+        <param>
+          <type>const <ref refid="lv__types_8h_1a01de9a127bcf589bd7d0c695a429b158" kindref="member">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if any object is still &quot;alive&quot;. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true: valid </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_obj.h" line="351" column="6" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_obj.h" declline="351" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj_8h_1a0955e47d2cb3421e975dea873fb12d43" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_null_on_delete</definition>
+        <argsstring>(lv_obj_t **obj_ptr)</argsstring>
+        <name>lv_obj_null_on_delete</name>
+        <param>
+          <type><ref refid="lv__types_8h_1a01de9a127bcf589bd7d0c695a429b158" kindref="member">lv_obj_t</ref> **</type>
+          <declname>obj_ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Utility to set an object reference to NULL when it gets deleted. The reference should be in a location that will not become invalid during the object&apos;s lifetime, i.e. static or allocated. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj_ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to a pointer to an object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_obj.h" line="359" column="6" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_obj.h" declline="359" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj_8h_1a02aa4ef9c759ada3ddd0b5b557fd7d4b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_add_screen_load_event</definition>
+        <argsstring>(lv_obj_t *obj, lv_event_code_t trigger, lv_obj_t *screen, lv_screen_load_anim_t anim_type, uint32_t duration, uint32_t delay)</argsstring>
+        <name>lv_obj_add_screen_load_event</name>
+        <param>
+          <type><ref refid="lv__types_8h_1a01de9a127bcf589bd7d0c695a429b158" kindref="member">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type><ref refid="lv__event_8h_1a34581e6a5056b169f0a229f3e51c7771" kindref="member">lv_event_code_t</ref></type>
+          <declname>trigger</declname>
+        </param>
+        <param>
+          <type><ref refid="lv__types_8h_1a01de9a127bcf589bd7d0c695a429b158" kindref="member">lv_obj_t</ref> *</type>
+          <declname>screen</declname>
+        </param>
+        <param>
+          <type>lv_screen_load_anim_t</type>
+          <declname>anim_type</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>duration</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>delay</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add an event handler to a widget that will load a screen on a trigger. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to widget which should load the screen </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>trigger</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an event code, e.g. <computeroutput><ref refid="lv__event_8h_1a34581e6a5056b169f0a229f3e51c7771aa02bc86fc8e7a7edab3634a816c19ab6" kindref="member">LV_EVENT_CLICKED</ref></computeroutput> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>screen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the screen to load (must be a valid widget) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>anim_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>element of <computeroutput>lv_screen_load_anim_t</computeroutput> the screen load animation </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>duration</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>duration of the animation in milliseconds </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>delay</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>delay before the screen load in milliseconds </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_obj.h" line="370" column="6" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_obj.h" declline="370" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj_8h_1a1262cc1ed5a509ee62f475adde3eab47" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_add_screen_create_event</definition>
+        <argsstring>(lv_obj_t *obj, lv_event_code_t trigger, lv_screen_create_cb_t screen_create_cb, lv_screen_load_anim_t anim_type, uint32_t duration, uint32_t delay)</argsstring>
+        <name>lv_obj_add_screen_create_event</name>
+        <param>
+          <type><ref refid="lv__types_8h_1a01de9a127bcf589bd7d0c695a429b158" kindref="member">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type><ref refid="lv__event_8h_1a34581e6a5056b169f0a229f3e51c7771" kindref="member">lv_event_code_t</ref></type>
+          <declname>trigger</declname>
+        </param>
+        <param>
+          <type>lv_screen_create_cb_t</type>
+          <declname>screen_create_cb</declname>
+        </param>
+        <param>
+          <type>lv_screen_load_anim_t</type>
+          <declname>anim_type</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>duration</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>delay</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add an event handler to a widget that will create a screen on a trigger. The created screen will be deleted when it&apos;s unloaded <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to widget which should load the screen </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>trigger</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an event code, e.g. <computeroutput><ref refid="lv__event_8h_1a34581e6a5056b169f0a229f3e51c7771aa02bc86fc8e7a7edab3634a816c19ab6" kindref="member">LV_EVENT_CLICKED</ref></computeroutput> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>screen_create_cb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a callback to create the screen, e.g. <computeroutput><ref refid="lv__types_8h_1a01de9a127bcf589bd7d0c695a429b158" kindref="member">lv_obj_t</ref> * myscreen_create(void)</computeroutput> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>anim_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>element of <computeroutput>lv_screen_load_anim_t</computeroutput> the screen load animation </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>duration</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>duration of the animation in milliseconds </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>delay</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>delay before the screen load in milliseconds </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_obj.h" line="383" column="6" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_obj.h" declline="383" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__obj_8h_1aa7170dc953f27f901895e79f7de9a915" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_obj_add_play_timeline_event</definition>
+        <argsstring>(lv_obj_t *obj, lv_event_code_t trigger, lv_anim_timeline_t *at, uint32_t delay, bool reverse)</argsstring>
+        <name>lv_obj_add_play_timeline_event</name>
+        <param>
+          <type><ref refid="lv__types_8h_1a01de9a127bcf589bd7d0c695a429b158" kindref="member">lv_obj_t</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type><ref refid="lv__event_8h_1a34581e6a5056b169f0a229f3e51c7771" kindref="member">lv_event_code_t</ref></type>
+          <declname>trigger</declname>
+        </param>
+        <param>
+          <type>lv_anim_timeline_t *</type>
+          <declname>at</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>delay</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>reverse</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Play a timeline animation on a trigger <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to widget which should trigger playing the animation </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>trigger</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an event code, e.g. <computeroutput><ref refid="lv__event_8h_1a34581e6a5056b169f0a229f3e51c7771aa02bc86fc8e7a7edab3634a816c19ab6" kindref="member">LV_EVENT_CLICKED</ref></computeroutput> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>at</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an animation timeline </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>delay</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>wait time before starting the animation </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>reverse</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true: play in reverse </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_obj.h" line="395" column="6" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_obj.h" declline="395" declcolumn="6"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_obj.h"/>
+  </compounddef>
+</doxygen>

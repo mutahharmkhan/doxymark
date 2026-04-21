@@ -1,0 +1,481 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="struct__lv__anim__t" kind="struct" language="C++" prot="public">
+    <compoundname>_lv_anim_t</compoundname>
+    <includes refid="lv__anim_8h" local="no">lv_anim.h</includes>
+    <innerclass refid="union__lv__anim__t_1_1__lv__anim__path__para__t" prot="public">_lv_anim_t::_lv_anim_path_para_t</innerclass>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__lv__anim__t_1a4b0b0f57a3d67af5bdaaa79ec0f96773" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* _lv_anim_t::var</definition>
+        <argsstring></argsstring>
+        <name>var</name>
+        <qualifiedname>_lv_anim_t::var</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Variable (Widget or other user-provided object) to animate </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="129" column="11" bodyfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__anim__t_1afed693cd4a40ab3981ca12858bacd794" prot="public" static="no" mutable="no">
+        <type><ref refid="lv__anim_8h_1a659b620cc7dd6a848a713b48af9a70aa" kindref="member">lv_anim_exec_xcb_t</ref></type>
+        <definition>lv_anim_exec_xcb_t _lv_anim_t::exec_cb</definition>
+        <argsstring></argsstring>
+        <name>exec_cb</name>
+        <qualifiedname>_lv_anim_t::exec_cb</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function to execute to animate </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="130" column="24" bodyfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__anim__t_1a251fb35b42b062ae9ee3199d21f519f1" prot="public" static="no" mutable="no">
+        <type><ref refid="lv__anim_8h_1a0b4aca4755a50b238f0373c83752dd2e" kindref="member">lv_anim_custom_exec_cb_t</ref></type>
+        <definition>lv_anim_custom_exec_cb_t _lv_anim_t::custom_exec_cb</definition>
+        <argsstring></argsstring>
+        <name>custom_exec_cb</name>
+        <qualifiedname>_lv_anim_t::custom_exec_cb</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function to execute to animate, same purpose as exec_cb but different parameters </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="131" column="30" bodyfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__anim__t_1a1794171ac312eff1b40c29b91bbd484f" prot="public" static="no" mutable="no">
+        <type><ref refid="lv__anim_8h_1a5e4061b364072c804f44fcdfc7d7eb39" kindref="member">lv_anim_start_cb_t</ref></type>
+        <definition>lv_anim_start_cb_t _lv_anim_t::start_cb</definition>
+        <argsstring></argsstring>
+        <name>start_cb</name>
+        <qualifiedname>_lv_anim_t::start_cb</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Call it when animation is starts (considering <computeroutput>delay</computeroutput>) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="133" column="24" bodyfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__anim__t_1a88dccfbe750bba3755b5f2ed0a0e9580" prot="public" static="no" mutable="no">
+        <type><ref refid="lv__anim_8h_1a4e18ac2283cf959337b251bf75a358c2" kindref="member">lv_anim_completed_cb_t</ref></type>
+        <definition>lv_anim_completed_cb_t _lv_anim_t::completed_cb</definition>
+        <argsstring></argsstring>
+        <name>completed_cb</name>
+        <qualifiedname>_lv_anim_t::completed_cb</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Call it when animation is fully completed </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="134" column="28" bodyfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__anim__t_1aa3604405d35fdd73804d633d8d6f84a0" prot="public" static="no" mutable="no">
+        <type><ref refid="lv__anim_8h_1a4ab1f98888afd3d193821f60fc7e6f49" kindref="member">lv_anim_deleted_cb_t</ref></type>
+        <definition>lv_anim_deleted_cb_t _lv_anim_t::deleted_cb</definition>
+        <argsstring></argsstring>
+        <name>deleted_cb</name>
+        <qualifiedname>_lv_anim_t::deleted_cb</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Call it when animation is deleted </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="135" column="26" bodyfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__anim__t_1ac1c14ba7023a49323be3a4c6c9a312af" prot="public" static="no" mutable="no">
+        <type><ref refid="lv__anim_8h_1adf26cfe11e30b24d42ba2c89284c9ec0" kindref="member">lv_anim_get_value_cb_t</ref></type>
+        <definition>lv_anim_get_value_cb_t _lv_anim_t::get_value_cb</definition>
+        <argsstring></argsstring>
+        <name>get_value_cb</name>
+        <qualifiedname>_lv_anim_t::get_value_cb</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get current value in relative mode </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="136" column="28" bodyfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__anim__t_1aa8ccf84c0d4076c8d4bcee939d3f8b38" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* _lv_anim_t::user_data</definition>
+        <argsstring></argsstring>
+        <name>user_data</name>
+        <qualifiedname>_lv_anim_t::user_data</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Custom user data </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="137" column="11" bodyfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__anim__t_1ac0dd5118407879e65def4439442ba77f" prot="public" static="no" mutable="no">
+        <type><ref refid="lv__anim_8h_1ab24ee67f903ada67fd9ee43d785553a4" kindref="member">lv_anim_path_cb_t</ref></type>
+        <definition>lv_anim_path_cb_t _lv_anim_t::path_cb</definition>
+        <argsstring></argsstring>
+        <name>path_cb</name>
+        <qualifiedname>_lv_anim_t::path_cb</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Provides path (curve) of animation </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="138" column="23" bodyfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__anim__t_1affb2afd81ed1d25d5aac711cb7917e8d" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t _lv_anim_t::start_value</definition>
+        <argsstring></argsstring>
+        <name>start_value</name>
+        <qualifiedname>_lv_anim_t::start_value</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Start value </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="139" column="13" bodyfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__anim__t_1aa3979c3cd067cd7f2f131371ec970744" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t _lv_anim_t::current_value</definition>
+        <argsstring></argsstring>
+        <name>current_value</name>
+        <qualifiedname>_lv_anim_t::current_value</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Current value </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="140" column="13" bodyfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__anim__t_1afb6eeccf9ed0a6fe13f64b46bcd35779" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t _lv_anim_t::end_value</definition>
+        <argsstring></argsstring>
+        <name>end_value</name>
+        <qualifiedname>_lv_anim_t::end_value</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>End value </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="141" column="13" bodyfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__anim__t_1a6da94303bfa054ba8c936a6131510b20" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t _lv_anim_t::duration</definition>
+        <argsstring></argsstring>
+        <name>duration</name>
+        <qualifiedname>_lv_anim_t::duration</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Animation duration in ms </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="142" column="13" bodyfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__anim__t_1aefd061d401c45d45b0da2233e31c8480" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t _lv_anim_t::act_time</definition>
+        <argsstring></argsstring>
+        <name>act_time</name>
+        <qualifiedname>_lv_anim_t::act_time</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Ms elapsed since animation started. Set to negative to make delay. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="143" column="13" bodyfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__anim__t_1a4fe46f4901a0f0f971a5e34b186239c5" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _lv_anim_t::reverse_delay</definition>
+        <argsstring></argsstring>
+        <name>reverse_delay</name>
+        <qualifiedname>_lv_anim_t::reverse_delay</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Wait (in ms) after forward play ends and before reverse play begins. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="144" column="14" bodyfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__anim__t_1a31479f2db623e480e6753b7796e4d188" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _lv_anim_t::reverse_duration</definition>
+        <argsstring></argsstring>
+        <name>reverse_duration</name>
+        <qualifiedname>_lv_anim_t::reverse_duration</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reverse animation duration in ms </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="145" column="14" bodyfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__anim__t_1a272f02263784d7ecc7804a9064eb1a66" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _lv_anim_t::repeat_delay</definition>
+        <argsstring></argsstring>
+        <name>repeat_delay</name>
+        <qualifiedname>_lv_anim_t::repeat_delay</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Wait before repeating </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="146" column="14" bodyfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__anim__t_1a9c58f6d1aadd0b9f50ab6dd362d82fc7" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _lv_anim_t::repeat_cnt</definition>
+        <argsstring></argsstring>
+        <name>repeat_cnt</name>
+        <qualifiedname>_lv_anim_t::repeat_cnt</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Repeat count for animation </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="147" column="14" bodyfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__anim__t_1a02dcbd684d47dd38b25dd79556d93256" prot="public" static="no" mutable="no">
+        <type>union <ref refid="union__lv__anim__t_1_1__lv__anim__path__para__t" kindref="compound">_lv_anim_t::_lv_anim_path_para_t</ref></type>
+        <definition>union _lv_anim_t::_lv_anim_path_para_t _lv_anim_t::parameter</definition>
+        <argsstring></argsstring>
+        <name>parameter</name>
+        <qualifiedname>_lv_anim_t::parameter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="150" column="15"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__anim__t_1a407c69432fe3b62a2c309b6e3c656326" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _lv_anim_t::last_timer_run</definition>
+        <argsstring></argsstring>
+        <name>last_timer_run</name>
+        <qualifiedname>_lv_anim_t::last_timer_run</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="153" column="14" bodyfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__anim__t_1a708f4106eb4a9b5a2b412013334aba63" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _lv_anim_t::pause_time</definition>
+        <argsstring></argsstring>
+        <name>pause_time</name>
+        <qualifiedname>_lv_anim_t::pause_time</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The time when the animation was paused </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="154" column="14" bodyfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__anim__t_1a72c463e8e04628327438f23ea76d6046" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _lv_anim_t::pause_duration</definition>
+        <argsstring></argsstring>
+        <name>pause_duration</name>
+        <qualifiedname>_lv_anim_t::pause_duration</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The amount of the time the animation must stay paused for </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="155" column="14" bodyfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__anim__t_1a2559abf2c0075f2d93d77f11c23ffdf0" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t _lv_anim_t::is_paused</definition>
+        <argsstring></argsstring>
+        <name>is_paused</name>
+        <qualifiedname>_lv_anim_t::is_paused</qualifiedname>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Indicates that the animation is paused </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="156" column="13" bodyfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__anim__t_1a4914f50575131a8df9e9346094034907" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t _lv_anim_t::reverse_play_in_progress</definition>
+        <argsstring></argsstring>
+        <name>reverse_play_in_progress</name>
+        <qualifiedname>_lv_anim_t::reverse_play_in_progress</qualifiedname>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reverse play is in progress </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="157" column="13" bodyfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__anim__t_1a3ed1178fc3071ed6f544e64b8a0b9572" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t _lv_anim_t::run_round</definition>
+        <argsstring></argsstring>
+        <name>run_round</name>
+        <qualifiedname>_lv_anim_t::run_round</qualifiedname>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>When not equal to global.anim_state.anim_run_round (which toggles each time animation timer executes), indicates this animation needs to be updated. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="158" column="13" bodyfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__anim__t_1a293f21a4b59ec38b9514000ef079d119" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t _lv_anim_t::start_cb_called</definition>
+        <argsstring></argsstring>
+        <name>start_cb_called</name>
+        <qualifiedname>_lv_anim_t::start_cb_called</qualifiedname>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Indicates that <computeroutput><ref refid="struct__lv__anim__t_1a1794171ac312eff1b40c29b91bbd484f" kindref="member">start_cb</ref></computeroutput> was already called </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="160" column="13" bodyfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lv__anim__t_1a38e52d59bffe3a2d8350b4ebec57e530" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t _lv_anim_t::early_apply</definition>
+        <argsstring></argsstring>
+        <name>early_apply</name>
+        <qualifiedname>_lv_anim_t::early_apply</qualifiedname>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>1: Apply start value immediately even is there is a <computeroutput>delay</computeroutput> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="161" column="13" bodyfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" bodystart="161" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Describes an animation </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>_lv_anim_t</label>
+        <link refid="struct__lv__anim__t"/>
+        <childnode refid="1" relation="usage">
+          <edgelabel>completed_cb</edgelabel>
+          <edgelabel>custom_exec_cb</edgelabel>
+          <edgelabel>deleted_cb</edgelabel>
+          <edgelabel>get_value_cb</edgelabel>
+          <edgelabel>path_cb</edgelabel>
+          <edgelabel>start_cb</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>parameter</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>_lv_anim_t::_lv_anim_path_para_t</label>
+        <link refid="union__lv__anim__t_1_1__lv__anim__path__para__t"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>bezier3</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>lv_anim_bezier3_para_t</label>
+        <link refid="structlv__anim__bezier3__para__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="125" column="1" bodyfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" bodystart="125" bodyend="162"/>
+    <listofallmembers>
+      <member refid="struct__lv__anim__t_1aefd061d401c45d45b0da2233e31c8480" prot="public" virt="non-virtual"><scope>_lv_anim_t</scope><name>act_time</name></member>
+      <member refid="struct__lv__anim__t_1a88dccfbe750bba3755b5f2ed0a0e9580" prot="public" virt="non-virtual"><scope>_lv_anim_t</scope><name>completed_cb</name></member>
+      <member refid="struct__lv__anim__t_1aa3979c3cd067cd7f2f131371ec970744" prot="public" virt="non-virtual"><scope>_lv_anim_t</scope><name>current_value</name></member>
+      <member refid="struct__lv__anim__t_1a251fb35b42b062ae9ee3199d21f519f1" prot="public" virt="non-virtual"><scope>_lv_anim_t</scope><name>custom_exec_cb</name></member>
+      <member refid="struct__lv__anim__t_1aa3604405d35fdd73804d633d8d6f84a0" prot="public" virt="non-virtual"><scope>_lv_anim_t</scope><name>deleted_cb</name></member>
+      <member refid="struct__lv__anim__t_1a6da94303bfa054ba8c936a6131510b20" prot="public" virt="non-virtual"><scope>_lv_anim_t</scope><name>duration</name></member>
+      <member refid="struct__lv__anim__t_1a38e52d59bffe3a2d8350b4ebec57e530" prot="public" virt="non-virtual"><scope>_lv_anim_t</scope><name>early_apply</name></member>
+      <member refid="struct__lv__anim__t_1afb6eeccf9ed0a6fe13f64b46bcd35779" prot="public" virt="non-virtual"><scope>_lv_anim_t</scope><name>end_value</name></member>
+      <member refid="struct__lv__anim__t_1afed693cd4a40ab3981ca12858bacd794" prot="public" virt="non-virtual"><scope>_lv_anim_t</scope><name>exec_cb</name></member>
+      <member refid="struct__lv__anim__t_1ac1c14ba7023a49323be3a4c6c9a312af" prot="public" virt="non-virtual"><scope>_lv_anim_t</scope><name>get_value_cb</name></member>
+      <member refid="struct__lv__anim__t_1a2559abf2c0075f2d93d77f11c23ffdf0" prot="public" virt="non-virtual"><scope>_lv_anim_t</scope><name>is_paused</name></member>
+      <member refid="struct__lv__anim__t_1a407c69432fe3b62a2c309b6e3c656326" prot="public" virt="non-virtual"><scope>_lv_anim_t</scope><name>last_timer_run</name></member>
+      <member refid="struct__lv__anim__t_1a02dcbd684d47dd38b25dd79556d93256" prot="public" virt="non-virtual"><scope>_lv_anim_t</scope><name>parameter</name></member>
+      <member refid="struct__lv__anim__t_1ac0dd5118407879e65def4439442ba77f" prot="public" virt="non-virtual"><scope>_lv_anim_t</scope><name>path_cb</name></member>
+      <member refid="struct__lv__anim__t_1a72c463e8e04628327438f23ea76d6046" prot="public" virt="non-virtual"><scope>_lv_anim_t</scope><name>pause_duration</name></member>
+      <member refid="struct__lv__anim__t_1a708f4106eb4a9b5a2b412013334aba63" prot="public" virt="non-virtual"><scope>_lv_anim_t</scope><name>pause_time</name></member>
+      <member refid="struct__lv__anim__t_1a9c58f6d1aadd0b9f50ab6dd362d82fc7" prot="public" virt="non-virtual"><scope>_lv_anim_t</scope><name>repeat_cnt</name></member>
+      <member refid="struct__lv__anim__t_1a272f02263784d7ecc7804a9064eb1a66" prot="public" virt="non-virtual"><scope>_lv_anim_t</scope><name>repeat_delay</name></member>
+      <member refid="struct__lv__anim__t_1a4fe46f4901a0f0f971a5e34b186239c5" prot="public" virt="non-virtual"><scope>_lv_anim_t</scope><name>reverse_delay</name></member>
+      <member refid="struct__lv__anim__t_1a31479f2db623e480e6753b7796e4d188" prot="public" virt="non-virtual"><scope>_lv_anim_t</scope><name>reverse_duration</name></member>
+      <member refid="struct__lv__anim__t_1a4914f50575131a8df9e9346094034907" prot="public" virt="non-virtual"><scope>_lv_anim_t</scope><name>reverse_play_in_progress</name></member>
+      <member refid="struct__lv__anim__t_1a3ed1178fc3071ed6f544e64b8a0b9572" prot="public" virt="non-virtual"><scope>_lv_anim_t</scope><name>run_round</name></member>
+      <member refid="struct__lv__anim__t_1a1794171ac312eff1b40c29b91bbd484f" prot="public" virt="non-virtual"><scope>_lv_anim_t</scope><name>start_cb</name></member>
+      <member refid="struct__lv__anim__t_1a293f21a4b59ec38b9514000ef079d119" prot="public" virt="non-virtual"><scope>_lv_anim_t</scope><name>start_cb_called</name></member>
+      <member refid="struct__lv__anim__t_1affb2afd81ed1d25d5aac711cb7917e8d" prot="public" virt="non-virtual"><scope>_lv_anim_t</scope><name>start_value</name></member>
+      <member refid="struct__lv__anim__t_1aa8ccf84c0d4076c8d4bcee939d3f8b38" prot="public" virt="non-virtual"><scope>_lv_anim_t</scope><name>user_data</name></member>
+      <member refid="struct__lv__anim__t_1a4b0b0f57a3d67af5bdaaa79ec0f96773" prot="public" virt="non-virtual"><scope>_lv_anim_t</scope><name>var</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

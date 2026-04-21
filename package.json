@@ -1,0 +1,53 @@
+{
+  "name": "doxymark",
+  "version": "1.0.0",
+  "description": "Convert Doxygen XML output to Markdown/MDX files with a symbol index",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "doxymark": "./dist/cli.js"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "engines": {
+    "node": ">=18.17"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mutahharmkhan/doxygen-mdx.git"
+  },
+  "keywords": [
+    "doxygen",
+    "markdown",
+    "mdx",
+    "api-docs",
+    "documentation"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mutahharmkhan/doxygen-mdx/issues"
+  },
+  "homepage": "https://github.com/mutahharmkhan/doxygen-mdx#readme",
+  "dependencies": {
+    "fast-xml-parser": "^5.3.6"
+  },
+  "devDependencies": {
+    "@types/node": "^25.3.0",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.18"
+  }
+}

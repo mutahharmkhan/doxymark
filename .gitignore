@@ -1,0 +1,6 @@
+.github/
+node_modules/
+dist/
+.DS_Store
+*.tsbuildinfo
+localDocs/

@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.9.6">
+  <compounddef id="namespacemylib" kind="namespace">
+    <compoundname>mylib</compoundname>
+    <innerclass refid="structmylib_1_1Vec3">mylib::Vec3</innerclass>
+    <innernamespace refid="namespacemylib_1_1detail">mylib::detail</innernamespace>
+    <briefdescription>
+      <para>The main library namespace.</para>
+    </briefdescription>
+    <detaileddescription>
+      <para>Contains all public API functions and types.</para>
+    </detaileddescription>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespacemylib_1init" static="no" const="no">
+        <type>void</type>
+        <definition>void mylib::init</definition>
+        <argsstring>()</argsstring>
+        <name>init</name>
+        <briefdescription>
+          <para>Initialize the library.</para>
+        </briefdescription>
+        <detaileddescription/>
+      </memberdef>
+      <memberdef kind="function" id="namespacemylib_1shutdown" static="no" const="no">
+        <type>void</type>
+        <definition>void mylib::shutdown</definition>
+        <argsstring>()</argsstring>
+        <name>shutdown</name>
+        <briefdescription>
+          <para>Shut down the library.</para>
+        </briefdescription>
+        <detaileddescription/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespacemylib_1callback_t">
+        <type>std::function&lt;void(int)&gt;</type>
+        <definition>using mylib::callback_t = std::function&lt;void(int)&gt;</definition>
+        <name>callback_t</name>
+        <briefdescription>
+          <para>Callback function type.</para>
+        </briefdescription>
+        <detaileddescription/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespacemylib_1LogLevel">
+        <name>LogLevel</name>
+        <briefdescription>
+          <para>Logging levels.</para>
+        </briefdescription>
+        <detaileddescription/>
+        <enumvalue id="namespacemylib_1LogLevel_Debug">
+          <name>Debug</name>
+          <initializer>= 0</initializer>
+          <briefdescription><para>Debug level</para></briefdescription>
+          <detaileddescription/>
+        </enumvalue>
+        <enumvalue id="namespacemylib_1LogLevel_Info">
+          <name>Info</name>
+          <initializer>= 1</initializer>
+          <briefdescription><para>Info level</para></briefdescription>
+          <detaileddescription/>
+        </enumvalue>
+        <enumvalue id="namespacemylib_1LogLevel_Error">
+          <name>Error</name>
+          <initializer>= 2</initializer>
+          <briefdescription><para>Error level</para></briefdescription>
+          <detaileddescription/>
+        </enumvalue>
+      </memberdef>
+    </sectiondef>
+  </compounddef>
+</doxygen>

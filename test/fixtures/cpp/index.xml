@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.9.6">
+  <compound refid="classMyClass" kind="class">
+    <name>MyClass</name>
+  </compound>
+  <compound refid="classMyClass_1_1Inner" kind="class">
+    <name>MyClass::Inner</name>
+  </compound>
+  <compound refid="namespacemylib" kind="namespace">
+    <name>mylib</name>
+  </compound>
+  <compound refid="namespacemylib_1_1detail" kind="namespace">
+    <name>mylib::detail</name>
+  </compound>
+  <compound refid="structmylib_1_1Vec3" kind="struct">
+    <name>mylib::Vec3</name>
+  </compound>
+  <compound refid="example_8cpp" kind="file">
+    <name>example.cpp</name>
+  </compound>
+  <compound refid="group__mygroup" kind="group">
+    <name>mygroup</name>
+  </compound>
+  <compound refid="page__mypage" kind="page">
+    <name>mypage</name>
+  </compound>
+</doxygenindex>

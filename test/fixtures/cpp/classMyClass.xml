@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.9.6">
+  <compounddef id="classMyClass" kind="class" abstract="no">
+    <compoundname>MyClass</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>T</declname>
+      </param>
+      <param>
+        <type>int</type>
+        <declname>N</declname>
+        <defval>10</defval>
+      </param>
+    </templateparamlist>
+    <basecompoundref refid="classBase" prot="public" virt="non-virtual">Base</basecompoundref>
+    <derivedcompoundref refid="classDerived">Derived</derivedcompoundref>
+    <briefdescription>
+      <para>A template class for demonstration.</para>
+    </briefdescription>
+    <detaileddescription>
+      <para>This class demonstrates template parameters, inheritance, and access levels.</para>
+    </detaileddescription>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classMyClass_1create" static="no" const="no" virt="non-virtual" explicit="no" inline="no">
+        <type>T</type>
+        <definition>T MyClass::create</definition>
+        <argsstring>(const std::string &amp;name)</argsstring>
+        <name>create</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+          <para>Create a new instance.</para>
+        </briefdescription>
+        <detaileddescription>
+          <para>
+            <parameterlist kind="param">
+              <parameteritem>
+                <parameternamelist><parametername direction="in">name</parametername></parameternamelist>
+                <parameterdescription><para>The name of the object</para></parameterdescription>
+              </parameteritem>
+            </parameterlist>
+            <simplesect kind="return"><para>The created object</para></simplesect>
+          </para>
+        </detaileddescription>
+      </memberdef>
+      <memberdef kind="function" id="classMyClass_1getValue" static="no" const="yes" virt="virtual" explicit="no" inline="no" noexcept="yes">
+        <type>int</type>
+        <definition>int MyClass::getValue</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>getValue</name>
+        <briefdescription>
+          <para>Get the value.</para>
+        </briefdescription>
+        <detaileddescription>
+          <para>
+            <simplesect kind="return"><para>The current value</para></simplesect>
+          </para>
+        </detaileddescription>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classMyClass_1instance" static="yes" const="no" virt="non-virtual" explicit="no" inline="yes" constexpr="yes">
+        <type>MyClass &amp;</type>
+        <definition>MyClass&amp; MyClass::instance</definition>
+        <argsstring>()</argsstring>
+        <name>instance</name>
+        <briefdescription>
+          <para>Get the singleton instance.</para>
+        </briefdescription>
+        <detaileddescription/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classMyClass_1doWork" static="no" const="no" virt="pure-virtual" explicit="no" inline="no">
+        <type>void</type>
+        <definition>virtual void MyClass::doWork</definition>
+        <argsstring>()=0</argsstring>
+        <name>doWork</name>
+        <briefdescription>
+          <para>Override to implement work.</para>
+        </briefdescription>
+        <detaileddescription/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classMyClass_1m_value" static="no">
+        <type>int</type>
+        <name>m_value</name>
+        <briefdescription>
+          <para>The stored value.</para>
+        </briefdescription>
+        <detaileddescription/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classMyClass_1value_type">
+        <type>T</type>
+        <definition>using MyClass::value_type = T</definition>
+        <name>value_type</name>
+        <briefdescription>
+          <para>The value type alias.</para>
+        </briefdescription>
+        <detaileddescription/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classMyClass_1friendHelper">
+        <type>class</type>
+        <name>Helper</name>
+        <briefdescription>
+          <para>The helper class is a friend.</para>
+        </briefdescription>
+        <detaileddescription/>
+      </memberdef>
+    </sectiondef>
+    <location file="/src/myclass.h" line="10"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,3515 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="lv__anim_8h" kind="file" language="C++">
+    <compoundname>lv_anim.h</compoundname>
+    <includes refid="lv__conf__internal_8h" local="yes">../lv_conf_internal.h</includes>
+    <includes refid="lv__ext__data_8h" local="yes">lv_ext_data.h</includes>
+    <includes refid="lv__types_8h" local="yes">lv_types.h</includes>
+    <includes refid="lv__math_8h" local="yes">lv_math.h</includes>
+    <includes refid="lv__timer_8h" local="yes">lv_timer.h</includes>
+    <includes refid="lv__ll_8h" local="yes">lv_ll.h</includes>
+    <includedby refid="lv__global_8h" local="yes">/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_global.h</includedby>
+    <includedby refid="lv__obj__scroll_8h" local="yes">/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_obj_scroll.h</includedby>
+    <includedby refid="lv__obj__tree_8h" local="yes">/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_obj_tree.h</includedby>
+    <includedby refid="lv__indev__private_8h" local="yes">/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/indev/lv_indev_private.h</includedby>
+    <includedby refid="lv__anim__private_8h" local="yes">/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim_private.h</includedby>
+    <includedby refid="lv__anim__timeline_8h" local="yes">/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim_timeline.h</includedby>
+    <includedby refid="lv__style_8h" local="yes">/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_style.h</includedby>
+    <includedby refid="lv__bar_8h" local="yes">/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/bar/lv_bar.h</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>../../lv_conf.h</label>
+      </node>
+      <node id="2">
+        <label>../lv_conf_internal.h</label>
+        <link refid="lv__conf__internal_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>lv_conf_kconfig.h</label>
+        <link refid="lv__conf__kconfig_8h"/>
+      </node>
+      <node id="1">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h</label>
+        <link refid="lv__anim_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>lv_ext_data.h</label>
+        <link refid="lv__ext__data_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>lv_ll.h</label>
+        <link refid="lv__ll_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>lv_math.h</label>
+        <link refid="lv__math_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>lv_timer.h</label>
+        <link refid="lv__timer_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>lv_types.h</label>
+        <link refid="lv__types_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>../tick/lv_tick.h</label>
+        <link refid="lv__tick_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>inttypes.h</label>
+      </node>
+      <node id="11">
+        <label>limits.h</label>
+      </node>
+      <node id="12">
+        <label>stdarg.h</label>
+      </node>
+      <node id="9">
+        <label>stdbool.h</label>
+      </node>
+      <node id="8">
+        <label>stddef.h</label>
+      </node>
+      <node id="7">
+        <label>stdint.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_global.h</label>
+        <link refid="lv__global_8h"/>
+      </node>
+      <node id="4">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_obj.h</label>
+        <link refid="lv__obj_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="82" relation="include">
+        </childnode>
+        <childnode refid="83" relation="include">
+        </childnode>
+        <childnode refid="85" relation="include">
+        </childnode>
+        <childnode refid="87" relation="include">
+        </childnode>
+        <childnode refid="88" relation="include">
+        </childnode>
+        <childnode refid="89" relation="include">
+        </childnode>
+        <childnode refid="90" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="91" relation="include">
+        </childnode>
+        <childnode refid="92" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="93" relation="include">
+        </childnode>
+        <childnode refid="94" relation="include">
+        </childnode>
+        <childnode refid="95" relation="include">
+        </childnode>
+        <childnode refid="96" relation="include">
+        </childnode>
+        <childnode refid="97" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="98" relation="include">
+        </childnode>
+        <childnode refid="99" relation="include">
+        </childnode>
+        <childnode refid="100" relation="include">
+        </childnode>
+        <childnode refid="101" relation="include">
+        </childnode>
+      </node>
+      <node id="109">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_obj_class.h</label>
+        <link refid="lv__obj__class_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="110" relation="include">
+        </childnode>
+      </node>
+      <node id="110">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_obj_class_private.h</label>
+        <link refid="lv__obj__class__private_8h"/>
+      </node>
+      <node id="114">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_obj_draw.h</label>
+        <link refid="lv__obj__draw_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="115" relation="include">
+        </childnode>
+      </node>
+      <node id="115">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_obj_draw_private.h</label>
+        <link refid="lv__obj__draw__private_8h"/>
+      </node>
+      <node id="116">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_obj_event.h</label>
+        <link refid="lv__obj__event_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="117" relation="include">
+        </childnode>
+      </node>
+      <node id="117">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_obj_event_private.h</label>
+        <link refid="lv__obj__event__private_8h"/>
+      </node>
+      <node id="5">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_obj_private.h</label>
+        <link refid="lv__obj__private_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="108">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_obj_property.h</label>
+        <link refid="lv__obj__property_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+        <childnode refid="83" relation="include">
+        </childnode>
+        <childnode refid="96" relation="include">
+        </childnode>
+        <childnode refid="111" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="112" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="99" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_obj_scroll.h</label>
+        <link refid="lv__obj__scroll_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="102" relation="include">
+        </childnode>
+      </node>
+      <node id="102">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_obj_scroll_private.h</label>
+        <link refid="lv__obj__scroll__private_8h"/>
+      </node>
+      <node id="113">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_obj_style.h</label>
+        <link refid="lv__obj__style_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="114" relation="include">
+        </childnode>
+        <childnode refid="116" relation="include">
+        </childnode>
+        <childnode refid="108" relation="include">
+        </childnode>
+        <childnode refid="118" relation="include">
+        </childnode>
+        <childnode refid="119" relation="include">
+        </childnode>
+      </node>
+      <node id="118">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_obj_style_gen.h</label>
+        <link refid="lv__obj__style__gen_8h_source"/>
+        <childnode refid="113" relation="include">
+        </childnode>
+      </node>
+      <node id="119">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_obj_style_private.h</label>
+        <link refid="lv__obj__style__private_8h"/>
+      </node>
+      <node id="103">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_obj_tree.h</label>
+        <link refid="lv__obj__tree_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_observer.h</label>
+        <link refid="lv__observer_8h"/>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_observer_private.h</label>
+        <link refid="lv__observer__private_8h"/>
+      </node>
+      <node id="61">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_refr.h</label>
+        <link refid="lv__refr_8h"/>
+        <childnode refid="62" relation="include">
+        </childnode>
+      </node>
+      <node id="62">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_refr_private.h</label>
+        <link refid="lv__refr__private_8h"/>
+      </node>
+      <node id="43">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/debugging/sysmon/lv_sysmon.h</label>
+        <link refid="lv__sysmon_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/debugging/sysmon/lv_sysmon_private.h</label>
+        <link refid="lv__sysmon__private_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="63">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/display/lv_display_private.h</label>
+        <link refid="lv__display__private_8h"/>
+      </node>
+      <node id="120">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/lv_draw.h</label>
+        <link refid="lv__draw_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="121" relation="include">
+        </childnode>
+        <childnode refid="133" relation="include">
+        </childnode>
+        <childnode refid="138" relation="include">
+        </childnode>
+        <childnode refid="140" relation="include">
+        </childnode>
+        <childnode refid="141" relation="include">
+        </childnode>
+        <childnode refid="142" relation="include">
+        </childnode>
+        <childnode refid="146" relation="include">
+        </childnode>
+        <childnode refid="122" relation="include">
+        </childnode>
+        <childnode refid="147" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+      </node>
+      <node id="121">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/lv_draw_arc.h</label>
+        <link refid="lv__draw__arc_8h"/>
+        <childnode refid="114" relation="include">
+        </childnode>
+        <childnode refid="122" relation="include">
+        </childnode>
+      </node>
+      <node id="148">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/lv_draw_blur.h</label>
+        <link refid="lv__draw__blur_8h"/>
+        <childnode refid="114" relation="include">
+        </childnode>
+        <childnode refid="122" relation="include">
+        </childnode>
+      </node>
+      <node id="133">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/lv_draw_image.h</label>
+        <link refid="lv__draw__image_8h"/>
+        <childnode refid="114" relation="include">
+        </childnode>
+        <childnode refid="134" relation="include">
+        </childnode>
+        <childnode refid="136" relation="include">
+        </childnode>
+        <childnode refid="122" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+      </node>
+      <node id="134">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/lv_draw_image_private.h</label>
+        <link refid="lv__draw__image__private_8h"/>
+        <childnode refid="135" relation="include">
+        </childnode>
+      </node>
+      <node id="138">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/lv_draw_label.h</label>
+        <link refid="lv__draw__label_8h"/>
+        <childnode refid="114" relation="include">
+        </childnode>
+        <childnode refid="139" relation="include">
+        </childnode>
+        <childnode refid="122" relation="include">
+        </childnode>
+      </node>
+      <node id="139">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/lv_draw_label_private.h</label>
+        <link refid="lv__draw__label__private_8h"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="149">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/lv_draw_line.h</label>
+        <link refid="lv__draw__line_8h"/>
+        <childnode refid="114" relation="include">
+        </childnode>
+        <childnode refid="122" relation="include">
+        </childnode>
+      </node>
+      <node id="140">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/lv_draw_mask.h</label>
+        <link refid="lv__draw__mask_8h"/>
+        <childnode refid="122" relation="include">
+        </childnode>
+      </node>
+      <node id="141">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/lv_draw_private.h</label>
+        <link refid="lv__draw__private_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="135" relation="include">
+        </childnode>
+        <childnode refid="132" relation="include">
+        </childnode>
+      </node>
+      <node id="142">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/lv_draw_rect.h</label>
+        <link refid="lv__draw__rect_8h"/>
+        <childnode refid="114" relation="include">
+        </childnode>
+        <childnode refid="138" relation="include">
+        </childnode>
+        <childnode refid="143" relation="include">
+        </childnode>
+        <childnode refid="144" relation="include">
+        </childnode>
+      </node>
+      <node id="143">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/lv_draw_rect_private.h</label>
+        <link refid="lv__draw__rect__private_8h"/>
+      </node>
+      <node id="144">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/lv_draw_triangle.h</label>
+        <link refid="lv__draw__triangle_8h"/>
+        <childnode refid="114" relation="include">
+        </childnode>
+        <childnode refid="145" relation="include">
+        </childnode>
+        <childnode refid="122" relation="include">
+        </childnode>
+      </node>
+      <node id="145">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/lv_draw_triangle_private.h</label>
+        <link refid="lv__draw__triangle__private_8h"/>
+      </node>
+      <node id="136">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/lv_draw_vector.h</label>
+        <link refid="lv__draw__vector_8h"/>
+        <childnode refid="137" relation="include">
+        </childnode>
+        <childnode refid="122" relation="include">
+        </childnode>
+      </node>
+      <node id="137">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/lv_draw_vector_private.h</label>
+        <link refid="lv__draw__vector__private_8h"/>
+      </node>
+      <node id="146">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/sdl/lv_draw_sdl.h</label>
+        <link refid="lv__draw__sdl_8h"/>
+      </node>
+      <node id="64">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/snapshot/lv_snapshot.h</label>
+        <link refid="lv__snapshot_8h"/>
+      </node>
+      <node id="135">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/sw/arm2d/lv_draw_sw_arm2d.h</label>
+        <link refid="lv__draw__sw__arm2d_8h"/>
+      </node>
+      <node id="150">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/sw/blend/lv_draw_sw_blend.h</label>
+        <link refid="lv__draw__sw__blend_8h"/>
+        <childnode refid="151" relation="include">
+        </childnode>
+        <childnode refid="152" relation="include">
+        </childnode>
+        <childnode refid="122" relation="include">
+        </childnode>
+      </node>
+      <node id="151">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/sw/blend/lv_draw_sw_blend_private.h</label>
+        <link refid="lv__draw__sw__blend__private_8h"/>
+      </node>
+      <node id="123">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/sw/blend/lv_draw_sw_blend_to_a8.h</label>
+        <link refid="lv__draw__sw__blend__to__a8_8h"/>
+      </node>
+      <node id="124">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/sw/blend/lv_draw_sw_blend_to_al88.h</label>
+        <link refid="lv__draw__sw__blend__to__al88_8h"/>
+      </node>
+      <node id="125">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888.h</label>
+        <link refid="lv__draw__sw__blend__to__argb8888_8h"/>
+      </node>
+      <node id="126">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.h</label>
+        <link refid="lv__draw__sw__blend__to__argb8888__premultiplied_8h"/>
+      </node>
+      <node id="127">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/sw/blend/lv_draw_sw_blend_to_i1.h</label>
+        <link refid="lv__draw__sw__blend__to__i1_8h"/>
+      </node>
+      <node id="128">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/sw/blend/lv_draw_sw_blend_to_l8.h</label>
+        <link refid="lv__draw__sw__blend__to__l8_8h"/>
+      </node>
+      <node id="129">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/sw/blend/lv_draw_sw_blend_to_rgb565.h</label>
+        <link refid="lv__draw__sw__blend__to__rgb565_8h"/>
+      </node>
+      <node id="130">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/sw/blend/lv_draw_sw_blend_to_rgb565_swapped.h</label>
+        <link refid="lv__draw__sw__blend__to__rgb565__swapped_8h"/>
+      </node>
+      <node id="131">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/sw/blend/lv_draw_sw_blend_to_rgb888.h</label>
+        <link refid="lv__draw__sw__blend__to__rgb888_8h"/>
+      </node>
+      <node id="152">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/sw/blend/riscv_v/lv_blend_riscv_v.h</label>
+        <link refid="lv__blend__riscv__v_8h"/>
+      </node>
+      <node id="122">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/sw/lv_draw_sw.h</label>
+        <link refid="lv__draw__sw_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="123" relation="include">
+        </childnode>
+        <childnode refid="124" relation="include">
+        </childnode>
+        <childnode refid="125" relation="include">
+        </childnode>
+        <childnode refid="126" relation="include">
+        </childnode>
+        <childnode refid="127" relation="include">
+        </childnode>
+        <childnode refid="128" relation="include">
+        </childnode>
+        <childnode refid="129" relation="include">
+        </childnode>
+        <childnode refid="130" relation="include">
+        </childnode>
+        <childnode refid="131" relation="include">
+        </childnode>
+        <childnode refid="132" relation="include">
+        </childnode>
+      </node>
+      <node id="153">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/sw/lv_draw_sw_grad.h</label>
+        <link refid="lv__draw__sw__grad_8h"/>
+      </node>
+      <node id="132">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/sw/lv_draw_sw_private.h</label>
+        <link refid="lv__draw__sw__private_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="67">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/drivers/wayland/lv_wl_keyboard.h</label>
+        <link refid="lv__wl__keyboard_8h"/>
+      </node>
+      <node id="68">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/drivers/wayland/lv_wl_pointer.h</label>
+        <link refid="lv__wl__pointer_8h"/>
+      </node>
+      <node id="69">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/drivers/wayland/lv_wl_pointer_axis.h</label>
+        <link refid="lv__wl__pointer__axis_8h"/>
+      </node>
+      <node id="70">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/drivers/wayland/lv_wl_touch.h</label>
+        <link refid="lv__wl__touch_8h"/>
+      </node>
+      <node id="65">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/indev/lv_gridnav.h</label>
+        <link refid="lv__gridnav_8h"/>
+      </node>
+      <node id="66">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/indev/lv_indev_gesture.h</label>
+        <link refid="lv__indev__gesture_8h_source"/>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+      </node>
+      <node id="72">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/indev/lv_indev_gesture_private.h</label>
+        <link refid="lv__indev__gesture__private_8h_source"/>
+      </node>
+      <node id="71">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/indev/lv_indev_private.h</label>
+        <link refid="lv__indev__private_8h"/>
+      </node>
+      <node id="73">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/indev/lv_indev_scroll.h</label>
+        <link refid="lv__indev__scroll_8h"/>
+        <childnode refid="71" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/libs/barcode/lv_barcode.h</label>
+        <link refid="lv__barcode_8h"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/libs/barcode/lv_barcode_private.h</label>
+        <link refid="lv__barcode__private_8h"/>
+      </node>
+      <node id="52">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/libs/qrcode/lv_qrcode.h</label>
+        <link refid="lv__qrcode_8h"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/libs/qrcode/lv_qrcode_private.h</label>
+        <link refid="lv__qrcode__private_8h"/>
+      </node>
+      <node id="1">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h</label>
+        <link refid="lv__anim_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="103" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="104" relation="include">
+        </childnode>
+        <childnode refid="105" relation="include">
+        </childnode>
+        <childnode refid="107" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+      </node>
+      <node id="104">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim_private.h</label>
+        <link refid="lv__anim__private_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="105">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim_timeline.h</label>
+        <link refid="lv__anim__timeline_8h"/>
+        <childnode refid="106" relation="include">
+        </childnode>
+      </node>
+      <node id="106">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim_timeline_private.h</label>
+        <link refid="lv__anim__timeline__private_8h"/>
+      </node>
+      <node id="107">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_style.h</label>
+        <link refid="lv__style_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="108" relation="include">
+        </childnode>
+        <childnode refid="113" relation="include">
+        </childnode>
+        <childnode refid="118" relation="include">
+        </childnode>
+        <childnode refid="120" relation="include">
+        </childnode>
+        <childnode refid="121" relation="include">
+        </childnode>
+        <childnode refid="148" relation="include">
+        </childnode>
+        <childnode refid="133" relation="include">
+        </childnode>
+        <childnode refid="138" relation="include">
+        </childnode>
+        <childnode refid="149" relation="include">
+        </childnode>
+        <childnode refid="140" relation="include">
+        </childnode>
+        <childnode refid="142" relation="include">
+        </childnode>
+        <childnode refid="150" relation="include">
+        </childnode>
+        <childnode refid="153" relation="include">
+        </childnode>
+        <childnode refid="154" relation="include">
+        </childnode>
+      </node>
+      <node id="154">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_style_private.h</label>
+        <link refid="lv__style__private_8h"/>
+      </node>
+      <node id="147">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_text_ap.h</label>
+        <link refid="lv__text__ap_8h"/>
+      </node>
+      <node id="74">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/others/file_explorer/lv_file_explorer.h</label>
+        <link refid="lv__file__explorer_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/others/file_explorer/lv_file_explorer_private.h</label>
+        <link refid="lv__file__explorer__private_8h"/>
+      </node>
+      <node id="75">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/others/fragment/lv_fragment.h</label>
+        <link refid="lv__fragment_8h"/>
+        <childnode refid="76" relation="include">
+        </childnode>
+      </node>
+      <node id="76">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/others/fragment/lv_fragment_private.h</label>
+        <link refid="lv__fragment__private_8h"/>
+      </node>
+      <node id="78">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/themes/default/lv_theme_default.h</label>
+        <link refid="lv__theme__default_8h"/>
+        <childnode refid="77" relation="include">
+        </childnode>
+      </node>
+      <node id="77">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/themes/lv_theme.h</label>
+        <link refid="lv__theme_8h"/>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+      </node>
+      <node id="79">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/themes/lv_theme_private.h</label>
+        <link refid="lv__theme__private_8h"/>
+      </node>
+      <node id="80">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/themes/mono/lv_theme_mono.h</label>
+        <link refid="lv__theme__mono_8h"/>
+        <childnode refid="77" relation="include">
+        </childnode>
+      </node>
+      <node id="81">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/themes/simple/lv_theme_simple.h</label>
+        <link refid="lv__theme__simple_8h"/>
+        <childnode refid="77" relation="include">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/animimage/lv_animimage.h</label>
+        <link refid="lv__animimage_8h"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/animimage/lv_animimage_private.h</label>
+        <link refid="lv__animimage__private_8h"/>
+      </node>
+      <node id="45">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/arc/lv_arc.h</label>
+        <link refid="lv__arc_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/arc/lv_arc_private.h</label>
+        <link refid="lv__arc__private_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/arclabel/lv_arclabel_private.h</label>
+        <link refid="lv__arclabel__private_8h"/>
+      </node>
+      <node id="46">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/bar/lv_bar.h</label>
+        <link refid="lv__bar_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/bar/lv_bar_private.h</label>
+        <link refid="lv__bar__private_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="82">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/button/lv_button.h</label>
+        <link refid="lv__button_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/button/lv_button_private.h</label>
+        <link refid="lv__button__private_8h"/>
+      </node>
+      <node id="83">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/buttonmatrix/lv_buttonmatrix.h</label>
+        <link refid="lv__buttonmatrix_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/buttonmatrix/lv_buttonmatrix_private.h</label>
+        <link refid="lv__buttonmatrix__private_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="84">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/calendar/lv_calendar.h</label>
+        <link refid="lv__calendar_8h"/>
+        <childnode refid="85" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="85">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/calendar/lv_calendar_chinese.h</label>
+        <link refid="lv__calendar__chinese_8h"/>
+        <childnode refid="84" relation="include">
+        </childnode>
+      </node>
+      <node id="87">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/calendar/lv_calendar_header_arrow.h</label>
+        <link refid="lv__calendar__header__arrow_8h"/>
+        <childnode refid="84" relation="include">
+        </childnode>
+      </node>
+      <node id="88">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/calendar/lv_calendar_header_dropdown.h</label>
+        <link refid="lv__calendar__header__dropdown_8h"/>
+        <childnode refid="84" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/calendar/lv_calendar_private.h</label>
+        <link refid="lv__calendar__private_8h"/>
+      </node>
+      <node id="50">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/canvas/lv_canvas.h</label>
+        <link refid="lv__canvas_8h"/>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/canvas/lv_canvas_private.h</label>
+        <link refid="lv__canvas__private_8h"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="89">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/chart/lv_chart.h</label>
+        <link refid="lv__chart_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/chart/lv_chart_private.h</label>
+        <link refid="lv__chart__private_8h"/>
+      </node>
+      <node id="90">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/checkbox/lv_checkbox.h</label>
+        <link refid="lv__checkbox_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/checkbox/lv_checkbox_private.h</label>
+        <link refid="lv__checkbox__private_8h"/>
+      </node>
+      <node id="55">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/dropdown/lv_dropdown.h</label>
+        <link refid="lv__dropdown_8h"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/dropdown/lv_dropdown_private.h</label>
+        <link refid="lv__dropdown__private_8h"/>
+      </node>
+      <node id="48">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/image/lv_image.h</label>
+        <link refid="lv__image_8h"/>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/image/lv_image_private.h</label>
+        <link refid="lv__image__private_8h"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="91">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/imagebutton/lv_imagebutton.h</label>
+        <link refid="lv__imagebutton_8h"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/imagebutton/lv_imagebutton_private.h</label>
+        <link refid="lv__imagebutton__private_8h"/>
+      </node>
+      <node id="92">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/ime/lv_ime_pinyin.h</label>
+        <link refid="lv__ime__pinyin_8h"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/ime/lv_ime_pinyin_private.h</label>
+        <link refid="lv__ime__pinyin__private_8h"/>
+      </node>
+      <node id="86">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/keyboard/lv_keyboard.h</label>
+        <link refid="lv__keyboard_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/keyboard/lv_keyboard_private.h</label>
+        <link refid="lv__keyboard__private_8h"/>
+      </node>
+      <node id="54">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/label/lv_label.h</label>
+        <link refid="lv__label_8h"/>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/label/lv_label_private.h</label>
+        <link refid="lv__label__private_8h"/>
+      </node>
+      <node id="93">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/led/lv_led.h</label>
+        <link refid="lv__led_8h"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/led/lv_led_private.h</label>
+        <link refid="lv__led__private_8h"/>
+      </node>
+      <node id="94">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/line/lv_line.h</label>
+        <link refid="lv__line_8h"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/line/lv_line_private.h</label>
+        <link refid="lv__line__private_8h"/>
+      </node>
+      <node id="95">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/list/lv_list.h</label>
+        <link refid="lv__list_8h"/>
+      </node>
+      <node id="96">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/menu/lv_menu.h</label>
+        <link refid="lv__menu_8h"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/menu/lv_menu_private.h</label>
+        <link refid="lv__menu__private_8h"/>
+      </node>
+      <node id="97">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/msgbox/lv_msgbox.h</label>
+        <link refid="lv__msgbox_8h"/>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/msgbox/lv_msgbox_private.h</label>
+        <link refid="lv__msgbox__private_8h"/>
+      </node>
+      <node id="111">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/property/lv_style_properties.h</label>
+        <link refid="lv__style__properties_8h"/>
+      </node>
+      <node id="56">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/roller/lv_roller.h</label>
+        <link refid="lv__roller_8h"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/roller/lv_roller_private.h</label>
+        <link refid="lv__roller__private_8h"/>
+      </node>
+      <node id="53">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/scale/lv_scale.h</label>
+        <link refid="lv__scale_8h"/>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/scale/lv_scale_private.h</label>
+        <link refid="lv__scale__private_8h"/>
+      </node>
+      <node id="47">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/slider/lv_slider.h</label>
+        <link refid="lv__slider_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/slider/lv_slider_private.h</label>
+        <link refid="lv__slider__private_8h"/>
+      </node>
+      <node id="60">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/span/lv_span.h</label>
+        <link refid="lv__span_8h"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/span/lv_span_private.h</label>
+        <link refid="lv__span__private_8h"/>
+      </node>
+      <node id="59">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/spinbox/lv_spinbox.h</label>
+        <link refid="lv__spinbox_8h"/>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/spinbox/lv_spinbox_private.h</label>
+        <link refid="lv__spinbox__private_8h"/>
+      </node>
+      <node id="112">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/spinner/lv_spinner.h</label>
+        <link refid="lv__spinner_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/spinner/lv_spinner_private.h</label>
+        <link refid="lv__spinner__private_8h"/>
+      </node>
+      <node id="98">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/switch/lv_switch.h</label>
+        <link refid="lv__switch_8h"/>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/switch/lv_switch_private.h</label>
+        <link refid="lv__switch__private_8h"/>
+      </node>
+      <node id="57">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/table/lv_table.h</label>
+        <link refid="lv__table_8h"/>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/table/lv_table_private.h</label>
+        <link refid="lv__table__private_8h"/>
+      </node>
+      <node id="99">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/tabview/lv_tabview.h</label>
+        <link refid="lv__tabview_8h"/>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/tabview/lv_tabview_private.h</label>
+        <link refid="lv__tabview__private_8h"/>
+      </node>
+      <node id="58">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/textarea/lv_textarea.h</label>
+        <link refid="lv__textarea_8h"/>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/textarea/lv_textarea_private.h</label>
+        <link refid="lv__textarea__private_8h"/>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="100">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/tileview/lv_tileview.h</label>
+        <link refid="lv__tileview_8h"/>
+        <childnode refid="39" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/tileview/lv_tileview_private.h</label>
+        <link refid="lv__tileview__private_8h"/>
+      </node>
+      <node id="101">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/win/lv_win.h</label>
+        <link refid="lv__win_8h"/>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/win/lv_win_private.h</label>
+        <link refid="lv__win__private_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structlv__anim__bezier3__para__t" prot="public">lv_anim_bezier3_para_t</innerclass>
+    <innerclass refid="struct__lv__anim__t" prot="public">_lv_anim_t</innerclass>
+    <innerclass refid="union__lv__anim__t_1_1__lv__anim__path__para__t" prot="public">_lv_anim_t::_lv_anim_path_para_t</innerclass>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="lv__anim_8h_1afa32040e71befa6e806501861a7a61da" prot="public" static="no">
+        <name>LV_ANIM_REPEAT_INFINITE</name>
+        <initializer>0xFFFFFFFF</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="27" column="9" bodyfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lv__anim_8h_1a558cc3aea1b7e72e4d00b97825715188" prot="public" static="no">
+        <name>LV_ANIM_PLAYTIME_INFINITE</name>
+        <initializer>0xFFFFFFFF</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="28" column="9" bodyfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lv__anim_8h_1ad450fc0021440d25a98f4f3ee2976a9a" prot="public" static="no">
+        <name>LV_ANIM_PAUSE_FOREVER</name>
+        <initializer>0xFFFFFFFF</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="29" column="9" bodyfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lv__anim_8h_1aa477e800cda596e9a863b0a76b3ffcb7" prot="public" static="no">
+        <name>_PARA</name>
+        <param><defname>a</defname></param>
+        <param><defname>x1</defname></param>
+        <param><defname>y1</defname></param>
+        <param><defname>x2</defname></param>
+        <param><defname>y2</defname></param>
+        <initializer>((a)-&gt;parameter.bezier3 =                                  \
+(<ref refid="structlv__anim__bezier3__para__t" kindref="compound">lv_anim_bezier3_para_t</ref>) {                      \
+    <ref refid="lv__math_8h_1a88461eba860b72b1e6b09f3bd6cfc71f" kindref="member">LV_BEZIER_VAL_FLOAT</ref>(x1), <ref refid="lv__math_8h_1a88461eba860b72b1e6b09f3bd6cfc71f" kindref="member">LV_BEZIER_VAL_FLOAT</ref>(y1),   \
+    <ref refid="lv__math_8h_1a88461eba860b72b1e6b09f3bd6cfc71f" kindref="member">LV_BEZIER_VAL_FLOAT</ref>(x2), <ref refid="lv__math_8h_1a88461eba860b72b1e6b09f3bd6cfc71f" kindref="member">LV_BEZIER_VAL_FLOAT</ref>(y2) }  \
+                                 )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="46" column="9" bodyfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" bodystart="46" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="define" id="lv__anim_8h_1a70f54b86d5713926263c1b5f7b84d8af" prot="public" static="no">
+        <name>LV_ANIM_SET_EASE_IN_SINE</name>
+        <param><defname>a</defname></param>
+        <initializer>_PARA(a, 0.12, 0, 0.39, 0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="52" column="9" bodyfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lv__anim_8h_1a696f28fc6cf11bbf08e3b3cb7691d14a" prot="public" static="no">
+        <name>LV_ANIM_SET_EASE_OUT_SINE</name>
+        <param><defname>a</defname></param>
+        <initializer>_PARA(a, 0.61, 1, 0.88, 1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="53" column="9" bodyfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lv__anim_8h_1a02f77f9482b322d3158966db14182f92" prot="public" static="no">
+        <name>LV_ANIM_SET_EASE_IN_OUT_SINE</name>
+        <param><defname>a</defname></param>
+        <initializer>_PARA(a, 0.37, 0, 0.63, 1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="54" column="9" bodyfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lv__anim_8h_1ac0a376b09d0aa3315ab9a8c5c7053c66" prot="public" static="no">
+        <name>LV_ANIM_SET_EASE_IN_QUAD</name>
+        <param><defname>a</defname></param>
+        <initializer>_PARA(a, 0.11, 0, 0.5, 0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="55" column="9" bodyfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lv__anim_8h_1a99c3cfc00f8269fdccde8e2322826416" prot="public" static="no">
+        <name>LV_ANIM_SET_EASE_OUT_QUAD</name>
+        <param><defname>a</defname></param>
+        <initializer>_PARA(a, 0.5, 1, 0.89, 1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="56" column="9" bodyfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lv__anim_8h_1af874dad8d6334c6c8b3c16504e46597b" prot="public" static="no">
+        <name>LV_ANIM_SET_EASE_IN_OUT_QUAD</name>
+        <param><defname>a</defname></param>
+        <initializer>_PARA(a, 0.45, 0, 0.55, 1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="57" column="9" bodyfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lv__anim_8h_1a40197acebec03ec30644daaca1433936" prot="public" static="no">
+        <name>LV_ANIM_SET_EASE_IN_CUBIC</name>
+        <param><defname>a</defname></param>
+        <initializer>_PARA(a, 0.32, 0, 0.67, 0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="58" column="9" bodyfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lv__anim_8h_1a41aade8b99d76a0b2ba028ae283e7e32" prot="public" static="no">
+        <name>LV_ANIM_SET_EASE_OUT_CUBIC</name>
+        <param><defname>a</defname></param>
+        <initializer>_PARA(a, 0.33, 1, 0.68, 1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="59" column="9" bodyfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lv__anim_8h_1a812d3908c6c9953c2ce1ce567d31351e" prot="public" static="no">
+        <name>LV_ANIM_SET_EASE_IN_OUT_CUBIC</name>
+        <param><defname>a</defname></param>
+        <initializer>_PARA(a, 0.65, 0, 0.35, 1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="60" column="9" bodyfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lv__anim_8h_1a977f58a5264bb52e4cbbbd55bf4f37bf" prot="public" static="no">
+        <name>LV_ANIM_SET_EASE_IN_QUART</name>
+        <param><defname>a</defname></param>
+        <initializer>_PARA(a, 0.5, 0, 0.75, 0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="61" column="9" bodyfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lv__anim_8h_1a819bae68239ae40d95f74c3ce0fa9f1f" prot="public" static="no">
+        <name>LV_ANIM_SET_EASE_OUT_QUART</name>
+        <param><defname>a</defname></param>
+        <initializer>_PARA(a, 0.25, 1, 0.5, 1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="62" column="9" bodyfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lv__anim_8h_1a70bfb232807837ee8b5e7e5841a26ab4" prot="public" static="no">
+        <name>LV_ANIM_SET_EASE_IN_OUT_QUART</name>
+        <param><defname>a</defname></param>
+        <initializer>_PARA(a, 0.76, 0, 0.24, 1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="63" column="9" bodyfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lv__anim_8h_1a9fdf286392a67248edea9470d1e277a7" prot="public" static="no">
+        <name>LV_ANIM_SET_EASE_IN_QUINT</name>
+        <param><defname>a</defname></param>
+        <initializer>_PARA(a, 0.64, 0, 0.78, 0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="64" column="9" bodyfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lv__anim_8h_1ad71b1a0ddbdbeb3fb89c9c205551ae5c" prot="public" static="no">
+        <name>LV_ANIM_SET_EASE_OUT_QUINT</name>
+        <param><defname>a</defname></param>
+        <initializer>_PARA(a, 0.22, 1, 0.36, 1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="65" column="9" bodyfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lv__anim_8h_1a09aee4f9185dff75d6f352f9539028c4" prot="public" static="no">
+        <name>LV_ANIM_SET_EASE_IN_OUT_QUINT</name>
+        <param><defname>a</defname></param>
+        <initializer>_PARA(a, 0.83, 0, 0.17, 1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="66" column="9" bodyfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lv__anim_8h_1aa190838fadebd09bbbf9e506da0bc8a2" prot="public" static="no">
+        <name>LV_ANIM_SET_EASE_IN_EXPO</name>
+        <param><defname>a</defname></param>
+        <initializer>_PARA(a, 0.7, 0, 0.84, 0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="67" column="9" bodyfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lv__anim_8h_1a07de0950b042ba033c736eaef3666ee6" prot="public" static="no">
+        <name>LV_ANIM_SET_EASE_OUT_EXPO</name>
+        <param><defname>a</defname></param>
+        <initializer>_PARA(a, 0.16, 1, 0.3, 1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="68" column="9" bodyfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lv__anim_8h_1a3f07ed99b9b9ff643e57099ad36172bb" prot="public" static="no">
+        <name>LV_ANIM_SET_EASE_IN_OUT_EXPO</name>
+        <param><defname>a</defname></param>
+        <initializer>_PARA(a, 0.87, 0, 0.13, 1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="69" column="9" bodyfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lv__anim_8h_1a21f440b73ea2858e437c0a5165429f9a" prot="public" static="no">
+        <name>LV_ANIM_SET_EASE_IN_CIRC</name>
+        <param><defname>a</defname></param>
+        <initializer>_PARA(a, 0.55, 0, 1, 0.45)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="70" column="9" bodyfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lv__anim_8h_1a592526c9957600828be723cfac46e032" prot="public" static="no">
+        <name>LV_ANIM_SET_EASE_OUT_CIRC</name>
+        <param><defname>a</defname></param>
+        <initializer>_PARA(a, 0, 0.55, 0.45, 1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="71" column="9" bodyfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lv__anim_8h_1ac3c9a2e40c6590cb0af45b7f534ffef5" prot="public" static="no">
+        <name>LV_ANIM_SET_EASE_IN_OUT_CIRC</name>
+        <param><defname>a</defname></param>
+        <initializer>_PARA(a, 0.85, 0, 0.15, 1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="72" column="9" bodyfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lv__anim_8h_1a379c23e659e5e0f12ee684d177c93eea" prot="public" static="no">
+        <name>LV_ANIM_SET_EASE_IN_BACK</name>
+        <param><defname>a</defname></param>
+        <initializer>_PARA(a, 0.36, 0, 0.66, -0.56)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="73" column="9" bodyfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lv__anim_8h_1ad64d8568b3a3b5e528b084b60368c752" prot="public" static="no">
+        <name>LV_ANIM_SET_EASE_OUT_BACK</name>
+        <param><defname>a</defname></param>
+        <initializer>_PARA(a, 0.34, 1.56, 0.64, 1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="74" column="9" bodyfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lv__anim_8h_1aeda1a5f88c3ae5f0a389d2bb5e329594" prot="public" static="no">
+        <name>LV_ANIM_SET_EASE_IN_OUT_BACK</name>
+        <param><defname>a</defname></param>
+        <initializer>_PARA(a, 0.68, -0.6, 0.32, 1.6)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="75" column="9" bodyfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lv__anim_8h_1a9971ba37bc3594d9a88bbd99be45634a" prot="public" static="no">
+        <name>LV_ANIM_OFF</name>
+        <initializer>false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Can be used to indicate if animations are enabled or disabled in a case </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="85" column="9" bodyfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lv__anim_8h_1a2bdacaf26d11540643dce55ca5e57c1b" prot="public" static="no">
+        <name>LV_ANIM_ON</name>
+        <initializer>true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="86" column="9" bodyfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="lv__anim_8h_1a2ccc5e2a177bd1e1f0dca6456b034153" prot="public" static="no">
+        <type>bool</type>
+        <definition>typedef bool lv_anim_enable_t</definition>
+        <argsstring></argsstring>
+        <name>lv_anim_enable_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="87" column="14" bodyfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="lv__anim_8h_1ab24ee67f903ada67fd9ee43d785553a4" prot="public" static="no">
+        <type>int32_t(*</type>
+        <definition>typedef int32_t(* lv_anim_path_cb_t) (const lv_anim_t *)</definition>
+        <argsstring>)(const lv_anim_t *)</argsstring>
+        <name>lv_anim_path_cb_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the current value during an animation </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="90" column="9" bodyfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="lv__anim_8h_1a659b620cc7dd6a848a713b48af9a70aa" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* lv_anim_exec_xcb_t) (void *, int32_t)</definition>
+        <argsstring>)(void *, int32_t)</argsstring>
+        <name>lv_anim_exec_xcb_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Generic prototype of &quot;animator&quot; functions. First parameter is the variable to animate. Second parameter is the value to set. Compatible with <computeroutput>lv_xxx_set_yyy(obj, value)</computeroutput> functions The <computeroutput>x</computeroutput> in <computeroutput>_xcb_t</computeroutput> means it&apos;s not a fully generic prototype because it doesn&apos;t receive <computeroutput>lv_anim_t *</computeroutput> as its first argument </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="98" column="9" bodyfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="lv__anim_8h_1a0b4aca4755a50b238f0373c83752dd2e" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* lv_anim_custom_exec_cb_t) (lv_anim_t *, int32_t)</definition>
+        <argsstring>)(lv_anim_t *, int32_t)</argsstring>
+        <name>lv_anim_custom_exec_cb_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Same as <computeroutput><ref refid="lv__anim_8h_1a659b620cc7dd6a848a713b48af9a70aa" kindref="member">lv_anim_exec_xcb_t</ref></computeroutput> but receives <computeroutput>lv_anim_t *</computeroutput> as the first parameter. It&apos;s more consistent but less convenient. Might be used by binding generator functions. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="102" column="9" bodyfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="lv__anim_8h_1a4e18ac2283cf959337b251bf75a358c2" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* lv_anim_completed_cb_t) (lv_anim_t *)</definition>
+        <argsstring>)(lv_anim_t *)</argsstring>
+        <name>lv_anim_completed_cb_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Callback to call when the animation is ready </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="105" column="9" bodyfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="lv__anim_8h_1a5e4061b364072c804f44fcdfc7d7eb39" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* lv_anim_start_cb_t) (lv_anim_t *)</definition>
+        <argsstring>)(lv_anim_t *)</argsstring>
+        <name>lv_anim_start_cb_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Callback to call when the animation really stars (considering <computeroutput>delay</computeroutput>) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="108" column="9" bodyfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="lv__anim_8h_1adf26cfe11e30b24d42ba2c89284c9ec0" prot="public" static="no">
+        <type>int32_t(*</type>
+        <definition>typedef int32_t(* lv_anim_get_value_cb_t) (lv_anim_t *)</definition>
+        <argsstring>)(lv_anim_t *)</argsstring>
+        <name>lv_anim_get_value_cb_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Callback used when the animation values are relative to get the current value </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="111" column="9" bodyfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="lv__anim_8h_1a4ab1f98888afd3d193821f60fc7e6f49" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* lv_anim_deleted_cb_t) (lv_anim_t *)</definition>
+        <argsstring>)(lv_anim_t *)</argsstring>
+        <name>lv_anim_deleted_cb_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Callback used when the animation is deleted </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="114" column="9" bodyfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="lv__anim_8h_1ab47f0c3139bbd759c1ccae268fc297e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_anim_init</definition>
+        <argsstring>(lv_anim_t *a)</argsstring>
+        <name>lv_anim_init</name>
+        <param>
+          <type>lv_anim_t *</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize an animation variable. E.g.: lv_anim_t a; lv_anim_init(&amp;a); lv_anim_set_...(&amp;a); lv_anim_start(&amp;a); <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an <computeroutput>lv_anim_t</computeroutput> variable to initialize </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="177" column="6" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" declline="177" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__anim_8h_1a8b95cb5c4da83460ebddfdac701804b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_anim_set_var</definition>
+        <argsstring>(lv_anim_t *a, void *var)</argsstring>
+        <name>lv_anim_set_var</name>
+        <param>
+          <type>lv_anim_t *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>var</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set a variable to animate <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an initialized <computeroutput>lv_anim_t</computeroutput> variable </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>var</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a variable to animate </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="184" column="6" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" declline="184" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__anim_8h_1ac702a419df5947550f685d071427e21d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_anim_set_exec_cb</definition>
+        <argsstring>(lv_anim_t *a, lv_anim_exec_xcb_t exec_cb)</argsstring>
+        <name>lv_anim_set_exec_cb</name>
+        <param>
+          <type>lv_anim_t *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="lv__anim_8h_1a659b620cc7dd6a848a713b48af9a70aa" kindref="member">lv_anim_exec_xcb_t</ref></type>
+          <declname>exec_cb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set a function to animate <computeroutput>var</computeroutput> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an initialized <computeroutput>lv_anim_t</computeroutput> variable </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exec_cb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a function to execute during animation LVGL&apos;s built-in functions can be used. E.g. lv_obj_set_x </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="193" column="6" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" declline="193" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__anim_8h_1a73a92f6a310e51e1db4868ece5ae1341" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_anim_set_duration</definition>
+        <argsstring>(lv_anim_t *a, uint32_t duration)</argsstring>
+        <name>lv_anim_set_duration</name>
+        <param>
+          <type>lv_anim_t *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>duration</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the duration of an animation <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an initialized <computeroutput>lv_anim_t</computeroutput> variable </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>duration</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>duration of the animation in milliseconds </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="200" column="6" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" declline="200" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__anim_8h_1a8643941c9f96153a9e8366917fa63dac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_anim_set_delay</definition>
+        <argsstring>(lv_anim_t *a, uint32_t delay)</argsstring>
+        <name>lv_anim_set_delay</name>
+        <param>
+          <type>lv_anim_t *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>delay</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set a delay before starting the animation <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an initialized <computeroutput>lv_anim_t</computeroutput> variable </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>delay</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>delay before the animation in milliseconds </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="207" column="6" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" declline="207" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__anim_8h_1a1e46ca82a03e9fe4d7bc8c1897d9f5fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_anim_resume</definition>
+        <argsstring>(lv_anim_t *a)</argsstring>
+        <name>lv_anim_resume</name>
+        <param>
+          <type>lv_anim_t *</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Resumes a paused animation <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an initialized <computeroutput>lv_anim_t</computeroutput> variable </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="213" column="6" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" declline="213" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__anim_8h_1ad8eb493e89c8a31b65e017210c809de8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_anim_pause</definition>
+        <argsstring>(lv_anim_t *a)</argsstring>
+        <name>lv_anim_pause</name>
+        <param>
+          <type>lv_anim_t *</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pauses the animation <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an initialized <computeroutput>lv_anim_t</computeroutput> variable </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="219" column="6" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" declline="219" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__anim_8h_1a1514f70678bf3f1fae9feaece3654382" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_anim_pause_for</definition>
+        <argsstring>(lv_anim_t *a, uint32_t ms)</argsstring>
+        <name>lv_anim_pause_for</name>
+        <param>
+          <type>lv_anim_t *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>ms</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pauses the animation for ms milliseconds <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an initialized <computeroutput>lv_anim_t</computeroutput> variable </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ms</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the pause time in milliseconds </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="226" column="6" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" declline="226" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__anim_8h_1afe58e5529566cdbd3f501f8317c21d45" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool lv_anim_is_paused</definition>
+        <argsstring>(lv_anim_t *a)</argsstring>
+        <name>lv_anim_is_paused</name>
+        <param>
+          <type>lv_anim_t *</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if the animation is paused <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an initialized <computeroutput>lv_anim_t</computeroutput> variable </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if the animation is paused else false </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="233" column="6" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" declline="233" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__anim_8h_1aa46a4bdace1d960b6ec96b20692f5765" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_anim_set_values</definition>
+        <argsstring>(lv_anim_t *a, int32_t start, int32_t end)</argsstring>
+        <name>lv_anim_set_values</name>
+        <param>
+          <type>lv_anim_t *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>end</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the start and end values of an animation <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an initialized <computeroutput>lv_anim_t</computeroutput> variable </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>start</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the start value </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>end</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the end value </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="241" column="6" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" declline="241" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__anim_8h_1ae1e4a3fe770b0807192fb955e9612e1a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_anim_set_custom_exec_cb</definition>
+        <argsstring>(lv_anim_t *a, lv_anim_custom_exec_cb_t exec_cb)</argsstring>
+        <name>lv_anim_set_custom_exec_cb</name>
+        <param>
+          <type>lv_anim_t *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="lv__anim_8h_1a0b4aca4755a50b238f0373c83752dd2e" kindref="member">lv_anim_custom_exec_cb_t</ref></type>
+          <declname>exec_cb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Similar to <computeroutput><ref refid="lv__anim_8h_1ac702a419df5947550f685d071427e21d" kindref="member">lv_anim_set_exec_cb</ref></computeroutput> but <computeroutput><ref refid="lv__anim_8h_1a0b4aca4755a50b238f0373c83752dd2e" kindref="member">lv_anim_custom_exec_cb_t</ref></computeroutput> receives <computeroutput>lv_anim_t * </computeroutput> as its first parameter instead of <computeroutput>void *</computeroutput>. This function might be used when LVGL is bound to other languages because it&apos;s more consistent to have <computeroutput>lv_anim_t *</computeroutput> as first parameter. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an initialized <computeroutput>lv_anim_t</computeroutput> variable </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exec_cb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a function to execute. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="251" column="6" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" declline="251" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__anim_8h_1af502ffcb6931366b62440011e6b5b566" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_anim_set_path_cb</definition>
+        <argsstring>(lv_anim_t *a, lv_anim_path_cb_t path_cb)</argsstring>
+        <name>lv_anim_set_path_cb</name>
+        <param>
+          <type>lv_anim_t *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="lv__anim_8h_1ab24ee67f903ada67fd9ee43d785553a4" kindref="member">lv_anim_path_cb_t</ref></type>
+          <declname>path_cb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the path (curve) of the animation. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an initialized <computeroutput>lv_anim_t</computeroutput> variable </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>path_cb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a function to set the current value of the animation. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="258" column="6" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" declline="258" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__anim_8h_1a39ef8b8773597e480e2f6bbe607d0e84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_anim_set_start_cb</definition>
+        <argsstring>(lv_anim_t *a, lv_anim_start_cb_t start_cb)</argsstring>
+        <name>lv_anim_set_start_cb</name>
+        <param>
+          <type>lv_anim_t *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="lv__anim_8h_1a5e4061b364072c804f44fcdfc7d7eb39" kindref="member">lv_anim_start_cb_t</ref></type>
+          <declname>start_cb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set a function call when the animation really starts (considering <computeroutput>delay</computeroutput>) <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an initialized <computeroutput>lv_anim_t</computeroutput> variable </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>start_cb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a function call when the animation starts </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="265" column="6" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" declline="265" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__anim_8h_1ab594277e32d3544284e1cfc1a32d96b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_anim_set_get_value_cb</definition>
+        <argsstring>(lv_anim_t *a, lv_anim_get_value_cb_t get_value_cb)</argsstring>
+        <name>lv_anim_set_get_value_cb</name>
+        <param>
+          <type>lv_anim_t *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="lv__anim_8h_1adf26cfe11e30b24d42ba2c89284c9ec0" kindref="member">lv_anim_get_value_cb_t</ref></type>
+          <declname>get_value_cb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set a function to use the current value of the variable and make start and end value relative to the returned current value. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an initialized <computeroutput>lv_anim_t</computeroutput> variable </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>get_value_cb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a function call when the animation starts </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="273" column="6" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" declline="273" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__anim_8h_1a0b1452a079e2e1c2af2ba3102ee333a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_anim_set_completed_cb</definition>
+        <argsstring>(lv_anim_t *a, lv_anim_completed_cb_t completed_cb)</argsstring>
+        <name>lv_anim_set_completed_cb</name>
+        <param>
+          <type>lv_anim_t *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="lv__anim_8h_1a4e18ac2283cf959337b251bf75a358c2" kindref="member">lv_anim_completed_cb_t</ref></type>
+          <declname>completed_cb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set a function call when the animation is completed <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an initialized <computeroutput>lv_anim_t</computeroutput> variable </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>completed_cb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a function call when the animation is fully completed </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="280" column="6" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" declline="280" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__anim_8h_1a2a4f1035b34d2766e5414d834c96c39a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_anim_set_deleted_cb</definition>
+        <argsstring>(lv_anim_t *a, lv_anim_deleted_cb_t deleted_cb)</argsstring>
+        <name>lv_anim_set_deleted_cb</name>
+        <param>
+          <type>lv_anim_t *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="lv__anim_8h_1a4ab1f98888afd3d193821f60fc7e6f49" kindref="member">lv_anim_deleted_cb_t</ref></type>
+          <declname>deleted_cb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set a function call when the animation is deleted. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an initialized <computeroutput>lv_anim_t</computeroutput> variable </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>deleted_cb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a function call when the animation is deleted </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="287" column="6" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" declline="287" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__anim_8h_1a3b8be747ac7c22f93d7e341ab0382cf8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_anim_set_reverse_duration</definition>
+        <argsstring>(lv_anim_t *a, uint32_t duration)</argsstring>
+        <name>lv_anim_set_reverse_duration</name>
+        <param>
+          <type>lv_anim_t *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>duration</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Make the animation to play back to when the forward direction is ready <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an initialized <computeroutput>lv_anim_t</computeroutput> variable </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>duration</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>duration of playback animation in milliseconds. 0: disable playback </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="294" column="6" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" declline="294" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__anim_8h_1a83da78cbb7b676f22efd5ed87c908631" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_anim_set_reverse_time</definition>
+        <argsstring>(lv_anim_t *a, uint32_t duration)</argsstring>
+        <name>lv_anim_set_reverse_time</name>
+        <param>
+          <type>lv_anim_t *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>duration</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Legacy <computeroutput><ref refid="lv__anim_8h_1a83da78cbb7b676f22efd5ed87c908631" kindref="member">lv_anim_set_reverse_time</ref></computeroutput> API will be removed soon, use <computeroutput><ref refid="lv__anim_8h_1a3b8be747ac7c22f93d7e341ab0382cf8" kindref="member">lv_anim_set_reverse_duration</ref></computeroutput> instead. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="299" column="6" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" declline="299" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__anim_8h_1a1fb582f095a99e8c0a4385bbca56e361" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_anim_set_reverse_delay</definition>
+        <argsstring>(lv_anim_t *a, uint32_t delay)</argsstring>
+        <name>lv_anim_set_reverse_delay</name>
+        <param>
+          <type>lv_anim_t *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>delay</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Make the animation to play back to when the forward direction is ready <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an initialized <computeroutput>lv_anim_t</computeroutput> variable </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>delay</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>delay in milliseconds before starting the playback animation. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="306" column="6" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" declline="306" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__anim_8h_1ab32df3a721553fa338561433d9cf43fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_anim_set_repeat_count</definition>
+        <argsstring>(lv_anim_t *a, uint32_t cnt)</argsstring>
+        <name>lv_anim_set_repeat_count</name>
+        <param>
+          <type>lv_anim_t *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>cnt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Make the animation repeat itself. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an initialized <computeroutput>lv_anim_t</computeroutput> variable </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cnt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>repeat count or <computeroutput>LV_ANIM_REPEAT_INFINITE</computeroutput> for infinite repetition. 0: to disable repetition. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="313" column="6" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" declline="313" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__anim_8h_1a1a0450f02c0f7dd4259be943e8ef36b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_anim_set_repeat_delay</definition>
+        <argsstring>(lv_anim_t *a, uint32_t delay)</argsstring>
+        <name>lv_anim_set_repeat_delay</name>
+        <param>
+          <type>lv_anim_t *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>delay</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set a delay before repeating the animation. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an initialized <computeroutput>lv_anim_t</computeroutput> variable </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>delay</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>delay in milliseconds before repeating the animation. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="320" column="6" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" declline="320" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__anim_8h_1a2dde4336a7e8a7b070520226189fb332" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_anim_set_early_apply</definition>
+        <argsstring>(lv_anim_t *a, bool en)</argsstring>
+        <name>lv_anim_set_early_apply</name>
+        <param>
+          <type>lv_anim_t *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>en</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set a whether the animation&apos;s should be applied immediately or only when the delay expired. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an initialized <computeroutput>lv_anim_t</computeroutput> variable </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>en</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true: apply the start value immediately in <computeroutput><ref refid="lv__anim_8h_1a51a27d8a0a7d7337a08c9416217b9d02" kindref="member">lv_anim_start</ref></computeroutput>; false: apply the start value only when <computeroutput>delay</computeroutput> ms is elapsed and the animations really starts </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="328" column="6" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" declline="328" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__anim_8h_1ad6ea0d6b42db25686623f034b3b3d095" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_anim_set_user_data</definition>
+        <argsstring>(lv_anim_t *a, void *user_data)</argsstring>
+        <name>lv_anim_set_user_data</name>
+        <param>
+          <type>lv_anim_t *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>user_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the custom user data field of the animation. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an initialized <computeroutput>lv_anim_t</computeroutput> variable </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>user_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the new user_data. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="335" column="6" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" declline="335" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__anim_8h_1ad3e105bb504ac992f68a42c77415958c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_anim_set_bezier3_param</definition>
+        <argsstring>(lv_anim_t *a, int16_t x1, int16_t y1, int16_t x2, int16_t y2)</argsstring>
+        <name>lv_anim_set_bezier3_param</name>
+        <param>
+          <type>lv_anim_t *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>x1</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>y1</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>x2</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>y2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set parameter for cubic bezier path <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an initialized <computeroutput>lv_anim_t</computeroutput> variable </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>first control point X </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>first control point Y </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>second control point X </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>second control point Y </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="345" column="6" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" declline="345" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__anim_8h_1a51a27d8a0a7d7337a08c9416217b9d02" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>lv_anim_t *</type>
+        <definition>lv_anim_t * lv_anim_start</definition>
+        <argsstring>(const lv_anim_t *a)</argsstring>
+        <name>lv_anim_start</name>
+        <param>
+          <type>const lv_anim_t *</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create an animation <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an initialized &apos;anim_t&apos; variable. Not required after call. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>pointer to the created animation (different from the <computeroutput>a</computeroutput> parameter) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="352" column="12" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" declline="352" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__anim_8h_1a4ab060319a31892f0e2b88a474e0ad15" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t lv_anim_get_delay</definition>
+        <argsstring>(const lv_anim_t *a)</argsstring>
+        <name>lv_anim_get_delay</name>
+        <param>
+          <type>const lv_anim_t *</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get a delay before starting the animation <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an initialized <computeroutput>lv_anim_t</computeroutput> variable </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>delay before the animation in milliseconds </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="359" column="10" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" declline="359" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__anim_8h_1a086bd9c24bad8ae156e841dc076a326e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t lv_anim_get_playtime</definition>
+        <argsstring>(const lv_anim_t *a)</argsstring>
+        <name>lv_anim_get_playtime</name>
+        <param>
+          <type>const lv_anim_t *</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the time used to play the animation. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an animation. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the play time in milliseconds. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="366" column="10" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" declline="366" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__anim_8h_1a6585cdc67dc43855f352990ff0452d5a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t lv_anim_get_time</definition>
+        <argsstring>(const lv_anim_t *a)</argsstring>
+        <name>lv_anim_get_time</name>
+        <param>
+          <type>const lv_anim_t *</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the duration of an animation <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an initialized <computeroutput>lv_anim_t</computeroutput> variable </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the duration of the animation in milliseconds </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="373" column="10" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" declline="373" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__anim_8h_1ac353961d8ea8c62d57ad0093fa3eaae1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t lv_anim_get_repeat_count</definition>
+        <argsstring>(const lv_anim_t *a)</argsstring>
+        <name>lv_anim_get_repeat_count</name>
+        <param>
+          <type>const lv_anim_t *</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the repeat count of the animation. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an initialized <computeroutput>lv_anim_t</computeroutput> variable </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the repeat count or <computeroutput>LV_ANIM_REPEAT_INFINITE</computeroutput> for infinite repetition. 0: disabled repetition. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="380" column="10" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" declline="380" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__anim_8h_1a3ecf21f14f92df88bf802192db71dc55" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void * lv_anim_get_user_data</definition>
+        <argsstring>(const lv_anim_t *a)</argsstring>
+        <name>lv_anim_get_user_data</name>
+        <param>
+          <type>const lv_anim_t *</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the user_data field of the animation <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an initialized <computeroutput>lv_anim_t</computeroutput> variable </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the pointer to the custom user_data of the animation </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="387" column="7" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" declline="387" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__anim_8h_1ac33d28f71b87f772c1dff4202348660b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool lv_anim_delete</definition>
+        <argsstring>(void *var, lv_anim_exec_xcb_t exec_cb)</argsstring>
+        <name>lv_anim_delete</name>
+        <param>
+          <type>void *</type>
+          <declname>var</declname>
+        </param>
+        <param>
+          <type><ref refid="lv__anim_8h_1a659b620cc7dd6a848a713b48af9a70aa" kindref="member">lv_anim_exec_xcb_t</ref></type>
+          <declname>exec_cb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delete animation(s) of a variable with a given animator function <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>var</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to variable </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exec_cb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a function pointer which is animating &apos;var&apos;, or NULL to ignore it and delete all the animations of &apos;var </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true: at least 1 animation is deleted, false: no animation is deleted </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="396" column="6" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" declline="396" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__anim_8h_1abd874249640a09721d9ebb92349f861a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_anim_delete_all</definition>
+        <argsstring>(void)</argsstring>
+        <name>lv_anim_delete_all</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delete all the animations </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="401" column="6" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" declline="401" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__anim_8h_1af39b0289b8cf745d09a0e5f4a796e2b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>lv_anim_t *</type>
+        <definition>lv_anim_t * lv_anim_get</definition>
+        <argsstring>(void *var, lv_anim_exec_xcb_t exec_cb)</argsstring>
+        <name>lv_anim_get</name>
+        <param>
+          <type>void *</type>
+          <declname>var</declname>
+        </param>
+        <param>
+          <type><ref refid="lv__anim_8h_1a659b620cc7dd6a848a713b48af9a70aa" kindref="member">lv_anim_exec_xcb_t</ref></type>
+          <declname>exec_cb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the animation of a variable and its <computeroutput>exec_cb</computeroutput>. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>var</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to variable </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exec_cb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a function pointer which is animating &apos;var&apos;, or NULL to return first matching &apos;var&apos; </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>pointer to the animation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="409" column="12" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" declline="409" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__anim_8h_1ae346c4d017c0cbe0b41b717929dc4bc2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>lv_timer_t *</type>
+        <definition>lv_timer_t * lv_anim_get_timer</definition>
+        <argsstring>(void)</argsstring>
+        <name>lv_anim_get_timer</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get global animation refresher timer. <simplesect kind="return"><para>pointer to the animation refresher timer. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="415" column="13" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" declline="415" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__anim_8h_1aa4b733249aa36b2af9740c91d1c2dfcf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool lv_anim_custom_delete</definition>
+        <argsstring>(lv_anim_t *a, lv_anim_custom_exec_cb_t exec_cb)</argsstring>
+        <name>lv_anim_custom_delete</name>
+        <param>
+          <type>lv_anim_t *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="lv__anim_8h_1a0b4aca4755a50b238f0373c83752dd2e" kindref="member">lv_anim_custom_exec_cb_t</ref></type>
+          <declname>exec_cb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delete an animation by getting the animated variable from <computeroutput>a</computeroutput>. Only animations with <computeroutput>exec_cb</computeroutput> will be deleted. This function exists because it&apos;s logical that all anim. functions receives an <computeroutput>lv_anim_t</computeroutput> as their first parameter. It&apos;s not practical in C but might make the API more consequent and makes easier to generate bindings. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an animation. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exec_cb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a function pointer which is animating &apos;var&apos;, or NULL to ignore it and delete all the animations of &apos;var </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true: at least 1 animation is deleted, false: no animation is deleted </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="428" column="6" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" declline="428" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__anim_8h_1a7da16733df9bb6d515aa154291b279b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>lv_anim_t *</type>
+        <definition>lv_anim_t * lv_anim_custom_get</definition>
+        <argsstring>(lv_anim_t *a, lv_anim_custom_exec_cb_t exec_cb)</argsstring>
+        <name>lv_anim_custom_get</name>
+        <param>
+          <type>lv_anim_t *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="lv__anim_8h_1a0b4aca4755a50b238f0373c83752dd2e" kindref="member">lv_anim_custom_exec_cb_t</ref></type>
+          <declname>exec_cb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the animation of a variable and its <computeroutput>exec_cb</computeroutput>. This function exists because it&apos;s logical that all anim. functions receives an <computeroutput>lv_anim_t</computeroutput> as their first parameter. It&apos;s not practical in C but might make the API more consequent and makes easier to generate bindings. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an animation. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exec_cb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a function pointer which is animating &apos;var&apos;, or NULL to return first matching &apos;var&apos; </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>pointer to the animation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="439" column="12" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" declline="439" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__anim_8h_1a4bb557452aa3ce128eb106e2f8208bc8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t lv_anim_count_running</definition>
+        <argsstring>(void)</argsstring>
+        <name>lv_anim_count_running</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the number of currently running animations <simplesect kind="return"><para>the number of running animations </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="445" column="10" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" declline="445" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__anim_8h_1a40d618fd5704b34d6942c353c50509d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t lv_anim_speed</definition>
+        <argsstring>(uint32_t speed)</argsstring>
+        <name>lv_anim_speed</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>speed</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Store the speed as a special value which can be used as time in animations. It will be converted to time internally based on the start and end values. The return value can be used as a constant with multiple animations and let LVGL convert the speed to time based on the actual values. LIMITATION: the max time stored this way can be 10,000 ms. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>speed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the speed of the animation in with unit / sec resolution in 0..10k range </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a special value which can be used as an animation time </para>
+</simplesect>
+<simplesect kind="note"><para>internally speed is stored as 10 unit/sec </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="457" column="10" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" declline="457" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__anim_8h_1a7d9e0e37b880e46b59173c754c3759e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t lv_anim_speed_clamped</definition>
+        <argsstring>(uint32_t speed, uint32_t min_time, uint32_t max_time)</argsstring>
+        <name>lv_anim_speed_clamped</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>speed</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>min_time</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>max_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Store the speed as a special value which can be used as time in animations. It will be converted to time internally based on the start and end values. The return value can be used as a constant with multiple animations and let LVGL convert the speed to time based on the actual values. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>speed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the speed of the animation in as unit / sec resolution in 0..10k range </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>min_time</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the minimum time in 0..10k range </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max_time</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the maximum time in 0..10k range </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a special value in where all three values are stored and can be used as an animation time </para>
+</simplesect>
+<simplesect kind="note"><para>internally speed is stored as 10 unit/sec </para>
+</simplesect>
+<simplesect kind="note"><para>internally min/max_time are stored with 10 ms unit </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="472" column="10" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" declline="472" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__anim_8h_1a6f5ed31c5141d47ad3ec9d75f56f0509" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t lv_anim_resolve_speed</definition>
+        <argsstring>(uint32_t speed, int32_t start, int32_t end)</argsstring>
+        <name>lv_anim_resolve_speed</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>speed</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>end</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Resolve the speed (created with <computeroutput><ref refid="lv__anim_8h_1a40d618fd5704b34d6942c353c50509d5" kindref="member">lv_anim_speed</ref></computeroutput> or <computeroutput><ref refid="lv__anim_8h_1a7d9e0e37b880e46b59173c754c3759e7" kindref="member">lv_anim_speed_clamped</ref></computeroutput>) to time based on start and end values. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>speed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>return values of <computeroutput><ref refid="lv__anim_8h_1a40d618fd5704b34d6942c353c50509d5" kindref="member">lv_anim_speed</ref></computeroutput> or <computeroutput><ref refid="lv__anim_8h_1a7d9e0e37b880e46b59173c754c3759e7" kindref="member">lv_anim_speed_clamped</ref></computeroutput> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>start</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the start value of the animation </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>end</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the end value of the animation </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the time required to get from <computeroutput>start</computeroutput> to <computeroutput>end</computeroutput> with the given <computeroutput>speed</computeroutput> setting </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="482" column="10" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" declline="482" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__anim_8h_1ab51f8f472c2bffe1f77080a1e40fc939" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t lv_anim_speed_to_time</definition>
+        <argsstring>(uint32_t speed, int32_t start, int32_t end)</argsstring>
+        <name>lv_anim_speed_to_time</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>speed</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>end</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Calculate the time of an animation based on its speed, start and end values. It simpler than <computeroutput><ref refid="lv__anim_8h_1a40d618fd5704b34d6942c353c50509d5" kindref="member">lv_anim_speed</ref></computeroutput> or <computeroutput><ref refid="lv__anim_8h_1a7d9e0e37b880e46b59173c754c3759e7" kindref="member">lv_anim_speed_clamped</ref></computeroutput> as it converts speed, start, and end to a time immediately. As it&apos;s simpler there is no limit on the maximum time. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>speed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the speed of the animation </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>start</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the start value </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>end</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the end value </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the time of the animation in milliseconds </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="494" column="10" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" declline="494" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__anim_8h_1a25ae5912901decafee4d960ec3584d17" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_anim_refr_now</definition>
+        <argsstring>(void)</argsstring>
+        <name>lv_anim_refr_now</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Manually refresh the state of the animations. Useful to make the animations running in a blocking process where <computeroutput><ref refid="lv__timer_8h_1a27171a7a7f26a1f80c91247e53ce643d" kindref="member">lv_timer_handler</ref></computeroutput> can&apos;t run for a while. Shouldn&apos;t be used directly because it is called in <computeroutput><ref refid="lv__refr_8h_1a46355e9677a6d10d50a513f66226c1e0" kindref="member">lv_refr_now()</ref></computeroutput>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="503" column="6" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" declline="503" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__anim_8h_1aa3e1114274e9085b8ba535420c873852" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t lv_anim_path_linear</definition>
+        <argsstring>(const lv_anim_t *a)</argsstring>
+        <name>lv_anim_path_linear</name>
+        <param>
+          <type>const lv_anim_t *</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Calculate the current value of an animation applying linear characteristic <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an animation </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the current value to set </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="510" column="9" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" declline="510" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__anim_8h_1a95b403ca1374087687179c7967600198" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t lv_anim_path_ease_in</definition>
+        <argsstring>(const lv_anim_t *a)</argsstring>
+        <name>lv_anim_path_ease_in</name>
+        <param>
+          <type>const lv_anim_t *</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Calculate the current value of an animation slowing down the start phase <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an animation </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the current value to set </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="517" column="9" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" declline="517" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__anim_8h_1a6a96dd88618e4e7912fb1096036c6458" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t lv_anim_path_ease_out</definition>
+        <argsstring>(const lv_anim_t *a)</argsstring>
+        <name>lv_anim_path_ease_out</name>
+        <param>
+          <type>const lv_anim_t *</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Calculate the current value of an animation slowing down the end phase <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an animation </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the current value to set </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="524" column="9" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" declline="524" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__anim_8h_1aa276989eca9f5bd11b2dc16d7e29c6d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t lv_anim_path_ease_in_out</definition>
+        <argsstring>(const lv_anim_t *a)</argsstring>
+        <name>lv_anim_path_ease_in_out</name>
+        <param>
+          <type>const lv_anim_t *</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Calculate the current value of an animation applying an &quot;S&quot; characteristic (cosine) <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an animation </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the current value to set </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="531" column="9" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" declline="531" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__anim_8h_1ac110a8857df9884ed29e79cf57389cca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t lv_anim_path_overshoot</definition>
+        <argsstring>(const lv_anim_t *a)</argsstring>
+        <name>lv_anim_path_overshoot</name>
+        <param>
+          <type>const lv_anim_t *</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Calculate the current value of an animation with overshoot at the end <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an animation </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the current value to set </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="538" column="9" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" declline="538" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__anim_8h_1abba54a9c3fdfefb0edab9be3ca28596e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t lv_anim_path_bounce</definition>
+        <argsstring>(const lv_anim_t *a)</argsstring>
+        <name>lv_anim_path_bounce</name>
+        <param>
+          <type>const lv_anim_t *</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Calculate the current value of an animation with 3 bounces <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an animation </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the current value to set </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="545" column="9" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" declline="545" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__anim_8h_1a448fcaf1475935df3dfc38acb245497d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t lv_anim_path_step</definition>
+        <argsstring>(const lv_anim_t *a)</argsstring>
+        <name>lv_anim_path_step</name>
+        <param>
+          <type>const lv_anim_t *</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Calculate the current value of an animation applying step characteristic. (Set end value on the end of the animation) <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an animation </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the current value to set </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="553" column="9" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" declline="553" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__anim_8h_1a892e1b874b00211cb718a377776e5db5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t lv_anim_path_custom_bezier3</definition>
+        <argsstring>(const lv_anim_t *a)</argsstring>
+        <name>lv_anim_path_custom_bezier3</name>
+        <param>
+          <type>const lv_anim_t *</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A custom cubic bezier animation path, need to specify cubic-parameters in a-&gt;parameter.bezier3 <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an animation </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the current value to set </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" line="560" column="9" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h" declline="560" declcolumn="9"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_anim.h"/>
+  </compounddef>
+</doxygen>

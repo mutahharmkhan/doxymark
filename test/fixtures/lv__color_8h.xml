@@ -1,0 +1,3475 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="lv__color_8h" kind="file" language="C++">
+    <compoundname>lv_color.h</compoundname>
+    <includes refid="lv__conf__internal_8h" local="yes">../lv_conf_internal.h</includes>
+    <includes refid="lv__assert_8h" local="yes">lv_assert.h</includes>
+    <includes refid="lv__math_8h" local="yes">lv_math.h</includes>
+    <includes refid="lv__types_8h" local="yes">lv_types.h</includes>
+    <includes refid="lv__palette_8h" local="yes">lv_palette.h</includes>
+    <includes refid="lv__color__op_8h" local="yes">lv_color_op.h</includes>
+    <includedby refid="lv__obj_8h" local="yes">/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_obj.h</includedby>
+    <includedby refid="lv__display_8h" local="yes">/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/display/lv_display.h</includedby>
+    <includedby refid="lv__draw__buf__convert__helium_8h" local="yes">/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/convert/helium/lv_draw_buf_convert_helium.h</includedby>
+    <includedby refid="lv__draw__buf__convert_8h" local="yes">/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/convert/lv_draw_buf_convert.h</includedby>
+    <includedby refid="lv__draw__buf__convert__neon_8h" local="yes">/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/convert/neon/lv_draw_buf_convert_neon.h</includedby>
+    <includedby refid="lv__draw__arc_8h" local="yes">/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/lv_draw_arc.h</includedby>
+    <includedby refid="lv__draw__blur_8h" local="yes">/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/lv_draw_blur.h</includedby>
+    <includedby refid="lv__draw__buf_8h" local="yes">/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/lv_draw_buf.h</includedby>
+    <includedby refid="lv__draw__label_8h" local="yes">/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/lv_draw_label.h</includedby>
+    <includedby refid="lv__draw__line_8h" local="yes">/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/lv_draw_line.h</includedby>
+    <includedby refid="lv__draw__mask_8h" local="yes">/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/lv_draw_mask.h</includedby>
+    <includedby refid="lv__draw__rect_8h" local="yes">/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/lv_draw_rect.h</includedby>
+    <includedby refid="lv__draw__sw__blend_8h" local="yes">/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/sw/blend/lv_draw_sw_blend.h</includedby>
+    <includedby refid="lv__draw__sw_8h" local="yes">/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/sw/lv_draw_sw.h</includedby>
+    <includedby refid="lv__draw__sw__grad_8h" local="yes">/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/sw/lv_draw_sw_grad.h</includedby>
+    <includedby refid="lv__draw__sw__mask_8h" local="yes">/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/sw/lv_draw_sw_mask.h</includedby>
+    <includedby refid="lv__draw__sw__utils_8h" local="yes">/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/sw/lv_draw_sw_utils.h</includedby>
+    <includedby refid="lv__barcode_8h" local="yes">/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/libs/barcode/lv_barcode.h</includedby>
+    <includedby refid="lv__qrcode_8h" local="yes">/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/libs/qrcode/lv_qrcode.h</includedby>
+    <includedby refid="lv__color__op_8h" local="yes">/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color_op.h</includedby>
+    <includedby refid="lv__grad_8h" local="yes">/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_grad.h</includedby>
+    <includedby refid="lv__palette_8h" local="yes">/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_palette.h</includedby>
+    <includedby refid="lv__style_8h" local="yes">/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_style.h</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>../../lv_conf.h</label>
+      </node>
+      <node id="2">
+        <label>../lv_conf_internal.h</label>
+        <link refid="lv__conf__internal_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>lv_conf_kconfig.h</label>
+        <link refid="lv__conf__kconfig_8h"/>
+      </node>
+      <node id="5">
+        <label>lv_assert.h</label>
+        <link refid="lv__assert_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color.h</label>
+        <link refid="lv__color_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>lv_color_op.h</label>
+        <link refid="lv__color__op_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="1" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>lv_log.h</label>
+        <link refid="lv__log_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>lv_math.h</label>
+        <link refid="lv__math_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>lv_palette.h</label>
+        <link refid="lv__palette_8h"/>
+        <childnode refid="1" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>lv_types.h</label>
+        <link refid="lv__types_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>../stdlib/lv_mem.h</label>
+        <link refid="lv__mem_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>lv_string.h</label>
+        <link refid="lv__string_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>inttypes.h</label>
+      </node>
+      <node id="12">
+        <label>limits.h</label>
+      </node>
+      <node id="13">
+        <label>stdarg.h</label>
+      </node>
+      <node id="10">
+        <label>stdbool.h</label>
+      </node>
+      <node id="9">
+        <label>stddef.h</label>
+      </node>
+      <node id="8">
+        <label>stdint.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="42">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_global.h</label>
+        <link refid="lv__global_8h"/>
+      </node>
+      <node id="2">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_obj.h</label>
+        <link refid="lv__obj_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+        <childnode refid="82" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+        <childnode refid="87" relation="include">
+        </childnode>
+        <childnode refid="88" relation="include">
+        </childnode>
+        <childnode refid="89" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="90" relation="include">
+        </childnode>
+        <childnode refid="91" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="92" relation="include">
+        </childnode>
+        <childnode refid="93" relation="include">
+        </childnode>
+        <childnode refid="94" relation="include">
+        </childnode>
+        <childnode refid="95" relation="include">
+        </childnode>
+        <childnode refid="96" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="97" relation="include">
+        </childnode>
+        <childnode refid="98" relation="include">
+        </childnode>
+        <childnode refid="99" relation="include">
+        </childnode>
+        <childnode refid="100" relation="include">
+        </childnode>
+      </node>
+      <node id="179">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_obj_class.h</label>
+        <link refid="lv__obj__class_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="180" relation="include">
+        </childnode>
+      </node>
+      <node id="180">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_obj_class_private.h</label>
+        <link refid="lv__obj__class__private_8h"/>
+      </node>
+      <node id="148">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_obj_draw.h</label>
+        <link refid="lv__obj__draw_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="149" relation="include">
+        </childnode>
+      </node>
+      <node id="149">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_obj_draw_private.h</label>
+        <link refid="lv__obj__draw__private_8h"/>
+      </node>
+      <node id="184">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_obj_event.h</label>
+        <link refid="lv__obj__event_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="185" relation="include">
+        </childnode>
+      </node>
+      <node id="185">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_obj_event_private.h</label>
+        <link refid="lv__obj__event__private_8h"/>
+      </node>
+      <node id="3">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_obj_private.h</label>
+        <link refid="lv__obj__private_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="178">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_obj_property.h</label>
+        <link refid="lv__obj__property_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="179" relation="include">
+        </childnode>
+        <childnode refid="82" relation="include">
+        </childnode>
+        <childnode refid="95" relation="include">
+        </childnode>
+        <childnode refid="181" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="182" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="98" relation="include">
+        </childnode>
+      </node>
+      <node id="183">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_obj_style.h</label>
+        <link refid="lv__obj__style_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="148" relation="include">
+        </childnode>
+        <childnode refid="184" relation="include">
+        </childnode>
+        <childnode refid="178" relation="include">
+        </childnode>
+        <childnode refid="186" relation="include">
+        </childnode>
+        <childnode refid="187" relation="include">
+        </childnode>
+      </node>
+      <node id="186">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_obj_style_gen.h</label>
+        <link refid="lv__obj__style__gen_8h_source"/>
+        <childnode refid="183" relation="include">
+        </childnode>
+      </node>
+      <node id="187">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_obj_style_private.h</label>
+        <link refid="lv__obj__style__private_8h"/>
+      </node>
+      <node id="102">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_obj_tree.h</label>
+        <link refid="lv__obj__tree_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_observer.h</label>
+        <link refid="lv__observer_8h"/>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_observer_private.h</label>
+        <link refid="lv__observer__private_8h"/>
+      </node>
+      <node id="60">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_refr.h</label>
+        <link refid="lv__refr_8h"/>
+        <childnode refid="61" relation="include">
+        </childnode>
+      </node>
+      <node id="61">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/core/lv_refr_private.h</label>
+        <link refid="lv__refr__private_8h"/>
+      </node>
+      <node id="41">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/debugging/sysmon/lv_sysmon.h</label>
+        <link refid="lv__sysmon_8h"/>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/debugging/sysmon/lv_sysmon_private.h</label>
+        <link refid="lv__sysmon__private_8h"/>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="101">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/display/lv_display.h</label>
+        <link refid="lv__display_8h"/>
+        <childnode refid="102" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="103" relation="include">
+        </childnode>
+        <childnode refid="114" relation="include">
+        </childnode>
+        <childnode refid="115" relation="include">
+        </childnode>
+        <childnode refid="117" relation="include">
+        </childnode>
+        <childnode refid="118" relation="include">
+        </childnode>
+        <childnode refid="124" relation="include">
+        </childnode>
+        <childnode refid="125" relation="include">
+        </childnode>
+        <childnode refid="126" relation="include">
+        </childnode>
+        <childnode refid="127" relation="include">
+        </childnode>
+        <childnode refid="128" relation="include">
+        </childnode>
+        <childnode refid="129" relation="include">
+        </childnode>
+        <childnode refid="130" relation="include">
+        </childnode>
+        <childnode refid="131" relation="include">
+        </childnode>
+        <childnode refid="132" relation="include">
+        </childnode>
+        <childnode refid="133" relation="include">
+        </childnode>
+        <childnode refid="138" relation="include">
+        </childnode>
+        <childnode refid="139" relation="include">
+        </childnode>
+        <childnode refid="140" relation="include">
+        </childnode>
+        <childnode refid="141" relation="include">
+        </childnode>
+        <childnode refid="142" relation="include">
+        </childnode>
+        <childnode refid="143" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+      </node>
+      <node id="62">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/display/lv_display_private.h</label>
+        <link refid="lv__display__private_8h"/>
+      </node>
+      <node id="144">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/convert/helium/lv_draw_buf_convert_helium.h</label>
+        <link refid="lv__draw__buf__convert__helium_8h"/>
+      </node>
+      <node id="145">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/convert/lv_draw_buf_convert.h</label>
+        <link refid="lv__draw__buf__convert_8h"/>
+      </node>
+      <node id="146">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/convert/neon/lv_draw_buf_convert_neon.h</label>
+        <link refid="lv__draw__buf__convert__neon_8h"/>
+      </node>
+      <node id="152">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/lv_draw.h</label>
+        <link refid="lv__draw_8h"/>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="147" relation="include">
+        </childnode>
+        <childnode refid="153" relation="include">
+        </childnode>
+        <childnode refid="158" relation="include">
+        </childnode>
+        <childnode refid="160" relation="include">
+        </childnode>
+        <childnode refid="161" relation="include">
+        </childnode>
+        <childnode refid="162" relation="include">
+        </childnode>
+        <childnode refid="166" relation="include">
+        </childnode>
+        <childnode refid="103" relation="include">
+        </childnode>
+        <childnode refid="167" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+      </node>
+      <node id="147">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/lv_draw_arc.h</label>
+        <link refid="lv__draw__arc_8h"/>
+        <childnode refid="148" relation="include">
+        </childnode>
+        <childnode refid="103" relation="include">
+        </childnode>
+      </node>
+      <node id="150">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/lv_draw_blur.h</label>
+        <link refid="lv__draw__blur_8h"/>
+        <childnode refid="148" relation="include">
+        </childnode>
+        <childnode refid="103" relation="include">
+        </childnode>
+      </node>
+      <node id="151">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/lv_draw_buf.h</label>
+        <link refid="lv__draw__buf_8h"/>
+        <childnode refid="144" relation="include">
+        </childnode>
+        <childnode refid="145" relation="include">
+        </childnode>
+        <childnode refid="146" relation="include">
+        </childnode>
+        <childnode refid="152" relation="include">
+        </childnode>
+        <childnode refid="168" relation="include">
+        </childnode>
+        <childnode refid="153" relation="include">
+        </childnode>
+        <childnode refid="169" relation="include">
+        </childnode>
+        <childnode refid="172" relation="include">
+        </childnode>
+        <childnode refid="198" relation="include">
+        </childnode>
+      </node>
+      <node id="168">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/lv_draw_buf_private.h</label>
+        <link refid="lv__draw__buf__private_8h"/>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="153">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/lv_draw_image.h</label>
+        <link refid="lv__draw__image_8h"/>
+        <childnode refid="148" relation="include">
+        </childnode>
+        <childnode refid="154" relation="include">
+        </childnode>
+        <childnode refid="156" relation="include">
+        </childnode>
+        <childnode refid="103" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+      </node>
+      <node id="154">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/lv_draw_image_private.h</label>
+        <link refid="lv__draw__image__private_8h"/>
+        <childnode refid="155" relation="include">
+        </childnode>
+      </node>
+      <node id="158">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/lv_draw_label.h</label>
+        <link refid="lv__draw__label_8h"/>
+        <childnode refid="148" relation="include">
+        </childnode>
+        <childnode refid="159" relation="include">
+        </childnode>
+        <childnode refid="103" relation="include">
+        </childnode>
+      </node>
+      <node id="159">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/lv_draw_label_private.h</label>
+        <link refid="lv__draw__label__private_8h"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="188">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/lv_draw_line.h</label>
+        <link refid="lv__draw__line_8h"/>
+        <childnode refid="148" relation="include">
+        </childnode>
+        <childnode refid="103" relation="include">
+        </childnode>
+      </node>
+      <node id="160">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/lv_draw_mask.h</label>
+        <link refid="lv__draw__mask_8h"/>
+        <childnode refid="103" relation="include">
+        </childnode>
+      </node>
+      <node id="161">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/lv_draw_private.h</label>
+        <link refid="lv__draw__private_8h"/>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="155" relation="include">
+        </childnode>
+        <childnode refid="113" relation="include">
+        </childnode>
+      </node>
+      <node id="162">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/lv_draw_rect.h</label>
+        <link refid="lv__draw__rect_8h"/>
+        <childnode refid="148" relation="include">
+        </childnode>
+        <childnode refid="158" relation="include">
+        </childnode>
+        <childnode refid="163" relation="include">
+        </childnode>
+        <childnode refid="164" relation="include">
+        </childnode>
+      </node>
+      <node id="163">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/lv_draw_rect_private.h</label>
+        <link refid="lv__draw__rect__private_8h"/>
+      </node>
+      <node id="164">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/lv_draw_triangle.h</label>
+        <link refid="lv__draw__triangle_8h"/>
+        <childnode refid="148" relation="include">
+        </childnode>
+        <childnode refid="165" relation="include">
+        </childnode>
+        <childnode refid="103" relation="include">
+        </childnode>
+      </node>
+      <node id="165">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/lv_draw_triangle_private.h</label>
+        <link refid="lv__draw__triangle__private_8h"/>
+      </node>
+      <node id="156">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/lv_draw_vector.h</label>
+        <link refid="lv__draw__vector_8h"/>
+        <childnode refid="157" relation="include">
+        </childnode>
+        <childnode refid="103" relation="include">
+        </childnode>
+      </node>
+      <node id="157">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/lv_draw_vector_private.h</label>
+        <link refid="lv__draw__vector__private_8h"/>
+      </node>
+      <node id="169">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/lv_image_decoder.h</label>
+        <link refid="lv__image__decoder_8h"/>
+        <childnode refid="152" relation="include">
+        </childnode>
+        <childnode refid="153" relation="include">
+        </childnode>
+        <childnode refid="170" relation="include">
+        </childnode>
+        <childnode refid="171" relation="include">
+        </childnode>
+      </node>
+      <node id="170">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/lv_image_decoder_private.h</label>
+        <link refid="lv__image__decoder__private_8h"/>
+      </node>
+      <node id="166">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/sdl/lv_draw_sdl.h</label>
+        <link refid="lv__draw__sdl_8h"/>
+      </node>
+      <node id="63">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/snapshot/lv_snapshot.h</label>
+        <link refid="lv__snapshot_8h"/>
+      </node>
+      <node id="155">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/sw/arm2d/lv_draw_sw_arm2d.h</label>
+        <link refid="lv__draw__sw__arm2d_8h"/>
+      </node>
+      <node id="189">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/sw/blend/lv_draw_sw_blend.h</label>
+        <link refid="lv__draw__sw__blend_8h"/>
+        <childnode refid="190" relation="include">
+        </childnode>
+        <childnode refid="191" relation="include">
+        </childnode>
+        <childnode refid="103" relation="include">
+        </childnode>
+      </node>
+      <node id="190">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/sw/blend/lv_draw_sw_blend_private.h</label>
+        <link refid="lv__draw__sw__blend__private_8h"/>
+      </node>
+      <node id="104">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/sw/blend/lv_draw_sw_blend_to_a8.h</label>
+        <link refid="lv__draw__sw__blend__to__a8_8h"/>
+      </node>
+      <node id="105">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/sw/blend/lv_draw_sw_blend_to_al88.h</label>
+        <link refid="lv__draw__sw__blend__to__al88_8h"/>
+      </node>
+      <node id="106">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888.h</label>
+        <link refid="lv__draw__sw__blend__to__argb8888_8h"/>
+      </node>
+      <node id="107">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.h</label>
+        <link refid="lv__draw__sw__blend__to__argb8888__premultiplied_8h"/>
+      </node>
+      <node id="108">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/sw/blend/lv_draw_sw_blend_to_i1.h</label>
+        <link refid="lv__draw__sw__blend__to__i1_8h"/>
+      </node>
+      <node id="109">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/sw/blend/lv_draw_sw_blend_to_l8.h</label>
+        <link refid="lv__draw__sw__blend__to__l8_8h"/>
+      </node>
+      <node id="110">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/sw/blend/lv_draw_sw_blend_to_rgb565.h</label>
+        <link refid="lv__draw__sw__blend__to__rgb565_8h"/>
+      </node>
+      <node id="111">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/sw/blend/lv_draw_sw_blend_to_rgb565_swapped.h</label>
+        <link refid="lv__draw__sw__blend__to__rgb565__swapped_8h"/>
+      </node>
+      <node id="112">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/sw/blend/lv_draw_sw_blend_to_rgb888.h</label>
+        <link refid="lv__draw__sw__blend__to__rgb888_8h"/>
+      </node>
+      <node id="191">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/sw/blend/riscv_v/lv_blend_riscv_v.h</label>
+        <link refid="lv__blend__riscv__v_8h"/>
+      </node>
+      <node id="103">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/sw/lv_draw_sw.h</label>
+        <link refid="lv__draw__sw_8h"/>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="104" relation="include">
+        </childnode>
+        <childnode refid="105" relation="include">
+        </childnode>
+        <childnode refid="106" relation="include">
+        </childnode>
+        <childnode refid="107" relation="include">
+        </childnode>
+        <childnode refid="108" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+        <childnode refid="110" relation="include">
+        </childnode>
+        <childnode refid="111" relation="include">
+        </childnode>
+        <childnode refid="112" relation="include">
+        </childnode>
+        <childnode refid="113" relation="include">
+        </childnode>
+      </node>
+      <node id="192">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/sw/lv_draw_sw_grad.h</label>
+        <link refid="lv__draw__sw__grad_8h"/>
+      </node>
+      <node id="199">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/sw/lv_draw_sw_mask.h</label>
+        <link refid="lv__draw__sw__mask_8h"/>
+        <childnode refid="189" relation="include">
+        </childnode>
+        <childnode refid="200" relation="include">
+        </childnode>
+      </node>
+      <node id="200">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/sw/lv_draw_sw_mask_private.h</label>
+        <link refid="lv__draw__sw__mask__private_8h"/>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="113">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/sw/lv_draw_sw_private.h</label>
+        <link refid="lv__draw__sw__private_8h"/>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="114">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/draw/sw/lv_draw_sw_utils.h</label>
+        <link refid="lv__draw__sw__utils_8h"/>
+        <childnode refid="103" relation="include">
+        </childnode>
+      </node>
+      <node id="115">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/drivers/display/drm/lv_linux_drm.h</label>
+        <link refid="lv__linux__drm_8h"/>
+        <childnode refid="116" relation="include">
+        </childnode>
+      </node>
+      <node id="117">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/drivers/display/fb/lv_linux_fbdev.h</label>
+        <link refid="lv__linux__fbdev_8h"/>
+        <childnode refid="116" relation="include">
+        </childnode>
+      </node>
+      <node id="119">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/drivers/display/ili9341/lv_ili9341.h</label>
+        <link refid="lv__ili9341_8h"/>
+        <childnode refid="116" relation="include">
+        </childnode>
+      </node>
+      <node id="118">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/drivers/display/lcd/lv_lcd_generic_mipi.h</label>
+        <link refid="lv__lcd__generic__mipi_8h"/>
+        <childnode refid="119" relation="include">
+        </childnode>
+        <childnode refid="120" relation="include">
+        </childnode>
+        <childnode refid="121" relation="include">
+        </childnode>
+        <childnode refid="122" relation="include">
+        </childnode>
+        <childnode refid="123" relation="include">
+        </childnode>
+        <childnode refid="116" relation="include">
+        </childnode>
+      </node>
+      <node id="124">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/drivers/display/lovyan_gfx/lv_lovyan_gfx.h</label>
+        <link refid="lv__lovyan__gfx_8h"/>
+        <childnode refid="116" relation="include">
+        </childnode>
+      </node>
+      <node id="120">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/drivers/display/nv3007/lv_nv3007.h</label>
+        <link refid="lv__nv3007_8h"/>
+        <childnode refid="116" relation="include">
+        </childnode>
+      </node>
+      <node id="125">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/drivers/display/nxp_elcdif/lv_nxp_elcdif.h</label>
+        <link refid="lv__nxp__elcdif_8h"/>
+      </node>
+      <node id="126">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/drivers/display/renesas_glcdc/lv_renesas_glcdc.h</label>
+        <link refid="lv__renesas__glcdc_8h"/>
+        <childnode refid="116" relation="include">
+        </childnode>
+      </node>
+      <node id="121">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/drivers/display/st7735/lv_st7735.h</label>
+        <link refid="lv__st7735_8h"/>
+        <childnode refid="116" relation="include">
+        </childnode>
+      </node>
+      <node id="122">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/drivers/display/st7789/lv_st7789.h</label>
+        <link refid="lv__st7789_8h"/>
+        <childnode refid="116" relation="include">
+        </childnode>
+      </node>
+      <node id="123">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/drivers/display/st7796/lv_st7796.h</label>
+        <link refid="lv__st7796_8h"/>
+        <childnode refid="116" relation="include">
+        </childnode>
+      </node>
+      <node id="127">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/drivers/display/tft_espi/lv_tft_espi.h</label>
+        <link refid="lv__tft__espi_8h"/>
+        <childnode refid="116" relation="include">
+        </childnode>
+      </node>
+      <node id="116">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/drivers/lv_drivers.h</label>
+        <link refid="lv__drivers_8h"/>
+      </node>
+      <node id="128">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/drivers/nuttx/lv_nuttx_entry.h</label>
+        <link refid="lv__nuttx__entry_8h"/>
+        <childnode refid="116" relation="include">
+        </childnode>
+      </node>
+      <node id="129">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/drivers/nuttx/lv_nuttx_fbdev.h</label>
+        <link refid="lv__nuttx__fbdev_8h"/>
+        <childnode refid="116" relation="include">
+        </childnode>
+      </node>
+      <node id="130">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/drivers/nuttx/lv_nuttx_lcd.h</label>
+        <link refid="lv__nuttx__lcd_8h"/>
+        <childnode refid="116" relation="include">
+        </childnode>
+      </node>
+      <node id="131">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/drivers/nuttx/lv_nuttx_libuv.h</label>
+        <link refid="lv__nuttx__libuv_8h"/>
+        <childnode refid="116" relation="include">
+        </childnode>
+      </node>
+      <node id="132">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/drivers/qnx/lv_qnx.h</label>
+        <link refid="lv__qnx_8h"/>
+        <childnode refid="116" relation="include">
+        </childnode>
+      </node>
+      <node id="134">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/drivers/sdl/lv_sdl_keyboard.h</label>
+        <link refid="lv__sdl__keyboard_8h"/>
+        <childnode refid="116" relation="include">
+        </childnode>
+      </node>
+      <node id="135">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/drivers/sdl/lv_sdl_mouse.h</label>
+        <link refid="lv__sdl__mouse_8h"/>
+        <childnode refid="116" relation="include">
+        </childnode>
+      </node>
+      <node id="136">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/drivers/sdl/lv_sdl_mousewheel.h</label>
+        <link refid="lv__sdl__mousewheel_8h"/>
+        <childnode refid="116" relation="include">
+        </childnode>
+      </node>
+      <node id="137">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/drivers/sdl/lv_sdl_private.h</label>
+        <link refid="lv__sdl__private_8h"/>
+      </node>
+      <node id="133">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/drivers/sdl/lv_sdl_window.h</label>
+        <link refid="lv__sdl__window_8h"/>
+        <childnode refid="116" relation="include">
+        </childnode>
+        <childnode refid="134" relation="include">
+        </childnode>
+        <childnode refid="135" relation="include">
+        </childnode>
+        <childnode refid="136" relation="include">
+        </childnode>
+        <childnode refid="137" relation="include">
+        </childnode>
+      </node>
+      <node id="138">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/drivers/uefi/lv_uefi_display.h</label>
+        <link refid="lv__uefi__display_8h"/>
+        <childnode refid="116" relation="include">
+        </childnode>
+      </node>
+      <node id="66">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/drivers/wayland/lv_wl_keyboard.h</label>
+        <link refid="lv__wl__keyboard_8h"/>
+      </node>
+      <node id="67">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/drivers/wayland/lv_wl_pointer.h</label>
+        <link refid="lv__wl__pointer_8h"/>
+      </node>
+      <node id="68">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/drivers/wayland/lv_wl_pointer_axis.h</label>
+        <link refid="lv__wl__pointer__axis_8h"/>
+      </node>
+      <node id="69">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/drivers/wayland/lv_wl_touch.h</label>
+        <link refid="lv__wl__touch_8h"/>
+      </node>
+      <node id="139">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/drivers/wayland/lv_wl_window.h</label>
+        <link refid="lv__wl__window_8h"/>
+      </node>
+      <node id="140">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/drivers/windows/lv_windows_context.h</label>
+        <link refid="lv__windows__context_8h"/>
+      </node>
+      <node id="141">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/drivers/windows/lv_windows_display.h</label>
+        <link refid="lv__windows__display_8h"/>
+        <childnode refid="116" relation="include">
+        </childnode>
+      </node>
+      <node id="142">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/drivers/windows/lv_windows_input.h</label>
+        <link refid="lv__windows__input_8h"/>
+        <childnode refid="116" relation="include">
+        </childnode>
+      </node>
+      <node id="143">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/drivers/x11/lv_x11.h</label>
+        <link refid="lv__x11_8h"/>
+        <childnode refid="116" relation="include">
+        </childnode>
+      </node>
+      <node id="173">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/font/fmt_txt/lv_font_fmt_txt.h</label>
+        <link refid="lv__font__fmt__txt_8h"/>
+        <childnode refid="174" relation="include">
+        </childnode>
+      </node>
+      <node id="174">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/font/fmt_txt/lv_font_fmt_txt_private.h</label>
+        <link refid="lv__font__fmt__txt__private_8h"/>
+      </node>
+      <node id="175">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/font/font_manager/lv_font_manager.h</label>
+        <link refid="lv__font__manager_8h"/>
+      </node>
+      <node id="176">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/font/imgfont/lv_imgfont.h</label>
+        <link refid="lv__imgfont_8h"/>
+      </node>
+      <node id="172">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/font/lv_font.h</label>
+        <link refid="lv__font_8h"/>
+        <childnode refid="173" relation="include">
+        </childnode>
+        <childnode refid="175" relation="include">
+        </childnode>
+        <childnode refid="176" relation="include">
+        </childnode>
+        <childnode refid="177" relation="include">
+        </childnode>
+        <childnode refid="194" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+      </node>
+      <node id="64">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/indev/lv_gridnav.h</label>
+        <link refid="lv__gridnav_8h"/>
+      </node>
+      <node id="65">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/indev/lv_indev_gesture.h</label>
+        <link refid="lv__indev__gesture_8h_source"/>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+      </node>
+      <node id="71">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/indev/lv_indev_gesture_private.h</label>
+        <link refid="lv__indev__gesture__private_8h_source"/>
+      </node>
+      <node id="70">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/indev/lv_indev_private.h</label>
+        <link refid="lv__indev__private_8h"/>
+      </node>
+      <node id="72">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/indev/lv_indev_scroll.h</label>
+        <link refid="lv__indev__scroll_8h"/>
+        <childnode refid="70" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/libs/barcode/lv_barcode.h</label>
+        <link refid="lv__barcode_8h"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/libs/barcode/lv_barcode_private.h</label>
+        <link refid="lv__barcode__private_8h"/>
+      </node>
+      <node id="171">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/libs/bin_decoder/lv_bin_decoder.h</label>
+        <link refid="lv__bin__decoder_8h"/>
+      </node>
+      <node id="51">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/libs/qrcode/lv_qrcode.h</label>
+        <link refid="lv__qrcode_8h"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/libs/qrcode/lv_qrcode_private.h</label>
+        <link refid="lv__qrcode__private_8h"/>
+      </node>
+      <node id="195">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_bidi.h</label>
+        <link refid="lv__bidi_8h"/>
+        <childnode refid="183" relation="include">
+        </childnode>
+        <childnode refid="158" relation="include">
+        </childnode>
+        <childnode refid="196" relation="include">
+        </childnode>
+        <childnode refid="177" relation="include">
+        </childnode>
+      </node>
+      <node id="196">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_bidi_private.h</label>
+        <link refid="lv__bidi__private_8h"/>
+      </node>
+      <node id="1">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color.h</label>
+        <link refid="lv__color_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="101" relation="include">
+        </childnode>
+        <childnode refid="144" relation="include">
+        </childnode>
+        <childnode refid="145" relation="include">
+        </childnode>
+        <childnode refid="146" relation="include">
+        </childnode>
+        <childnode refid="147" relation="include">
+        </childnode>
+        <childnode refid="150" relation="include">
+        </childnode>
+        <childnode refid="151" relation="include">
+        </childnode>
+        <childnode refid="158" relation="include">
+        </childnode>
+        <childnode refid="188" relation="include">
+        </childnode>
+        <childnode refid="160" relation="include">
+        </childnode>
+        <childnode refid="162" relation="include">
+        </childnode>
+        <childnode refid="189" relation="include">
+        </childnode>
+        <childnode refid="103" relation="include">
+        </childnode>
+        <childnode refid="192" relation="include">
+        </childnode>
+        <childnode refid="199" relation="include">
+        </childnode>
+        <childnode refid="114" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="201" relation="include">
+        </childnode>
+        <childnode refid="203" relation="include">
+        </childnode>
+        <childnode refid="204" relation="include">
+        </childnode>
+        <childnode refid="177" relation="include">
+        </childnode>
+      </node>
+      <node id="201">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color_op.h</label>
+        <link refid="lv__color__op_8h"/>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="1" relation="include">
+        </childnode>
+        <childnode refid="202" relation="include">
+        </childnode>
+      </node>
+      <node id="202">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color_op_private.h</label>
+        <link refid="lv__color__op__private_8h"/>
+      </node>
+      <node id="203">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_grad.h</label>
+        <link refid="lv__grad_8h"/>
+        <childnode refid="177" relation="include">
+        </childnode>
+      </node>
+      <node id="204">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_palette.h</label>
+        <link refid="lv__palette_8h"/>
+        <childnode refid="1" relation="include">
+        </childnode>
+      </node>
+      <node id="177">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_style.h</label>
+        <link refid="lv__style_8h"/>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="178" relation="include">
+        </childnode>
+        <childnode refid="183" relation="include">
+        </childnode>
+        <childnode refid="186" relation="include">
+        </childnode>
+        <childnode refid="152" relation="include">
+        </childnode>
+        <childnode refid="147" relation="include">
+        </childnode>
+        <childnode refid="150" relation="include">
+        </childnode>
+        <childnode refid="153" relation="include">
+        </childnode>
+        <childnode refid="158" relation="include">
+        </childnode>
+        <childnode refid="188" relation="include">
+        </childnode>
+        <childnode refid="160" relation="include">
+        </childnode>
+        <childnode refid="162" relation="include">
+        </childnode>
+        <childnode refid="189" relation="include">
+        </childnode>
+        <childnode refid="192" relation="include">
+        </childnode>
+        <childnode refid="193" relation="include">
+        </childnode>
+      </node>
+      <node id="193">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_style_private.h</label>
+        <link refid="lv__style__private_8h"/>
+      </node>
+      <node id="194">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_text.h</label>
+        <link refid="lv__text_8h"/>
+        <childnode refid="152" relation="include">
+        </childnode>
+        <childnode refid="158" relation="include">
+        </childnode>
+        <childnode refid="195" relation="include">
+        </childnode>
+        <childnode refid="177" relation="include">
+        </childnode>
+        <childnode refid="167" relation="include">
+        </childnode>
+        <childnode refid="197" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+      </node>
+      <node id="167">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_text_ap.h</label>
+        <link refid="lv__text__ap_8h"/>
+      </node>
+      <node id="197">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_text_private.h</label>
+        <link refid="lv__text__private_8h"/>
+      </node>
+      <node id="198">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_utils.h</label>
+        <link refid="lv__utils_8h"/>
+      </node>
+      <node id="73">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/others/file_explorer/lv_file_explorer.h</label>
+        <link refid="lv__file__explorer_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/others/file_explorer/lv_file_explorer_private.h</label>
+        <link refid="lv__file__explorer__private_8h"/>
+      </node>
+      <node id="74">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/others/fragment/lv_fragment.h</label>
+        <link refid="lv__fragment_8h"/>
+        <childnode refid="75" relation="include">
+        </childnode>
+      </node>
+      <node id="75">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/others/fragment/lv_fragment_private.h</label>
+        <link refid="lv__fragment__private_8h"/>
+      </node>
+      <node id="77">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/themes/default/lv_theme_default.h</label>
+        <link refid="lv__theme__default_8h"/>
+        <childnode refid="76" relation="include">
+        </childnode>
+      </node>
+      <node id="76">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/themes/lv_theme.h</label>
+        <link refid="lv__theme_8h"/>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+      </node>
+      <node id="78">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/themes/lv_theme_private.h</label>
+        <link refid="lv__theme__private_8h"/>
+      </node>
+      <node id="79">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/themes/mono/lv_theme_mono.h</label>
+        <link refid="lv__theme__mono_8h"/>
+        <childnode refid="76" relation="include">
+        </childnode>
+      </node>
+      <node id="80">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/themes/simple/lv_theme_simple.h</label>
+        <link refid="lv__theme__simple_8h"/>
+        <childnode refid="76" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/animimage/lv_animimage.h</label>
+        <link refid="lv__animimage_8h"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/animimage/lv_animimage_private.h</label>
+        <link refid="lv__animimage__private_8h"/>
+      </node>
+      <node id="44">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/arc/lv_arc.h</label>
+        <link refid="lv__arc_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/arc/lv_arc_private.h</label>
+        <link refid="lv__arc__private_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/arclabel/lv_arclabel_private.h</label>
+        <link refid="lv__arclabel__private_8h"/>
+      </node>
+      <node id="45">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/bar/lv_bar.h</label>
+        <link refid="lv__bar_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/bar/lv_bar_private.h</label>
+        <link refid="lv__bar__private_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="81">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/button/lv_button.h</label>
+        <link refid="lv__button_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/button/lv_button_private.h</label>
+        <link refid="lv__button__private_8h"/>
+      </node>
+      <node id="82">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/buttonmatrix/lv_buttonmatrix.h</label>
+        <link refid="lv__buttonmatrix_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="83" relation="include">
+        </childnode>
+        <childnode refid="85" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/buttonmatrix/lv_buttonmatrix_private.h</label>
+        <link refid="lv__buttonmatrix__private_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="83">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/calendar/lv_calendar.h</label>
+        <link refid="lv__calendar_8h"/>
+        <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="84">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/calendar/lv_calendar_chinese.h</label>
+        <link refid="lv__calendar__chinese_8h"/>
+        <childnode refid="83" relation="include">
+        </childnode>
+      </node>
+      <node id="86">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/calendar/lv_calendar_header_arrow.h</label>
+        <link refid="lv__calendar__header__arrow_8h"/>
+        <childnode refid="83" relation="include">
+        </childnode>
+      </node>
+      <node id="87">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/calendar/lv_calendar_header_dropdown.h</label>
+        <link refid="lv__calendar__header__dropdown_8h"/>
+        <childnode refid="83" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/calendar/lv_calendar_private.h</label>
+        <link refid="lv__calendar__private_8h"/>
+      </node>
+      <node id="49">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/canvas/lv_canvas.h</label>
+        <link refid="lv__canvas_8h"/>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/canvas/lv_canvas_private.h</label>
+        <link refid="lv__canvas__private_8h"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="88">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/chart/lv_chart.h</label>
+        <link refid="lv__chart_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/chart/lv_chart_private.h</label>
+        <link refid="lv__chart__private_8h"/>
+      </node>
+      <node id="89">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/checkbox/lv_checkbox.h</label>
+        <link refid="lv__checkbox_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/checkbox/lv_checkbox_private.h</label>
+        <link refid="lv__checkbox__private_8h"/>
+      </node>
+      <node id="54">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/dropdown/lv_dropdown.h</label>
+        <link refid="lv__dropdown_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/dropdown/lv_dropdown_private.h</label>
+        <link refid="lv__dropdown__private_8h"/>
+      </node>
+      <node id="47">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/image/lv_image.h</label>
+        <link refid="lv__image_8h"/>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/image/lv_image_private.h</label>
+        <link refid="lv__image__private_8h"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="90">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/imagebutton/lv_imagebutton.h</label>
+        <link refid="lv__imagebutton_8h"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/imagebutton/lv_imagebutton_private.h</label>
+        <link refid="lv__imagebutton__private_8h"/>
+      </node>
+      <node id="91">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/ime/lv_ime_pinyin.h</label>
+        <link refid="lv__ime__pinyin_8h"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/ime/lv_ime_pinyin_private.h</label>
+        <link refid="lv__ime__pinyin__private_8h"/>
+      </node>
+      <node id="85">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/keyboard/lv_keyboard.h</label>
+        <link refid="lv__keyboard_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/keyboard/lv_keyboard_private.h</label>
+        <link refid="lv__keyboard__private_8h"/>
+      </node>
+      <node id="53">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/label/lv_label.h</label>
+        <link refid="lv__label_8h"/>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/label/lv_label_private.h</label>
+        <link refid="lv__label__private_8h"/>
+      </node>
+      <node id="92">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/led/lv_led.h</label>
+        <link refid="lv__led_8h"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/led/lv_led_private.h</label>
+        <link refid="lv__led__private_8h"/>
+      </node>
+      <node id="93">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/line/lv_line.h</label>
+        <link refid="lv__line_8h"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/line/lv_line_private.h</label>
+        <link refid="lv__line__private_8h"/>
+      </node>
+      <node id="94">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/list/lv_list.h</label>
+        <link refid="lv__list_8h"/>
+      </node>
+      <node id="95">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/menu/lv_menu.h</label>
+        <link refid="lv__menu_8h"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/menu/lv_menu_private.h</label>
+        <link refid="lv__menu__private_8h"/>
+      </node>
+      <node id="96">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/msgbox/lv_msgbox.h</label>
+        <link refid="lv__msgbox_8h"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/msgbox/lv_msgbox_private.h</label>
+        <link refid="lv__msgbox__private_8h"/>
+      </node>
+      <node id="181">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/property/lv_style_properties.h</label>
+        <link refid="lv__style__properties_8h"/>
+      </node>
+      <node id="55">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/roller/lv_roller.h</label>
+        <link refid="lv__roller_8h"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/roller/lv_roller_private.h</label>
+        <link refid="lv__roller__private_8h"/>
+      </node>
+      <node id="52">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/scale/lv_scale.h</label>
+        <link refid="lv__scale_8h"/>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/scale/lv_scale_private.h</label>
+        <link refid="lv__scale__private_8h"/>
+      </node>
+      <node id="46">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/slider/lv_slider.h</label>
+        <link refid="lv__slider_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/slider/lv_slider_private.h</label>
+        <link refid="lv__slider__private_8h"/>
+      </node>
+      <node id="59">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/span/lv_span.h</label>
+        <link refid="lv__span_8h"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/span/lv_span_private.h</label>
+        <link refid="lv__span__private_8h"/>
+      </node>
+      <node id="58">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/spinbox/lv_spinbox.h</label>
+        <link refid="lv__spinbox_8h"/>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/spinbox/lv_spinbox_private.h</label>
+        <link refid="lv__spinbox__private_8h"/>
+      </node>
+      <node id="182">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/spinner/lv_spinner.h</label>
+        <link refid="lv__spinner_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/spinner/lv_spinner_private.h</label>
+        <link refid="lv__spinner__private_8h"/>
+      </node>
+      <node id="97">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/switch/lv_switch.h</label>
+        <link refid="lv__switch_8h"/>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/switch/lv_switch_private.h</label>
+        <link refid="lv__switch__private_8h"/>
+      </node>
+      <node id="56">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/table/lv_table.h</label>
+        <link refid="lv__table_8h"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/table/lv_table_private.h</label>
+        <link refid="lv__table__private_8h"/>
+      </node>
+      <node id="98">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/tabview/lv_tabview.h</label>
+        <link refid="lv__tabview_8h"/>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/tabview/lv_tabview_private.h</label>
+        <link refid="lv__tabview__private_8h"/>
+      </node>
+      <node id="57">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/textarea/lv_textarea.h</label>
+        <link refid="lv__textarea_8h"/>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/textarea/lv_textarea_private.h</label>
+        <link refid="lv__textarea__private_8h"/>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="99">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/tileview/lv_tileview.h</label>
+        <link refid="lv__tileview_8h"/>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/tileview/lv_tileview_private.h</label>
+        <link refid="lv__tileview__private_8h"/>
+      </node>
+      <node id="100">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/win/lv_win.h</label>
+        <link refid="lv__win_8h"/>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/widgets/win/lv_win_private.h</label>
+        <link refid="lv__win__private_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structlv__color__t" prot="public">lv_color_t</innerclass>
+    <innerclass refid="structlv__color16__t" prot="public">lv_color16_t</innerclass>
+    <innerclass refid="structlv__color32__t" prot="public">lv_color32_t</innerclass>
+    <innerclass refid="structlv__color__hsv__t" prot="public">lv_color_hsv_t</innerclass>
+    <innerclass refid="structlv__color16a__t" prot="public">lv_color16a_t</innerclass>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="lv__color_8h_1a57d857706d217c92efbb25d085a5194f" prot="public" static="no">
+        <name>LV_COLOR_NATIVE_WITH_ALPHA_SIZE</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color.h" line="29" column="9" bodyfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lv__color_8h_1ac614bb0f5acc68f3b921f3213d46ac0f" prot="public" static="no">
+        <name>LV_OPA_MIN</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Fully transparent if opa &lt;= LV_OPA_MIN </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color.h" line="56" column="9" bodyfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lv__color_8h_1aea67a137776de380296f660cf9543e42" prot="public" static="no">
+        <name>LV_OPA_MAX</name>
+        <initializer>253</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Fully cover if opa &gt;= LV_OPA_MAX </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color.h" line="57" column="9" bodyfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lv__color_8h_1a2f50a567e910290f4535b8d217188253" prot="public" static="no">
+        <name>LV_COLOR_FORMAT_GET_BPP</name>
+        <param><defname>cf</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the pixel size of a color format in bits, bpp <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a color format (<computeroutput>LV_COLOR_FORMAT_...</computeroutput>) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the pixel size in bits </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="lv__color_8h_1a423b610930d97a5aadcb7377501e24b5" kindref="member">lv_color_format_get_bpp</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color.h" line="65" column="9" bodyfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color.h" bodystart="65" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="define" id="lv__color_8h_1a5c13058d49e7a3c0530d4074f1159a8c" prot="public" static="no">
+        <name>LV_COLOR_FORMAT_GET_SIZE</name>
+        <param><defname>cf</defname></param>
+        <initializer>((<ref refid="lv__color_8h_1a2f50a567e910290f4535b8d217188253" kindref="member">LV_COLOR_FORMAT_GET_BPP</ref>(cf) + 7) &gt;&gt; 3)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the pixel size of a color format in bytes <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a color format (<computeroutput>LV_COLOR_FORMAT_...</computeroutput>) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the pixel size in bytes </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="lv__color_8h_1af32de6483e3a70fd6544aed8f40ec889" kindref="member">lv_color_format_get_size</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color.h" line="103" column="9" bodyfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lv__color_8h_1a29c35f0d31362bfb49d0569bd29c5b0c" prot="public" static="no">
+        <name>LV_COLOR_FORMAT_IS_ALPHA_ONLY</name>
+        <param><defname>cf</defname></param>
+        <initializer>((cf) &gt;= LV_COLOR_FORMAT_A1 &amp;&amp; (cf) &lt;= LV_COLOR_FORMAT_A8)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color.h" line="223" column="9" bodyfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color.h" bodystart="223" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lv__color_8h_1a5c49f4028a3c200d9294f7e08c80a788" prot="public" static="no">
+        <name>LV_COLOR_FORMAT_IS_INDEXED</name>
+        <param><defname>cf</defname></param>
+        <initializer>((cf) &gt;= LV_COLOR_FORMAT_I1 &amp;&amp; (cf) &lt;= LV_COLOR_FORMAT_I8)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color.h" line="224" column="9" bodyfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color.h" bodystart="224" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lv__color_8h_1a7420ed5a755fa3a9df4ad77ca88e1723" prot="public" static="no">
+        <name>LV_COLOR_FORMAT_IS_YUV</name>
+        <param><defname>cf</defname></param>
+        <initializer>((cf) &gt;= LV_COLOR_FORMAT_YUV_START &amp;&amp; (cf) &lt;= LV_COLOR_FORMAT_YUV_END)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color.h" line="225" column="9" bodyfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color.h" bodystart="225" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lv__color_8h_1aad7f5597cc1d3ccb95aa344c8d542b99" prot="public" static="no">
+        <name>LV_COLOR_INDEXED_PALETTE_SIZE</name>
+        <param><defname>cf</defname></param>
+        <initializer>((cf) == LV_COLOR_FORMAT_I1 ? 2 :\
+(cf) == LV_COLOR_FORMAT_I2 ? 4 :\
+(cf) == LV_COLOR_FORMAT_I4 ? 16 :\
+(cf) == LV_COLOR_FORMAT_I8 ? 256 : 0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color.h" line="226" column="9" bodyfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color.h" bodystart="226" bodyend="229"/>
+      </memberdef>
+      <memberdef kind="define" id="lv__color_8h_1a1114077945bc9caa3781a0c2e9484283" prot="public" static="no">
+        <name>LV_COLOR_MAKE</name>
+        <param><defname>r8</defname></param>
+        <param><defname>g8</defname></param>
+        <param><defname>b8</defname></param>
+        <initializer>{b8, g8, r8}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color.h" line="235" column="9" bodyfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color.h" bodystart="235" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lv__color_8h_1a69d6b1033a003d100b87322cdc69241c" prot="public" static="no">
+        <name>LV_OPA_MIX2</name>
+        <param><defname>a1</defname></param>
+        <param><defname>a2</defname></param>
+        <initializer>((lv_opa_t)(((int32_t)(a1) * (a2)) &gt;&gt; 8))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color.h" line="237" column="9" bodyfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color.h" bodystart="237" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lv__color_8h_1a7629ff63074c4e250331c64624e07e48" prot="public" static="no">
+        <name>LV_OPA_MIX3</name>
+        <param><defname>a1</defname></param>
+        <param><defname>a2</defname></param>
+        <param><defname>a3</defname></param>
+        <initializer>((lv_opa_t)(((int32_t)(a1) * (a2) * (a3)) &gt;&gt; 16))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color.h" line="238" column="9" bodyfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color.h" bodystart="238" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="lv__color_8h_1a1ad2ded4e489aa575d8bc5a9bd9df954" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_lv_opacity_level_t</name>
+        <enumvalue id="lv__color_8h_1a1ad2ded4e489aa575d8bc5a9bd9df954ac5670b24820d02ac0fe11ff8a1ad00c0" prot="public">
+          <name>LV_OPA_TRANSP</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__color_8h_1a1ad2ded4e489aa575d8bc5a9bd9df954a022929d228c6de59a3bcb10e9d6373a8" prot="public">
+          <name>LV_OPA_0</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__color_8h_1a1ad2ded4e489aa575d8bc5a9bd9df954adbd27adbfd0347f6af5030c7f533e47d" prot="public">
+          <name>LV_OPA_10</name>
+          <initializer>= 25</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__color_8h_1a1ad2ded4e489aa575d8bc5a9bd9df954acdffbc269048ad2b6e689e311aaefea6" prot="public">
+          <name>LV_OPA_20</name>
+          <initializer>= 51</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__color_8h_1a1ad2ded4e489aa575d8bc5a9bd9df954a2eca983ed75d41926f0e7c9608aa2aa0" prot="public">
+          <name>LV_OPA_30</name>
+          <initializer>= 76</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__color_8h_1a1ad2ded4e489aa575d8bc5a9bd9df954a3dde339d67efb75f90331f51df49d74f" prot="public">
+          <name>LV_OPA_40</name>
+          <initializer>= 102</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__color_8h_1a1ad2ded4e489aa575d8bc5a9bd9df954a2b0db3f7dd5170beb8cdaa5e26c35200" prot="public">
+          <name>LV_OPA_50</name>
+          <initializer>= 127</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__color_8h_1a1ad2ded4e489aa575d8bc5a9bd9df954ae506ddb8751efd6258111395b45c2cd8" prot="public">
+          <name>LV_OPA_60</name>
+          <initializer>= 153</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__color_8h_1a1ad2ded4e489aa575d8bc5a9bd9df954a519758c4538a66db53b951157a879532" prot="public">
+          <name>LV_OPA_70</name>
+          <initializer>= 178</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__color_8h_1a1ad2ded4e489aa575d8bc5a9bd9df954acc4a6a3a3a6c866d17da2283723bb94f" prot="public">
+          <name>LV_OPA_80</name>
+          <initializer>= 204</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__color_8h_1a1ad2ded4e489aa575d8bc5a9bd9df954ab49a9bc0c62645a617ac7d76a3be4546" prot="public">
+          <name>LV_OPA_90</name>
+          <initializer>= 229</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__color_8h_1a1ad2ded4e489aa575d8bc5a9bd9df954a465addffd4457a5aab153657aeb9eb12" prot="public">
+          <name>LV_OPA_100</name>
+          <initializer>= 255</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__color_8h_1a1ad2ded4e489aa575d8bc5a9bd9df954a13cdfbbe767edf76dc4f53389dfeca4a" prot="public">
+          <name>LV_OPA_COVER</name>
+          <initializer>= 255</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Opacity percentages. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color.h" line="40" column="1" bodyfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color.h" bodystart="40" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="enum" id="lv__color_8h_1a373bd610cd5bd39aa97244166a356932" prot="public" static="no" strong="no">
+        <type></type>
+        <name>lv_color_format_t</name>
+        <enumvalue id="lv__color_8h_1a373bd610cd5bd39aa97244166a356932a0c3ae7bb7d74b6546edad95b25878f38" prot="public">
+          <name>LV_COLOR_FORMAT_UNKNOWN</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__color_8h_1a373bd610cd5bd39aa97244166a356932ada4787babffa3a4343263fa24a869359" prot="public">
+          <name>LV_COLOR_FORMAT_RAW</name>
+          <initializer>= 0x01</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__color_8h_1a373bd610cd5bd39aa97244166a356932a0f4b23f018efe45119136cc9832806d8" prot="public">
+          <name>LV_COLOR_FORMAT_RAW_ALPHA</name>
+          <initializer>= 0x02</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__color_8h_1a373bd610cd5bd39aa97244166a356932a8a84f0c0bd12fefd53bcc50144abb3b3" prot="public">
+          <name>LV_COLOR_FORMAT_L8</name>
+          <initializer>= 0x06</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__color_8h_1a373bd610cd5bd39aa97244166a356932ad307868267c4b8c79770008c5b9ca5e4" prot="public">
+          <name>LV_COLOR_FORMAT_I1</name>
+          <initializer>= 0x07</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__color_8h_1a373bd610cd5bd39aa97244166a356932a57cd2efef8d89876ab42b303686a3a7c" prot="public">
+          <name>LV_COLOR_FORMAT_I2</name>
+          <initializer>= 0x08</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__color_8h_1a373bd610cd5bd39aa97244166a356932aa680509a87486d2e3be354d6619af680" prot="public">
+          <name>LV_COLOR_FORMAT_I4</name>
+          <initializer>= 0x09</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__color_8h_1a373bd610cd5bd39aa97244166a356932ae06216fdd0bf012bba81eb1881183d19" prot="public">
+          <name>LV_COLOR_FORMAT_I8</name>
+          <initializer>= 0x0A</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__color_8h_1a373bd610cd5bd39aa97244166a356932a0d3968bc87a4d73c1b55f64d25a90895" prot="public">
+          <name>LV_COLOR_FORMAT_A8</name>
+          <initializer>= 0x0E</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__color_8h_1a373bd610cd5bd39aa97244166a356932a678b5a785e1e6bbeffba7c045e312176" prot="public">
+          <name>LV_COLOR_FORMAT_RGB565</name>
+          <initializer>= 0x12</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__color_8h_1a373bd610cd5bd39aa97244166a356932ad9d4647f73226732ee9b61b438175da2" prot="public">
+          <name>LV_COLOR_FORMAT_ARGB8565</name>
+          <initializer>= 0x13</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Not supported by sw renderer yet. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__color_8h_1a373bd610cd5bd39aa97244166a356932a749a7ab8e2bb9ea07611391befad7bf3" prot="public">
+          <name>LV_COLOR_FORMAT_RGB565A8</name>
+          <initializer>= 0x14</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Color array followed by Alpha array </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__color_8h_1a373bd610cd5bd39aa97244166a356932acf24e7f41fc9aeb72d310c422670ee9a" prot="public">
+          <name>LV_COLOR_FORMAT_AL88</name>
+          <initializer>= 0x15</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>L8 with alpha &gt; </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__color_8h_1a373bd610cd5bd39aa97244166a356932ad295b71677af87d9009903bbb3602cd9" prot="public">
+          <name>LV_COLOR_FORMAT_RGB565_SWAPPED</name>
+          <initializer>= 0x1B</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__color_8h_1a373bd610cd5bd39aa97244166a356932abea7fb3f4f8cfed62f96a433616e433a" prot="public">
+          <name>LV_COLOR_FORMAT_RGB888</name>
+          <initializer>= 0x0F</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__color_8h_1a373bd610cd5bd39aa97244166a356932a4c5aecc3efd95782b54d703cf3dec783" prot="public">
+          <name>LV_COLOR_FORMAT_ARGB8888</name>
+          <initializer>= 0x10</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__color_8h_1a373bd610cd5bd39aa97244166a356932ab0d9837834fbe76e8332b2f8df0bcd79" prot="public">
+          <name>LV_COLOR_FORMAT_XRGB8888</name>
+          <initializer>= 0x11</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__color_8h_1a373bd610cd5bd39aa97244166a356932a387db2e923ac602c4a7644b67858a543" prot="public">
+          <name>LV_COLOR_FORMAT_ARGB8888_PREMULTIPLIED</name>
+          <initializer>= 0x1A</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__color_8h_1a373bd610cd5bd39aa97244166a356932a22caa1b0e12ec1fd7a67d38c9a1db6d1" prot="public">
+          <name>LV_COLOR_FORMAT_A1</name>
+          <initializer>= 0x0B</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__color_8h_1a373bd610cd5bd39aa97244166a356932aa97d21dee516fded92fc716022e75d04" prot="public">
+          <name>LV_COLOR_FORMAT_A2</name>
+          <initializer>= 0x0C</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__color_8h_1a373bd610cd5bd39aa97244166a356932adc3e839f971d7ea74eb148802ddea986" prot="public">
+          <name>LV_COLOR_FORMAT_A4</name>
+          <initializer>= 0x0D</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__color_8h_1a373bd610cd5bd39aa97244166a356932a2eb62d82ba70a47760aabf9aa4b6bccc" prot="public">
+          <name>LV_COLOR_FORMAT_ARGB1555</name>
+          <initializer>= 0x16</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__color_8h_1a373bd610cd5bd39aa97244166a356932a75408604ed87c2cf843b92bd95497b64" prot="public">
+          <name>LV_COLOR_FORMAT_ARGB4444</name>
+          <initializer>= 0x17</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__color_8h_1a373bd610cd5bd39aa97244166a356932ac84ded05a2c3caa273d60da485aac3d7" prot="public">
+          <name>LV_COLOR_FORMAT_ARGB2222</name>
+          <initializer>= 0X18</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__color_8h_1a373bd610cd5bd39aa97244166a356932a4ace951820e7617c9be33b7b38c3c37b" prot="public">
+          <name>LV_COLOR_FORMAT_YUV_START</name>
+          <initializer>= 0x20</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__color_8h_1a373bd610cd5bd39aa97244166a356932aecf2ca1d4ac85e22e5eb199a9a193c58" prot="public">
+          <name>LV_COLOR_FORMAT_I420</name>
+          <initializer>= LV_COLOR_FORMAT_YUV_START</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__color_8h_1a373bd610cd5bd39aa97244166a356932abb46c2fb6b6604f1605c3ad7d7c0420f" prot="public">
+          <name>LV_COLOR_FORMAT_I422</name>
+          <initializer>= 0x21</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__color_8h_1a373bd610cd5bd39aa97244166a356932a3f40a6d39f7fa8c5f81b7aa3c4c7ccea" prot="public">
+          <name>LV_COLOR_FORMAT_I444</name>
+          <initializer>= 0x22</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__color_8h_1a373bd610cd5bd39aa97244166a356932a95a8aa4357c6750134103b8ac615dcec" prot="public">
+          <name>LV_COLOR_FORMAT_I400</name>
+          <initializer>= 0x23</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__color_8h_1a373bd610cd5bd39aa97244166a356932abd566ec558107ae7c66e65b2cededdda" prot="public">
+          <name>LV_COLOR_FORMAT_NV21</name>
+          <initializer>= 0x24</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__color_8h_1a373bd610cd5bd39aa97244166a356932a82f915cfd6ade7511056c6a29a6888f9" prot="public">
+          <name>LV_COLOR_FORMAT_NV12</name>
+          <initializer>= 0x25</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__color_8h_1a373bd610cd5bd39aa97244166a356932a91845cb6152e91047a412e89b0c60faa" prot="public">
+          <name>LV_COLOR_FORMAT_YUY2</name>
+          <initializer>= 0x26</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__color_8h_1a373bd610cd5bd39aa97244166a356932a02e0b3da9e892464e995f2041f922f82" prot="public">
+          <name>LV_COLOR_FORMAT_UYVY</name>
+          <initializer>= 0x27</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__color_8h_1a373bd610cd5bd39aa97244166a356932a5033080a1813d3d27baad559ff22faf0" prot="public">
+          <name>LV_COLOR_FORMAT_YUV_END</name>
+          <initializer>= LV_COLOR_FORMAT_UYVY</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__color_8h_1a373bd610cd5bd39aa97244166a356932a1538b301b410238ee75b75bdb0c87781" prot="public">
+          <name>LV_COLOR_FORMAT_PROPRIETARY_START</name>
+          <initializer>= 0x30</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__color_8h_1a373bd610cd5bd39aa97244166a356932a97afc9c52ee20793425c62e7d63dae13" prot="public">
+          <name>LV_COLOR_FORMAT_NEMA_TSC_START</name>
+          <initializer>= LV_COLOR_FORMAT_PROPRIETARY_START</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__color_8h_1a373bd610cd5bd39aa97244166a356932ab4a2b6773d9aaba107e7d08d1dec1160" prot="public">
+          <name>LV_COLOR_FORMAT_NEMA_TSC4</name>
+          <initializer>= LV_COLOR_FORMAT_NEMA_TSC_START</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__color_8h_1a373bd610cd5bd39aa97244166a356932ad22ac09ba3d41169d72accb2246e65d8" prot="public">
+          <name>LV_COLOR_FORMAT_NEMA_TSC6</name>
+          <initializer>= 0x31</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__color_8h_1a373bd610cd5bd39aa97244166a356932ae07bfb119dcbdf47d3fc8eb4673eaa23" prot="public">
+          <name>LV_COLOR_FORMAT_NEMA_TSC6A</name>
+          <initializer>= 0x32</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__color_8h_1a373bd610cd5bd39aa97244166a356932a572379e873f41bc541fee2fd75dbd917" prot="public">
+          <name>LV_COLOR_FORMAT_NEMA_TSC6AP</name>
+          <initializer>= 0x33</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__color_8h_1a373bd610cd5bd39aa97244166a356932a771b28febe67f89eed869eb4b4e31ee8" prot="public">
+          <name>LV_COLOR_FORMAT_NEMA_TSC12</name>
+          <initializer>= 0x34</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__color_8h_1a373bd610cd5bd39aa97244166a356932a6895d7e3a35399f24d935a10827a9fa0" prot="public">
+          <name>LV_COLOR_FORMAT_NEMA_TSC12A</name>
+          <initializer>= 0x35</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__color_8h_1a373bd610cd5bd39aa97244166a356932a6efb61491bf639af316b1eb3a5e2eb61" prot="public">
+          <name>LV_COLOR_FORMAT_NEMA_TSC_END</name>
+          <initializer>= LV_COLOR_FORMAT_NEMA_TSC12A</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__color_8h_1a373bd610cd5bd39aa97244166a356932a104f8baf434965a5610be08203ecefde" prot="public">
+          <name>LV_COLOR_FORMAT_NATIVE</name>
+          <initializer>= LV_COLOR_FORMAT_RGB565</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lv__color_8h_1a373bd610cd5bd39aa97244166a356932aa17801b44052ab2e55fa8d31067d98f7" prot="public">
+          <name>LV_COLOR_FORMAT_NATIVE_WITH_ALPHA</name>
+          <initializer>= LV_COLOR_FORMAT_RGB565A8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color.h" line="139" column="1" bodyfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color.h" bodystart="139" bodyend="221"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="lv__color_8h_1a8de57621cfea9a36df2d55768b00452e" prot="public" static="no" extern="yes" mutable="no">
+        <type>const lv_color_filter_dsc_t</type>
+        <definition>const lv_color_filter_dsc_t lv_color_filter_shade</definition>
+        <argsstring></argsstring>
+        <name>lv_color_filter_shade</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color.h" line="488" column="37" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color.h" declline="488" declcolumn="37"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="lv__color_8h_1a423b610930d97a5aadcb7377501e24b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t lv_color_format_get_bpp</definition>
+        <argsstring>(lv_color_format_t cf)</argsstring>
+        <name>lv_color_format_get_bpp</name>
+        <param>
+          <type><ref refid="lv__color_8h_1a373bd610cd5bd39aa97244166a356932" kindref="member">lv_color_format_t</ref></type>
+          <declname>cf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the pixel size of a color format in bits, bpp <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a color format (<computeroutput>LV_COLOR_FORMAT_...</computeroutput>) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the pixel size in bits </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="lv__color_8h_1a2f50a567e910290f4535b8d217188253" kindref="member">LV_COLOR_FORMAT_GET_BPP</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color.h" line="250" column="9" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color.h" declline="250" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__color_8h_1af32de6483e3a70fd6544aed8f40ec889" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t lv_color_format_get_size</definition>
+        <argsstring>(lv_color_format_t cf)</argsstring>
+        <name>lv_color_format_get_size</name>
+        <param>
+          <type><ref refid="lv__color_8h_1a373bd610cd5bd39aa97244166a356932" kindref="member">lv_color_format_t</ref></type>
+          <declname>cf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the pixel size of a color format in bytes <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a color format (<computeroutput>LV_COLOR_FORMAT_...</computeroutput>) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the pixel size in bytes </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="lv__color_8h_1a5c13058d49e7a3c0530d4074f1159a8c" kindref="member">LV_COLOR_FORMAT_GET_SIZE</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color.h" line="258" column="9" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color.h" declline="258" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__color_8h_1a2c230781df228281072911939213ea42" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool lv_color_format_has_alpha</definition>
+        <argsstring>(lv_color_format_t src_cf)</argsstring>
+        <name>lv_color_format_has_alpha</name>
+        <param>
+          <type><ref refid="lv__color_8h_1a373bd610cd5bd39aa97244166a356932" kindref="member">lv_color_format_t</ref></type>
+          <declname>src_cf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if a color format has alpha channel or not <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>src_cf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a color format (<computeroutput>LV_COLOR_FORMAT_...</computeroutput>) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true: has alpha channel; false: doesn&apos;t have alpha channel </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color.h" line="265" column="6" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color.h" declline="265" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__color_8h_1a1460428cd70003f29f0dbe88ef6b6fa5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structlv__color32__t" kindref="compound">lv_color32_t</ref></type>
+        <definition>lv_color32_t lv_color_to_32</definition>
+        <argsstring>(lv_color_t color, lv_opa_t opa)</argsstring>
+        <name>lv_color_to_32</name>
+        <param>
+          <type><ref refid="structlv__color__t" kindref="compound">lv_color_t</ref></type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>lv_opa_t</type>
+          <declname>opa</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create an ARGB8888 color from RGB888 + alpha <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an RGB888 color </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>opa</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the alpha value </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the ARGB8888 color </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color.h" line="273" column="14" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color.h" declline="273" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__color_8h_1a11f6f6e45bb605031e3100ed26a4ba5e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t lv_color_to_int</definition>
+        <argsstring>(lv_color_t c)</argsstring>
+        <name>lv_color_to_int</name>
+        <param>
+          <type><ref refid="structlv__color__t" kindref="compound">lv_color_t</ref></type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convert an RGB888 color to an integer <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an RGB888 color </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput>c</computeroutput> as an integer </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color.h" line="280" column="10" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color.h" declline="280" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__color_8h_1ab290d48590f902cf7986fc2cd8b05f85" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool lv_color_eq</definition>
+        <argsstring>(lv_color_t c1, lv_color_t c2)</argsstring>
+        <name>lv_color_eq</name>
+        <param>
+          <type><ref refid="structlv__color__t" kindref="compound">lv_color_t</ref></type>
+          <declname>c1</declname>
+        </param>
+        <param>
+          <type><ref refid="structlv__color__t" kindref="compound">lv_color_t</ref></type>
+          <declname>c2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if two RGB888 color are equal <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the first color </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the second color </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true: equal </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color.h" line="288" column="6" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color.h" declline="288" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__color_8h_1a35f90721b6d63213f74a2b1efa96ec79" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool lv_color32_eq</definition>
+        <argsstring>(lv_color32_t c1, lv_color32_t c2)</argsstring>
+        <name>lv_color32_eq</name>
+        <param>
+          <type><ref refid="structlv__color32__t" kindref="compound">lv_color32_t</ref></type>
+          <declname>c1</declname>
+        </param>
+        <param>
+          <type><ref refid="structlv__color32__t" kindref="compound">lv_color32_t</ref></type>
+          <declname>c2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if two ARGB8888 color are equal <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the first color </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the second color </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true: equal </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color.h" line="296" column="6" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color.h" declline="296" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__color_8h_1a683fc45072eabc9c74257af7fc36345f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structlv__color__t" kindref="compound">lv_color_t</ref></type>
+        <definition>lv_color_t lv_color_hex</definition>
+        <argsstring>(uint32_t c)</argsstring>
+        <name>lv_color_hex</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a color from 0x000000..0xffffff input <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the hex input </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the color </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color.h" line="303" column="12" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color.h" declline="303" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__color_8h_1a94015f61087474d5563772f31f47e182" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structlv__color__t" kindref="compound">lv_color_t</ref></type>
+        <definition>lv_color_t lv_color_make</definition>
+        <argsstring>(uint8_t r, uint8_t g, uint8_t b)</argsstring>
+        <name>lv_color_make</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>g</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create an RGB888 color <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>r</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the red channel (0..255) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>g</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the green channel (0..255) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the blue channel (0..255) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the color </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color.h" line="312" column="12" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color.h" declline="312" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__color_8h_1a06df003ea6dcbf5573d931815cfc7641" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structlv__color32__t" kindref="compound">lv_color32_t</ref></type>
+        <definition>lv_color32_t lv_color32_make</definition>
+        <argsstring>(uint8_t r, uint8_t g, uint8_t b, uint8_t a)</argsstring>
+        <name>lv_color32_make</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>g</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create an ARGB8888 color <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>r</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the red channel (0..255) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>g</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the green channel (0..255) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the blue channel (0..255) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the alpha channel (0..255) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the color </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color.h" line="322" column="14" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color.h" declline="322" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__color_8h_1abf80bdeb86b9f12a497f4a43e1df2b4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structlv__color__t" kindref="compound">lv_color_t</ref></type>
+        <definition>lv_color_t lv_color_hex3</definition>
+        <argsstring>(uint32_t c)</argsstring>
+        <name>lv_color_hex3</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a color from 0x000..0xfff input <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the hex input (e.g. 0x123 will be 0x112233) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the color </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color.h" line="329" column="12" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color.h" declline="329" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__color_8h_1a7b8434fcd3ee2f2d4c482b601868bf91" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool lv_color_is_in_range</definition>
+        <argsstring>(lv_color_t color, lv_color_t l_color, lv_color_t h_color)</argsstring>
+        <name>lv_color_is_in_range</name>
+        <param>
+          <type><ref refid="structlv__color__t" kindref="compound">lv_color_t</ref></type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type><ref refid="structlv__color__t" kindref="compound">lv_color_t</ref></type>
+          <declname>l_color</declname>
+        </param>
+        <param>
+          <type><ref refid="structlv__color__t" kindref="compound">lv_color_t</ref></type>
+          <declname>h_color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if a color with an RGB888 color is within the color range defined by l_color and h_color. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the color to check </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>l_color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the lower bound color </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>h_color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the upper bound color </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true: pixel is within the color range </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color.h" line="338" column="20" bodyfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color.h" bodystart="338" bodyend="346"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__color_8h_1a825a5b40ba601891c53a019b246b3013" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structlv__color__t" kindref="compound">lv_color_t</ref></type>
+        <definition>static lv_color_t lv_color16_to_color</definition>
+        <argsstring>(lv_color16_t c)</argsstring>
+        <name>lv_color16_to_color</name>
+        <param>
+          <type><ref refid="structlv__color16__t" kindref="compound">lv_color16_t</ref></type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convert a RGB565 color to RGB888 <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a RGB565 color on <ref refid="structlv__color16__t" kindref="compound">lv_color16_t</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the color </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color.h" line="353" column="26" bodyfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color.h" bodystart="353" bodyend="356"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__color_8h_1a0557c1156cd9cd683f7873aec984b74a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t lv_color_to_u16</definition>
+        <argsstring>(lv_color_t color)</argsstring>
+        <name>lv_color_to_u16</name>
+        <param>
+          <type><ref refid="structlv__color__t" kindref="compound">lv_color_t</ref></type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convert am RGB888 color to RGB565 stored in <computeroutput>uint16_t</computeroutput> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>and RGB888 color </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput>color</computeroutput> as RGB565 on <computeroutput>uin16_t</computeroutput> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color.h" line="363" column="10" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color.h" declline="363" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__color_8h_1a8751d74dde6486a4fdba45e679120b56" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t lv_color_to_u32</definition>
+        <argsstring>(lv_color_t color)</argsstring>
+        <name>lv_color_to_u32</name>
+        <param>
+          <type><ref refid="structlv__color__t" kindref="compound">lv_color_t</ref></type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convert am RGB888 color to XRGB8888 stored in <computeroutput>uint32_t</computeroutput> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>and RGB888 color </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput>color</computeroutput> as XRGB8888 on <computeroutput>uin32_t</computeroutput> (the alpha channel is always set to 0xFF) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color.h" line="370" column="10" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color.h" declline="370" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__color_8h_1a85f6743d830f7c058900374be3942810" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t lv_color_16_16_mix</definition>
+        <argsstring>(uint16_t c1, uint16_t c2, uint8_t mix)</argsstring>
+        <name>lv_color_16_16_mix</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>c1</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>c2</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>mix</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Mix two RGB565 colors <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the first color (typically the foreground color) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the second color (typically the background color) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>0..255, or LV_OPA_0/10/20... </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>mix == 0: c2 mix == 255: c1 mix == 128: 0.5 x c1 + 0.5 x c2 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color.h" line="381" column="11" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color.h" declline="381" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__color_8h_1abb69f9753b72145e5c6334b418ee61f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structlv__color__t" kindref="compound">lv_color_t</ref></type>
+        <definition>lv_color_t lv_color_lighten</definition>
+        <argsstring>(lv_color_t c, lv_opa_t lvl)</argsstring>
+        <name>lv_color_lighten</name>
+        <param>
+          <type><ref refid="structlv__color__t" kindref="compound">lv_color_t</ref></type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>lv_opa_t</type>
+          <declname>lvl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Mix white to a color <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the base color </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lvl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the intensity of white (0: no change, 255: fully white) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the mixed color </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color.h" line="389" column="12" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color.h" declline="389" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__color_8h_1a210eb413016d55506d3a74d0e562cd18" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structlv__color__t" kindref="compound">lv_color_t</ref></type>
+        <definition>lv_color_t lv_color_darken</definition>
+        <argsstring>(lv_color_t c, lv_opa_t lvl)</argsstring>
+        <name>lv_color_darken</name>
+        <param>
+          <type><ref refid="structlv__color__t" kindref="compound">lv_color_t</ref></type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>lv_opa_t</type>
+          <declname>lvl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Mix black to a color <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the base color </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lvl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the intensity of black (0: no change, 255: fully black) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the mixed color </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color.h" line="397" column="12" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color.h" declline="397" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__color_8h_1a09816229b98000ba2fc7098696c2b740" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structlv__color__t" kindref="compound">lv_color_t</ref></type>
+        <definition>lv_color_t lv_color_hsv_to_rgb</definition>
+        <argsstring>(uint16_t h, uint8_t s, uint8_t v)</argsstring>
+        <name>lv_color_hsv_to_rgb</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convert a HSV color to RGB <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>h</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>hue [0..359] </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>saturation [0..100] </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value [0..100] </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the given RGB color in RGB (with LV_COLOR_DEPTH depth) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color.h" line="406" column="12" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color.h" declline="406" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__color_8h_1a4d455fed0393e8a3fee3d8d5d3ea5900" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structlv__color__hsv__t" kindref="compound">lv_color_hsv_t</ref></type>
+        <definition>lv_color_hsv_t lv_color_rgb_to_hsv</definition>
+        <argsstring>(uint8_t r8, uint8_t g8, uint8_t b8)</argsstring>
+        <name>lv_color_rgb_to_hsv</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>r8</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>g8</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>b8</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convert a 32-bit RGB color to HSV <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>r8</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>8-bit red </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>g8</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>8-bit green </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b8</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>8-bit blue </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the given RGB color in HSV </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color.h" line="415" column="16" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color.h" declline="415" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__color_8h_1a2afdf6490e5979aa453398c03773bf2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structlv__color__hsv__t" kindref="compound">lv_color_hsv_t</ref></type>
+        <definition>lv_color_hsv_t lv_color_to_hsv</definition>
+        <argsstring>(lv_color_t color)</argsstring>
+        <name>lv_color_to_hsv</name>
+        <param>
+          <type><ref refid="structlv__color__t" kindref="compound">lv_color_t</ref></type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convert a color to HSV <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>color </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the given color in HSV </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color.h" line="422" column="16" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color.h" declline="422" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__color_8h_1ae88f1b549583615e288c9c3557cd249b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structlv__color__t" kindref="compound">lv_color_t</ref></type>
+        <definition>lv_color_t lv_color_white</definition>
+        <argsstring>(void)</argsstring>
+        <name>lv_color_white</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A helper for white color <simplesect kind="return"><para>a white color </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color.h" line="430" column="12" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color.h" declline="430" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__color_8h_1aa31c8a4104bac9d890489cf9d26d9ae3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structlv__color__t" kindref="compound">lv_color_t</ref></type>
+        <definition>lv_color_t lv_color_black</definition>
+        <argsstring>(void)</argsstring>
+        <name>lv_color_black</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A helper for black color <simplesect kind="return"><para>a black color </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color.h" line="436" column="12" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color.h" declline="436" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__color_8h_1a165eb1cd999a21d5d0e40e173c1a1762" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_color_premultiply</definition>
+        <argsstring>(lv_color32_t *c)</argsstring>
+        <name>lv_color_premultiply</name>
+        <param>
+          <type><ref refid="structlv__color32__t" kindref="compound">lv_color32_t</ref> *</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color.h" line="438" column="6" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color.h" declline="438" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__color_8h_1ad89e4253331a1fcb0b7370ee8899fdad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lv_color16_premultiply</definition>
+        <argsstring>(lv_color16_t *c, lv_opa_t a)</argsstring>
+        <name>lv_color16_premultiply</name>
+        <param>
+          <type><ref refid="structlv__color16__t" kindref="compound">lv_color16_t</ref> *</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>lv_opa_t</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color.h" line="440" column="6" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color.h" declline="440" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__color_8h_1a439d34cb77cba7e49a9ca6ad9420c0e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t lv_color_luminance</definition>
+        <argsstring>(lv_color_t c)</argsstring>
+        <name>lv_color_luminance</name>
+        <param>
+          <type><ref refid="structlv__color__t" kindref="compound">lv_color_t</ref></type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the luminance of a color: luminance = 0.3 R + 0.59 G + 0.11 B <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a color </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the brightness [0..255] </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color.h" line="447" column="9" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color.h" declline="447" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__color_8h_1a9759722e6fda3c3f0027d0dcec1b2eed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t lv_color16_luminance</definition>
+        <argsstring>(const lv_color16_t c)</argsstring>
+        <name>lv_color16_luminance</name>
+        <param>
+          <type>const <ref refid="structlv__color16__t" kindref="compound">lv_color16_t</ref></type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the luminance of a color16: luminance = 0.3 R + 0.59 G + 0.11 B <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a color </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the brightness [0..255] </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color.h" line="454" column="9" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color.h" declline="454" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__color_8h_1a69ceb52df9728a4dcbfd7e6ac9ebcb02" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t lv_color24_luminance</definition>
+        <argsstring>(const uint8_t *c)</argsstring>
+        <name>lv_color24_luminance</name>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the luminance of a color24: luminance = 0.3 R + 0.59 G + 0.11 B <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a color </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the brightness [0..255] </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color.h" line="461" column="9" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color.h" declline="461" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__color_8h_1a6370108944444cc02faf0595c8542455" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t lv_color32_luminance</definition>
+        <argsstring>(lv_color32_t c)</argsstring>
+        <name>lv_color32_luminance</name>
+        <param>
+          <type><ref refid="structlv__color32__t" kindref="compound">lv_color32_t</ref></type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the luminance of a color32: luminance = 0.3 R + 0.59 G + 0.11 B <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a color </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the brightness [0..255] </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color.h" line="468" column="9" declfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color.h" declline="468" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="lv__color_8h_1a09fb8f1903ec2e3c8f5c2180ca3caf33" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>static uint16_t lv_color_swap_16</definition>
+        <argsstring>(uint16_t c)</argsstring>
+        <name>lv_color_swap_16</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Swap the endianness of an rgb565 color <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a color </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the swapped color </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color.h" line="476" column="25" bodyfile="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color.h" bodystart="476" bodyend="479"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/mustafak/Documents/GitHub/doxygen-mdx/lvgldocs/src/misc/lv_color.h"/>
+  </compounddef>
+</doxygen>

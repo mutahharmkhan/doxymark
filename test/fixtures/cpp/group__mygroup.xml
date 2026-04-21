@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.9.6">
+  <compounddef id="group__mygroup" kind="group">
+    <compoundname>mygroup</compoundname>
+    <title>My Module Group</title>
+    <innergroup refid="group__subgroup">subgroup</innergroup>
+    <briefdescription>
+      <para>A group of related APIs.</para>
+    </briefdescription>
+    <detaileddescription>
+      <para>This group contains functions and types for the my module.</para>
+    </detaileddescription>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group__mygroup_1group_init" static="no" const="no">
+        <type>void</type>
+        <definition>void group_init</definition>
+        <argsstring>(int flags)</argsstring>
+        <name>group_init</name>
+        <param>
+          <type>int</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+          <para>Initialize the module.</para>
+        </briefdescription>
+        <detaileddescription/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__mygroup_1group_handle_t">
+        <type>void *</type>
+        <definition>typedef void* group_handle_t</definition>
+        <name>group_handle_t</name>
+        <briefdescription>
+          <para>Opaque handle type.</para>
+        </briefdescription>
+        <detaileddescription/>
+      </memberdef>
+    </sectiondef>
+  </compounddef>
+</doxygen>
