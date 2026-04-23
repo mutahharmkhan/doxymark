@@ -34,18 +34,17 @@ export function escapePipesOutsideCode(text: string): string {
   const n = text.length;
   while (i < n) {
     const c = text[i];
-    // Preserve backtick code spans
+    // Preserve backtick code spans (only if matched)
     if (c === "`") {
+      const closeIdx = text.indexOf("`", i + 1);
+      if (closeIdx >= 0) {
+        out += text.substring(i, closeIdx + 1);
+        i = closeIdx + 1;
+        continue;
+      }
+      // Unmatched backtick — treat as literal and keep escaping pipes in rest
       out += c;
       i++;
-      while (i < n && text[i] !== "`") {
-        out += text[i];
-        i++;
-      }
-      if (i < n) {
-        out += text[i];
-        i++;
-      }
       continue;
     }
     // Preserve {{...}} placeholders (dxlink, dxanchor, etc.)
@@ -298,7 +297,8 @@ export const markdownTemplates: TemplateSet = {
       parts.push("| Name | Type | Description |");
       parts.push("|------|------|-------------|");
       for (const tp of fn.templateParams) {
-        parts.push(`| \`${tp.name}\` | \`${tp.type.text}\` | ${sanitizeForTableCell(tp.description || "")} |`);
+        const nameCell = tp.name ? `\`${tp.name}\`` : "—";
+        parts.push(`| ${nameCell} | \`${tp.type.text}\` | ${sanitizeForTableCell(tp.description || "")} |`);
       }
       parts.push("");
     }

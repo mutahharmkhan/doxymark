@@ -252,7 +252,16 @@ function extractTemplateParams(
   for (const paramWrapper of paramWrappers) {
     const pChildren = paramWrapper["param"] as PONode[];
     const type = parseTypeRef(getChild(pChildren, "type"));
-    const name = getText(getChild(pChildren, "declname") ?? getChild(pChildren, "defname") ?? []);
+    let name = getText(getChild(pChildren, "declname") ?? getChild(pChildren, "defname") ?? []);
+    // Doxygen sometimes emits C++ template params as "<type>typename X</type>"
+    // with no declname. Split out the name so it renders in its own column.
+    if (!name) {
+      const match = /^(typename|class)(\s*\.\.\.)?\s+(\w+)$/.exec(type.text);
+      if (match) {
+        name = match[3];
+        type.text = `${match[1]}${match[2] ?? ""}`;
+      }
+    }
     const defvalChildren = getChild(pChildren, "defval");
     const defaultValue = defvalChildren
       ? extractTextContent(defvalChildren)

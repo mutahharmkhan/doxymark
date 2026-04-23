@@ -1858,7 +1858,7 @@ describe("cross-file intelligence features", () => {
       };
       const dummyCtx = { index: {} } as any;
       const result = fumadocsPreset.function(fn, dummyCtx);
-      expect(result).toContain("\\<stdint.h>");
+      expect(result).toContain("\\<stdint.h\\>");
       expect(result).toContain("x \\< 10");
     });
 
@@ -2064,14 +2064,22 @@ describe("escapeMdxText", () => {
 
   it("should escape bare < that is not an HTML tag", () => {
     expect(escapeMdxText("x < 10")).toBe("x \\< 10");
-    expect(escapeMdxText("<stdint.h>")).toBe("\\<stdint.h>");
+    expect(escapeMdxText("<stdint.h>")).toBe("\\<stdint.h\\>");
     expect(escapeMdxText("a << b")).toBe("a \\<\\< b");
   });
 
   it("should escape all angle brackets in description text", () => {
-    expect(escapeMdxText("line<br/>break")).toBe("line\\<br/>break");
-    expect(escapeMdxText("<CONST>")).toBe("\\<CONST>");
-    expect(escapeMdxText("LV_<CONST>")).toBe("LV_\\<CONST>");
+    expect(escapeMdxText("line<br/>break")).toBe("line\\<br/\\>break");
+    expect(escapeMdxText("<CONST>")).toBe("\\<CONST\\>");
+    expect(escapeMdxText("LV_<CONST>")).toBe("LV_\\<CONST\\>");
+  });
+
+  it("should escape content after an unclosed inline-code backtick", () => {
+    // Regression: an unmatched backtick used to swallow the rest of the string
+    // verbatim, letting <, {, | leak through into MDX output.
+    expect(escapeMdxText("default `!?%/\\-=()[]{}<>@#&$")).toBe(
+      "default `!?%/\\-=()[]\\{\\}\\<\\>@#&$"
+    );
   });
 
   it("should handle mixed content", () => {
@@ -2080,7 +2088,7 @@ describe("escapeMdxText", () => {
     expect(result).toContain('\\{"Btn1"');
     expect(result).toContain("\\}");
     expect(result).toContain("`<stdio.h>`");
-    expect(result).toContain("\\<br/>");
+    expect(result).toContain("\\<br/\\>");
   });
 });
 
@@ -2144,9 +2152,9 @@ describe("table cell sanitization", () => {
         .toBe("line 1<br/>line 2");
     });
 
-    it("MDX-escapes bare <, {, } in text portions", () => {
+    it("MDX-escapes bare <, >, {, } in text portions", () => {
       const result = sanitizeForMdxTableCell("see <T> and {x}");
-      expect(result).toContain("\\<T>");
+      expect(result).toContain("\\<T\\>");
       expect(result).toContain("\\{x\\}");
     });
 
@@ -2157,7 +2165,7 @@ describe("table cell sanitization", () => {
 
     it("applies all transforms together", () => {
       const result = sanitizeForMdxTableCell("LV_A | LV_B\nsee <T>");
-      expect(result).toBe("LV_A \\| LV_B<br/>see \\<T>");
+      expect(result).toBe("LV_A \\| LV_B<br/>see \\<T\\>");
     });
   });
 
@@ -2257,7 +2265,7 @@ describe("table cell sanitization", () => {
       );
       const file = result.files.find(f => f.path.endsWith(".mdx"))!;
       expect(file.content).toContain("\\{a\\}");
-      expect(file.content).toContain("\\<T>");
+      expect(file.content).toContain("\\<T\\>");
     });
   });
 });

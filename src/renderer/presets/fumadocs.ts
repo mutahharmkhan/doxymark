@@ -57,13 +57,14 @@ function titleCase(s: string): string {
 
 /**
  * Escape characters that break MDX parsing in prose text.
- * Preserves content inside code fences, inline code spans,
+ * Preserves content inside code fences, matched inline code spans,
  * and internal {{...}} placeholders (e.g. {{dxanchor:id}}).
  * - Bare { } are treated as JS expressions by MDX
  * - Bare < that doesn't start a valid HTML/JSX tag is treated as JSX
+ * - Bare > is escaped for symmetry with < so patterns like <X> render consistently
  */
 export function escapeMdxText(text: string): string {
-  if (!text || !/[{}<]/.test(text)) return text;
+  if (!text || !/[{}<>`]/.test(text)) return text;
 
   const result: string[] = [];
   let i = 0;
@@ -87,13 +88,17 @@ export function escapeMdxText(text: string): string {
       continue;
     }
 
-    // Inline code: preserve `...` spans
+    // Inline code: preserve `...` spans (only if there is a closing backtick)
     if (ch === '`') {
-      const start = i;
+      const closeIdx = text.indexOf('`', i + 1);
+      if (closeIdx >= 0) {
+        result.push(text.substring(i, closeIdx + 1));
+        i = closeIdx + 1;
+        continue;
+      }
+      // Unmatched backtick — treat as literal and keep escaping rest of string
+      result.push(ch);
       i++;
-      while (i < len && text[i] !== '`') i++;
-      if (i < len) i++;
-      result.push(text.substring(start, i));
       continue;
     }
 
@@ -119,6 +124,14 @@ export function escapeMdxText(text: string): string {
     // outside of escapeMdxText, so all < in description text is literal.
     if (ch === '<') {
       result.push('\\<');
+      i++;
+      continue;
+    }
+
+    // Bare > — escape for symmetry. Prevents half-escaped patterns like
+    // "\<widget_type>_#" where < is escaped but > leaks through.
+    if (ch === '>') {
+      result.push('\\>');
       i++;
       continue;
     }
@@ -287,7 +300,8 @@ export const fumadocsPreset: TemplateSet = {
       parts.push("| Name | Type | Description |");
       parts.push("|------|------|-------------|");
       for (const tp of fn.templateParams) {
-        parts.push(`| \`${tp.name}\` | \`${tp.type.text}\` | ${sanitizeForMdxTableCell(tp.description || "")} |`);
+        const nameCell = tp.name ? `\`${tp.name}\`` : "—";
+        parts.push(`| ${nameCell} | \`${tp.type.text}\` | ${sanitizeForMdxTableCell(tp.description || "")} |`);
       }
       parts.push("");
     }
